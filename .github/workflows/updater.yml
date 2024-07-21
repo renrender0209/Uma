@@ -23,8 +23,4 @@ jobs:
     - run: npm i
     - run: npm run update
     - name: Update List
-      uses: test-room-7/action-update-file@v1
-      with:
-       file-path: unified_instances.txt
-       commit-msg: Update List
-       github-token: ${{ secrets.GITHUB_TOKEN }}
+      uses: int128/update-generated-files-action@v2
