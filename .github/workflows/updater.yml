@@ -1,5 +1,3 @@
-name: Update Instances List
-
 on:
  pull_request:
  push:
@@ -13,11 +11,13 @@ permissions:
   pull-requests: write
 
 jobs:
-  generate:
+  update:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: oven-sh/setup-bun@v2
-    - run: bun main.ts
+    - uses: denoland/setup-deno@v1
+      with:
+         deno-version: vx.x.x
+    - run: deno run main.ts
     - uses: int128/update-generated-files-action@v2
     
