@@ -1,4 +1,4 @@
-lunar.icu, 🇩🇪, piped-api, invidious
+projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
 
 reallyaweso.me, 🇩🇪, pipedapi, invidious
 
@@ -8,9 +8,9 @@ darkness.services, 🇺🇸, pipedapi, invidious
 
 projectsegfau.lt, 🇫🇷, api.piped, invidious
 
-projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
-
 privacydev.net, 🇫🇷, api.piped, invidious
+
+lunar.icu, 🇩🇪, piped-api, invidious
 
 ggtyler.dev, 🇺🇸, piapi, iv
 
