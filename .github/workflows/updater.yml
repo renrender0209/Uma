@@ -8,16 +8,14 @@ on:
     
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: denoland/setup-deno@v1
-      with:
-         deno-version: vx.x.x
-    - run: deno run --allow-read=unified_instances.txt main.ts
-    - uses: int128/update-generated-files-action@v2
-    
+    - uses: oven-sh/setup-bun@v2
+    - run: bun main.ts
+    - run: git add unified_instances.txt
+    - run: git commit -m ''
+    - run: git push    
