@@ -17,5 +17,7 @@ jobs:
     - uses: oven-sh/setup-bun@v2
     - run: bun main.ts
     - run: git add unified_instances.txt
+    - run: git config --global user.email "${{ secrets.EMAIL }}"
+    - run: git config --global user.name "n-ce"
     - run: git commit -m ''
     - run: git push    
