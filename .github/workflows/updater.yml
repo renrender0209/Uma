@@ -1,10 +1,6 @@
 name: Update Instances List
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   schedule:
     - cron: "*/30 * * * *"
     
@@ -17,9 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: oven-sh/setup-bun@v2
-      with:
-       bun-download-url: "https://github.com/oven-sh/bun/releases/latest/download/bun-${{runner.os == 'macOS' && 'darwin' || runner.os}}-${{ runner.arch == 'X64' && 'x64' || 'arm64' }}.zip"
     - run: bun main.ts
-    - name: Update List
-      uses: int128/update-generated-files-action@v2
+    - uses: int128/update-generated-files-action@v2
     
