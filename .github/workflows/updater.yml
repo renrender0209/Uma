@@ -18,6 +18,6 @@ jobs:
     - uses: denoland/setup-deno@v1
       with:
          deno-version: vx.x.x
-    - run: deno run main.ts --allow-read
+    - run: deno run --allow-read=unified_instances.txt main.ts
     - uses: int128/update-generated-files-action@v2
     
