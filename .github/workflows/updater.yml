@@ -20,9 +20,7 @@ jobs:
       with:
         node-version: latest
         cache: 'npm'
-    - run: npm i
-    - run: tsc main.ts && node main.js
-    - run: rm -r main.js
+    - run: npx tsc main.ts && node main.js && rm -r main.js
     - name: Update List
       uses: int128/update-generated-files-action@v2
     
