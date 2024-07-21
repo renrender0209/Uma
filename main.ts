@@ -1,11 +1,9 @@
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from 'node:fs';
 
 
 const musicStream = 'k2Fjn90aB0M';
 const nonMusicStream = 'MvsAesQ-4zA';
-
 const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
-
 const newData: { [index: string]: number } = {};
 
 setImmediate(async () => {
