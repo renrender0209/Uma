@@ -1,15 +1,19 @@
 name: Update Instances List
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"
+ pull_request:
+ push:
+  branches:
+   - main
+ schedule:
+   - cron: "*/30 * * * *"
     
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
