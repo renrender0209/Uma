@@ -16,11 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-node@v3
-      with:
-        node-version: latest
-        cache: 'npm'
-    - run: npx tsc main.ts && node main.js && rm -r main.js
+    - uses: oven-sh/setup-bun@v2
+    - run: bun main.ts
     - name: Update List
       uses: int128/update-generated-files-action@v2
     
