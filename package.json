@@ -1,0 +1,28 @@
+{
+  "name": "uma",
+  "version": "0.0.0",
+  "description": "Unified Instances List Maintainer",
+  "main": "index.ts",
+  "scripts": {
+    "update": "tsc main.ts && node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n-ce/Uma.git"
+  },
+  "keywords": [
+    "piped",
+    "invidious",
+    "instances"
+  ],
+  "author": "n-ce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n-ce/Uma/issues"
+  },
+  "homepage": "https://github.com/n-ce/Uma#readme",
+  "dependencies": {
+    "@types/node": "^20.14.11",
+    "typescript": "^5.5.3"
+  }
+}
