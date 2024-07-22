@@ -16,7 +16,7 @@ setImmediate(async () => {
 
   writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
 
-  exec(`export commit_message=${diff(data, newData)}`);
+  exec(`export COMMIT_MESSAGE="${diff(data, newData)}"`);
   
 });
 
