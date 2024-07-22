@@ -16,7 +16,12 @@ setImmediate(async () => {
 
   writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
 
-  exec(`export COMMIT_MESSAGE=\"${diff(data, newData)}\"`);
+  exec(`
+  git add unified_instances.txt;
+  git config user.email 'action@github.com';
+  git config user.name 'github-actions';
+  git commit -m ${diff(data, newData)} || true && git push || true
+  `);
   
 });
 
