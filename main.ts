@@ -100,7 +100,7 @@ function diff (textArr1, textArr2) {
   const data = [];
   textArr1.forEach((line:string, index:number)=>{
     if (line !== textArr2[index])
-      data.push(`${line} => ${textArr2[index]}`);
+      data.push(`${line.split(', ')[0]} ${index} => ${textArr2.indexOf(line)}`);
   });
   return JSON.stringify(data, null, 2);
 }
