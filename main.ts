@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync } from 'node:fs';
+import { exec } from 'node:child_process';
 
 const musicStream = 'k2Fjn90aB0M';
 const nonMusicStream = 'MvsAesQ-4zA';
@@ -15,6 +16,8 @@ setImmediate(async () => {
 
   writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
 
+  exec(`export commit_message=${diff(data, newData)}`);
+  
 });
 
 
@@ -86,5 +89,13 @@ async function fetchAudioUrl(name: string, piped: string, invidious: string) {
 
   return score;
 
+}
+
+function diff (textArr1, textArr2) {
+  const data = textArr1.map((line:string,index:number)=>{
+    if (line !== textArr[index])
+      return `${line}=>${textArr[index]}`;
+  });
+  return JSON.stringify(data,null,2);
 }
 
