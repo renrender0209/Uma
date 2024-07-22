@@ -93,8 +93,8 @@ async function fetchAudioUrl(name: string, piped: string, invidious: string) {
 
 function diff (textArr1, textArr2) {
   const data = textArr1.map((line:string,index:number)=>{
-    if (line !== textArr[index])
-      return `${line}=>${textArr[index]}`;
+    if (line !== textArr2[index])
+      return `${line}=>${textArr2[index]}`;
   });
   return JSON.stringify(data,null,2);
 }
