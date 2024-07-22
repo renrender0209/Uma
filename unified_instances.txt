@@ -1,3 +1,5 @@
+adminforge.de, 🇩🇪, pipedapi, invidious
+
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
 
 reallyaweso.me, 🇩🇪, pipedapi, invidious
