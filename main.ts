@@ -36,7 +36,7 @@ async function fetchAudioUrl(name: string, piped: string, invidious: string) {
 
         fetch(proxiedUrl)
           .then(data => data.blob())
-          .then(() => {
+          .then(blob => {
             if (blob.type.startsWith('audio')) {
               console.log('\n✅ loaded music stream on ' + name);
               const timeTaken = performance.now() - t;
