@@ -19,12 +19,10 @@ setImmediate(async () => {
 });
 
 
-
 async function fetchAudioUrl(name: string, piped: string, invidious: string) {
 
   const pipedInstance = `https://${piped}.${name}`;
   const invidiousInstance = `https://${invidious}.${name}`;
-
   let score = 0;
 
   await fetch(`${pipedInstance}/streams/${musicStream}`)
@@ -34,19 +32,23 @@ async function fetchAudioUrl(name: string, piped: string, invidious: string) {
         score++;
         const audioUrl = data.audioStreams[0].url;
         const proxiedUrl = audioUrl.replace(new URL(audioUrl).origin, invidiousInstance);
+        const t = performance.now();
 
         fetch(proxiedUrl)
           .then(data => data.blob())
           .then(() => {
-            console.log('\n✅ loaded music stream on ' + name);
-            score++;
+            if (blob.type.startsWith('audio')) {
+              console.log('\n✅ loaded music stream on ' + name);
+              const timeTaken = performance.now() - t;
+              score += (1/timeTaken);
+            }
+            else throw new Error();
           })
           .catch(() => {
             console.log('\n❌ failed to load music stream on ' + name);
           });
       }
-      else
-        throw new Error();
+      else throw new Error();
     })
     .catch(() => {
       console.log(`\n❌ failed to fetch music stream data on ${name}`);
@@ -62,12 +64,17 @@ async function fetchAudioUrl(name: string, piped: string, invidious: string) {
         const deproxiedUrl = audioUrl.replace(
           construct.host,
           construct.searchParams.get('host'));
-
+        const t = performance.now();
+        
         fetch(deproxiedUrl)
           .then(data => data.blob())
-          .then(() => {
-            console.log('\n✅ loaded deproxified non-music stream on ' + name);
-            score++;
+          .then(blob => {
+            if (blob.type.startsWith('audio')) {
+              console.log('\n✅ loaded deproxified non-music stream on ' + name);
+              const timeTaken = performance.now() - t;
+              score += (1/timeTaken);
+            }
+            else throw new Error();
           })
           .catch(() => {
             console.log('\n❌ failed to load deproxified non-music stream on ' + name);
