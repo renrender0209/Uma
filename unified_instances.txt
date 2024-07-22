@@ -6,9 +6,9 @@ private.coffee, 🇦🇹, api.piped, invidious
 
 darkness.services, 🇺🇸, pipedapi, invidious
 
-projectsegfau.lt, 🇫🇷, api.piped, invidious
-
 privacydev.net, 🇫🇷, api.piped, invidious
+
+projectsegfau.lt, 🇫🇷, api.piped, invidious
 
 lunar.icu, 🇩🇪, piped-api, invidious
 
