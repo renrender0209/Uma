@@ -20,7 +20,7 @@ setImmediate(async () => {
   git add unified_instances.txt;
   git config user.email 'action@github.com';
   git config user.name 'github-actions';
-  git commit -m '${diff(data, newData)}' || true && git push || true
+  git commit -m '${diff(data, sortedList)}' || true && git push || true
   `);
   
 });
