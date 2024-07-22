@@ -16,7 +16,7 @@ setImmediate(async () => {
 
   writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
 
-  exec(`export COMMIT_MESSAGE="${diff(data, newData)}"`);
+  exec(`export COMMIT_MESSAGE=\"${diff(data, newData)}\"`);
   
 });
 
@@ -92,10 +92,11 @@ async function fetchAudioUrl(name: string, piped: string, invidious: string) {
 }
 
 function diff (textArr1, textArr2) {
-  const data = textArr1.map((line:string,index:number)=>{
+  const data = [];
+  textArr1.forEach((line:string, index:number)=>{
     if (line !== textArr2[index])
-      return `${line}=>${textArr2[index]}`;
+      data.push(`${line} => ${textArr2[index]}`);
   });
-  return JSON.stringify(data,null,2);
+  return JSON.stringify(data, null, 2);
 }
 
