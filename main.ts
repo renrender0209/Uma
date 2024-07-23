@@ -18,7 +18,7 @@ Promise
 
 async function fetchAudioUrl(instance:string) {
   
-  const [name, _, piped, invidious] = v.split(', ');
+  const [name, _, piped, invidious] = instance.split(', ');
   const musicStream = 'k2Fjn90aB0M';
   const nonMusicStream = 'MvsAesQ-4zA';
   const pipedInstance = `https://${piped}.${name}`;
@@ -85,7 +85,7 @@ async function fetchAudioUrl(instance:string) {
       console.log(`\n❌ failed to fetch non-music stream data on ${name}`);
     });
 
-  return [v, score];
+  return [instance, score];
   
 }
 
