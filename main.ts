@@ -1,32 +1,24 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { exec } from 'node:child_process';
-import process from 'node:process';
-
-setImmediate(async () => {
   
-  const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
-  const promises = data.map(async (v:string) => {
-    const [name, _, piped, invidious] = v.split(', ');
-    const score = await fetchAudioUrl(name, piped, invidious);
-    return [v, score];
+const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
+Promise
+  .all(data.map(fetchAudioUrl))
+  .then((list) => list.sort((a, b) => b[1] - a[1]).map(v => v[0]))
+  .then((sortedList) => {
+    writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
+    exec(`
+    git add unified_instances.txt;
+    git config user.email 'action@github.com';
+    git config user.name 'github-actions';
+    git commit -m '${diff(data, sortedList)}' || true && git push || true
+    `);
   });
-  const list = await Promise.all(promises);
-  const sortedList = list.sort((a, b) => b[1] - a[1]).map(v => v[0]);
-
-  writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
-  
-  exec(`
-  git add unified_instances.txt;
-  git config user.email 'action@github.com';
-  git config user.name 'github-actions';
-  git commit -m '${diff(data, sortedList)}' || true && git push || true
-  `);
-  
-});
 
 
-async function fetchAudioUrl(name: string, piped: string, invidious: string) {
+async function fetchAudioUrl(instance:string) {
   
+  const [name, _, piped, invidious] = v.split(', ');
   const musicStream = 'k2Fjn90aB0M';
   const nonMusicStream = 'MvsAesQ-4zA';
   const pipedInstance = `https://${piped}.${name}`;
@@ -93,8 +85,8 @@ async function fetchAudioUrl(name: string, piped: string, invidious: string) {
       console.log(`\n❌ failed to fetch non-music stream data on ${name}`);
     });
 
-  return score;
-
+  return [v, score];
+  
 }
 
 function diff (textArr1, textArr2) {
