@@ -5,22 +5,16 @@ import process from 'node:process';
 setImmediate(async () => {
   
   const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
-  const newData: { [index: string]: number } = {};
-  
-  for await (const v of data) {
+  const promises = data.map((v:string) => {
     const [name, _, piped, invidious] = v.split(', ');
     const score = await fetchAudioUrl(name, piped, invidious);
-    newData[v] = score;
-  }
-  
-  const sortedList = Object.entries(newData).sort((a, b) => b[1] - a[1]).map(v => v[0])
+    return [[v],[score]];
+  });
+  const list = await Promise.all(promises);
+  const sortedList = list.sort((a, b) => b[1] - a[1]).map(v => v[0]);
 
-  console.log('writing file');
-  
   writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
   
-  console.log('updating via git');
-
   exec(`
   git add unified_instances.txt;
   git config user.email 'action@github.com';
