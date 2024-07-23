@@ -15,7 +15,11 @@ setImmediate(async () => {
   
   const sortedList = Object.entries(newData).sort((a, b) => b[1] - a[1]).map(v => v[0])
 
+  console.log('writing file');
+  
   writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
+  
+  console.log('updating via git');
 
   exec(`
   git add unified_instances.txt;
@@ -23,10 +27,6 @@ setImmediate(async () => {
   git config user.name 'github-actions';
   git commit -m '${diff(data, sortedList)}' || true && git push || true
   `);
-
-  console.log('Task Accomplished');
-  process.exit();
-  console.log('Exit Requested');
   
 });
 
