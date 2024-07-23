@@ -5,10 +5,10 @@ import process from 'node:process';
 setImmediate(async () => {
   
   const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
-  const promises = data.map((v:string) => {
+  const promises = data.map(async (v:string) => {
     const [name, _, piped, invidious] = v.split(', ');
     const score = await fetchAudioUrl(name, piped, invidious);
-    return [[v],[score]];
+    return [v, score];
   });
   const list = await Promise.all(promises);
   const sortedList = list.sort((a, b) => b[1] - a[1]).map(v => v[0]);
