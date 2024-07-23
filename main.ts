@@ -1,17 +1,18 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { exec } from 'node:child_process';
-
-const musicStream = 'k2Fjn90aB0M';
-const nonMusicStream = 'MvsAesQ-4zA';
-const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
-const newData: { [index: string]: number } = {};
+import process from 'node:process';
 
 setImmediate(async () => {
+  
+  const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
+  const newData: { [index: string]: number } = {};
+  
   for await (const v of data) {
     const [name, _, piped, invidious] = v.split(', ');
     const score = await fetchAudioUrl(name, piped, invidious);
     newData[v] = score;
   }
+  
   const sortedList = Object.entries(newData).sort((a, b) => b[1] - a[1]).map(v => v[0])
 
   writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
@@ -22,12 +23,18 @@ setImmediate(async () => {
   git config user.name 'github-actions';
   git commit -m '${diff(data, sortedList)}' || true && git push || true
   `);
+
+  console.log('Task Accomplished');
+  process.exit();
+  console.log('Exit Requested');
   
 });
 
 
 async function fetchAudioUrl(name: string, piped: string, invidious: string) {
-
+  
+  const musicStream = 'k2Fjn90aB0M';
+  const nonMusicStream = 'MvsAesQ-4zA';
   const pipedInstance = `https://${piped}.${name}`;
   const invidiousInstance = `https://${invidious}.${name}`;
   const f = performance.now();
