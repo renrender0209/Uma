@@ -1,7 +1,9 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { exec } from 'node:child_process';
-  
+import process from 'node:process';
+
 const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
+
 Promise
   .all(data.map(fetchAudioUrl))
   .then((list) => list.sort((a, b) => b[1] - a[1]).map(v => v[0]))
@@ -13,6 +15,7 @@ Promise
     git config user.name 'github-actions';
     git commit -m '${diff(data, sortedList)}' || true && git push || true
     `);
+    process.exit();
   });
 
 
@@ -91,10 +94,9 @@ async function fetchAudioUrl(instance:string) {
 
 function diff (textArr1, textArr2) {
   const data = [];
-  textArr1.forEach((line:string, index:number) => {
-    if (line !== textArr2[index])
-      data.push(`${line.split(', ')[0]} ${index} => ${textArr2.indexOf(line)}`);
-  });
+  for(let i = 0; i < textArr1.length; i++)
+    if (textArr1[i] !== textArr2[i])
+      data.push(textArr1[i].split(', ')[0] + ((index - textArr2.indexOf(line)) > 0 ? ' 🔺' : ' 🔻'));
   return data.join(', ');
 }
 
