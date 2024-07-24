@@ -1,6 +1,5 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { exec } from 'node:child_process';
-import process from 'node:process';
 
 const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
 
@@ -19,7 +18,7 @@ Promise
       for (let j = 0; j < grid.length; j++)
         sum += grid[j][i][1];
       
-      res[i] = [grid[0][i][0], sum];
+      list[i] = [grid[0][i][0], sum];
     }
     return list;
   })
@@ -32,7 +31,6 @@ Promise
     git config user.name 'github-actions';
     git commit -m '${diff(data, sortedList)}' || true && git push || true
     `);
-    process.exit();
   });
 
 
