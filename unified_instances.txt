@@ -4,16 +4,16 @@ adminforge.de, 🇩🇪, pipedapi, invidious
 
 reallyaweso.me, 🇩🇪, pipedapi, invidious
 
-private.coffee, 🇦🇹, api.piped, invidious
+privacydev.net, 🇫🇷, api.piped, invidious
 
 projectsegfau.lt, 🇫🇷, api.piped, invidious
 
+private.coffee, 🇦🇹, api.piped, invidious
+
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
 
-privacydev.net, 🇫🇷, api.piped, invidious
+ggtyler.dev, 🇺🇸, piapi, iv
 
 lunar.icu, 🇩🇪, piped-api, invidious
-
-ggtyler.dev, 🇺🇸, piapi, iv
 
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
