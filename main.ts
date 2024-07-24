@@ -4,8 +4,25 @@ import process from 'node:process';
 
 const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
 
+// generate an average of data.length datasets
+
 Promise
-  .all(data.map(fetchAudioUrl))
+  .all(Array(data.length)
+       .fill(null)
+       .map(() => Promise.all(data.map(fetchAudioUrl)))
+  )
+  .then((grid) => {
+    const list = [];
+    for (let i = 0; i < grid[0].length; i++) {
+      let sum = 0;
+      
+      for (let j = 0; j < grid.length; j++)
+        sum += grid[j][i][1];
+      
+      res[i] = [grid[0][i][0], sum];
+    }
+    return list;
+  })
   .then((list) => list.sort((a, b) => b[1] - a[1]).map(v => v[0]))
   .then((sortedList) => {
     writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
@@ -96,7 +113,7 @@ function diff (textArr1, textArr2) {
   const data = [];
   for(let i = 0; i < textArr1.length; i++)
     if (textArr1[i] !== textArr2[i])
-      data.push(textArr1[i].split(', ')[0] + ((index - textArr2.indexOf(line)) > 0 ? ' 🔺' : ' 🔻'));
+      data.push(textArr1[i].split(', ')[0] + ((i - textArr2.indexOf(textArr1[i])) > 0 ? ' 🔺' : ' 🔻'));
   return data.join(', ');
 }
 
