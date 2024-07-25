@@ -6,9 +6,9 @@ adminforge.de, 🇩🇪, pipedapi, invidious
 
 private.coffee, 🇦🇹, api.piped, invidious
 
-projectsegfau.lt, 🇫🇷, api.piped, invidious
-
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
+
+projectsegfau.lt, 🇫🇷, api.piped, invidious
 
 lunar.icu, 🇩🇪, piped-api, invidious
 
