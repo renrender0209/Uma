@@ -1,5 +1,3 @@
-reallyaweso.me, 🇩🇪, pipedapi, invidious
-
 adminforge.de, 🇩🇪, pipedapi, invidious
 
 private.coffee, 🇦🇹, api.piped, invidious
@@ -7,6 +5,8 @@ private.coffee, 🇦🇹, api.piped, invidious
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
 
 projectsegfau.lt, 🇫🇷, api.piped, invidious
+
+reallyaweso.me, 🇩🇪, pipedapi, invidious
 
 privacydev.net, 🇫🇷, api.piped, invidious
 
