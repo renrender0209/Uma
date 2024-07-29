@@ -1,6 +1,6 @@
-darkness.services, 🇺🇸, pipedapi, invidious
-
 reallyaweso.me, 🇩🇪, pipedapi, invidious
+
+darkness.services, 🇺🇸, pipedapi, invidious
 
 adminforge.de, 🇩🇪, pipedapi, invidious
 
