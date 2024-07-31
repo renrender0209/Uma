@@ -4,13 +4,13 @@ private.coffee, 🇦🇹, api.piped, invidious
 
 lunar.icu, 🇩🇪, piped-api, invidious
 
-reallyaweso.me, 🇩🇪, pipedapi, invidious
-
 adminforge.de, 🇩🇪, pipedapi, invidious
 
-projectsegfau.lt, 🇫🇷, api.piped, invidious
+reallyaweso.me, 🇩🇪, pipedapi, invidious
 
 ggtyler.dev, 🇺🇸, piapi, iv
+
+projectsegfau.lt, 🇫🇷, api.piped, invidious
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
 
