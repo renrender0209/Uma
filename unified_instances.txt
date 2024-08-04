@@ -6,10 +6,10 @@ private.coffee, 🇦🇹, api.piped, invidious
 
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
 
-reallyaweso.me, 🇩🇪, pipedapi, invidious
-
 
 adminforge.de, 🇩🇪, pipedapi, invidious
+
+reallyaweso.me, 🇩🇪, pipedapi, invidious
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
 
