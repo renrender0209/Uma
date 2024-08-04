@@ -1,6 +1,6 @@
-darkness.services, 🇺🇸, pipedapi, invidious
-
 private.coffee, 🇦🇹, api.piped, invidious
+
+darkness.services, 🇺🇸, pipedapi, invidious
 
 reallyaweso.me, 🇩🇪, pipedapi, invidious
 
