@@ -1,9 +1,9 @@
 darkness.services, 🇺🇸, pipedapi, invidious
 
-reallyaweso.me, 🇩🇪, pipedapi, invidious
-
 
 adminforge.de, 🇩🇪, pipedapi, invidious
+
+reallyaweso.me, 🇩🇪, pipedapi, invidious
 
 private.coffee, 🇦🇹, api.piped, invidious
 
