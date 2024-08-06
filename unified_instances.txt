@@ -1,6 +1,6 @@
-darkness.services, 🇺🇸, pipedapi, invidious
-
 privacydev.net, 🇫🇷, api.piped, invidious
+
+darkness.services, 🇺🇸, pipedapi, invidious
 
 reallyaweso.me, 🇩🇪, pipedapi, invidious
 
