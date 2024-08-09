@@ -1,19 +1,20 @@
-privacydev.net, 🇫🇷, api.piped, invidious
+projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
 
 darkness.services, 🇺🇸, pipedapi, invidious
 
-projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
+reallyaweso.me, 🇩🇪, pipedapi, invidious
 
 private.coffee, 🇦🇹, api.piped, invidious
 
-reallyaweso.me, 🇩🇪, pipedapi, invidious
-
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
+
+ggtyler.dev, 🇺🇸, piapi, iv
+
+
+privacydev.net, 🇫🇷, api.piped, invidious
 
 adminforge.de, 🇩🇪, pipedapi, invidious
 
 projectsegfau.lt, 🇫🇷, api.piped, invidious
 
 lunar.icu, 🇩🇪, piped-api, invidious
-
-ggtyler.dev, 🇺🇸, piapi, iv
