@@ -1,8 +1,8 @@
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
 
-ggtyler.dev, 🇺🇸, piapi, iv
-
 adminforge.de, 🇩🇪, pipedapi, invidious
+
+ggtyler.dev, 🇺🇸, piapi, iv
 
 private.coffee, 🇦🇹, api.piped, invidious
 
