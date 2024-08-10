@@ -1,5 +1,7 @@
 darkness.services, 🇺🇸, pipedapi, invidious
 
+privacydev.net, 🇫🇷, api.piped, invidious
+
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
 
 private.coffee, 🇦🇹, api.piped, invidious
@@ -7,8 +9,6 @@ private.coffee, 🇦🇹, api.piped, invidious
 ggtyler.dev, 🇺🇸, piapi, iv
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
-
-privacydev.net, 🇫🇷, api.piped, invidious
 
 reallyaweso.me, 🇩🇪, pipedapi, invidious
 
