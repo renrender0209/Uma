@@ -1,6 +1,6 @@
-ggtyler.dev, 🇺🇸, piapi, iv
-
 privacydev.net, 🇫🇷, api.piped, invidious
+
+ggtyler.dev, 🇺🇸, piapi, iv
 
 adminforge.de, 🇩🇪, pipedapi, invidious
 
