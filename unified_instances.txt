@@ -1,8 +1,8 @@
-ggtyler.dev, 🇺🇸, piapi, iv
-
 darkness.services, 🇺🇸, pipedapi, invidious
 
 private.coffee, 🇦🇹, api.piped, invidious
+
+ggtyler.dev, 🇺🇸, piapi, iv
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
 
