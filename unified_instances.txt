@@ -1,10 +1,10 @@
-ggtyler.dev, 🇺🇸, piapi, iv
-
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
 
-privacydev.net, 🇫🇷, api.piped, invidious
-
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
+
+ggtyler.dev, 🇺🇸, piapi, iv
+
+privacydev.net, 🇫🇷, api.piped, invidious
 
 adminforge.de, 🇩🇪, pipedapi, invidious
 
