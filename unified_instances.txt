@@ -1,8 +1,8 @@
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
 
-adminforge.de, 🇩🇪, pipedapi, invidious
-
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
+
+adminforge.de, 🇩🇪, pipedapi, invidious
 
 darkness.services, 🇺🇸, pipedapi, invidious
 
