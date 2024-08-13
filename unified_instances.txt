@@ -1,8 +1,8 @@
 ggtyler.dev, 🇺🇸, piapi, iv
 
-projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
-
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
+
+projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
 
 adminforge.de, 🇩🇪, pipedapi, invidious
 
