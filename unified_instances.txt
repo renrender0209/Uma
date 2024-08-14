@@ -1,6 +1,6 @@
-privacydev.net, 🇫🇷, api.piped, invidious
-
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in
+
+privacydev.net, 🇫🇷, api.piped, invidious
 
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us
 
