@@ -4,19 +4,7 @@ import { exec } from 'node:child_process';
 const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
 
 Promise
-  .all([Promise.all(data.map(fetchAudioUrl))])
-  .then((grid) => {
-    const list = [];
-    for (let i = 0; i < grid[0].length; i++) {
-      let sum = 0;
-      
-      for (let j = 0; j < grid.length; j++)
-        sum += grid[j][i][1];
-      
-      list[i] = [grid[0][i][0], sum];
-    }
-    return list;
-  })
+  .all(data.map(fetchAudioUrl))
   .then((list) => list.sort((a, b) => b[1] - a[1]).map(v => v[0]))
   .then((sortedList) => {
     writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
