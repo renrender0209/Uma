@@ -3,13 +3,8 @@ import { exec } from 'node:child_process';
 
 const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
 
-// generate an average of data.length datasets
-
 Promise
-  .all(Array(data.length)
-       .fill(null)
-       .map(() => Promise.all(data.map(fetchAudioUrl)))
-  )
+  .all([Promise.all(data.map(fetchAudioUrl))])
   .then((grid) => {
     const list = [];
     for (let i = 0; i < grid[0].length; i++) {
