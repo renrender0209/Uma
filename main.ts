@@ -19,8 +19,8 @@ Promise
 async function fetchAudioUrl(instance: string) {
 
   const [name, _, piped, invidious, hyperpipe] = instance.split(', ');
-  const stream = 'k2Fjn90aB0M';
-  const stream2 = 'MvsAesQ-4zA';
+  const stream = 'zJl2K7JRCKY';
+  const stream2 = 'GFoGRSacNOs';
   const pipedInstance = `https://${piped}.${name}`;
   const invidiousInstance = `https://${invidious}.${name}`;
   const hyperpipeInstance = `https://${hyperpipe}.${name}`;
