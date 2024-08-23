@@ -49,11 +49,14 @@ async function fetchAudioUrl(instance: string) {
             console.log('\n❌ failed to load stream on ' + invidiousInstance);
           });
 
+        const m = performance.now();
+        
         await fetch(hyperpipeInstance + data.authorUrl)
           .then(res => res.json())
           .then(data => {
             console.log('\n✅ loaded music artist on ' + hyperpipeInstance);
-            if ('playlistId' in data) score += 0.5;
+            if ('playlistId' in data)
+              score += (1 / (performance.now() - m));
           })
           .catch(() => {
             console.log('\n❌ failed to load music artist on ' + hyperpipeInstance);
@@ -89,11 +92,14 @@ async function fetchAudioUrl(instance: string) {
           .catch(() => {
             console.log('\n❌ failed to load stream on ' + pipedInstance);
           });
+        const m = performance.now();
+        
         await fetch(hyperpipeInstance + data.uploaderUrl)
           .then(res => res.json())
           .then(data => {
             console.log('\n✅ loaded music artist on ' + hyperpipeInstance);
-            if ('playlistId' in data) score += 0.5;
+            if ('playlistId' in data)
+              score += (1 / (performance.now() - m));
           })
           .catch(() => {
             console.log('\n❌ failed to load music artist on ' + name);
