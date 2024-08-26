@@ -4,9 +4,9 @@ projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
 projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
-darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
-
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
+
+darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
 
 ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
