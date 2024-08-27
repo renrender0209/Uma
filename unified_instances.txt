@@ -1,10 +1,10 @@
-reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
-
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
-projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
+reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
 
 ggtyler.dev, 🇺🇸, piapi, iv, hpapi
+
+projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
 
