@@ -1,6 +1,6 @@
-reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
-
 adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
+
+reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
 
 ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
