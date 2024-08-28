@@ -1,10 +1,10 @@
 reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
 
-ggtyler.dev, 🇺🇸, piapi, iv, hpapi
-
 projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
 adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
+
+ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
 
