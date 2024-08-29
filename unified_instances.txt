@@ -1,6 +1,6 @@
-ggtyler.dev, 🇺🇸, piapi, iv, hpapi
-
 reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
+
+ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
 projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
