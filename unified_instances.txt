@@ -1,14 +1,14 @@
+ggtyler.dev, 🇺🇸, piapi, iv, hpapi
+
 adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
 
 projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
-ggtyler.dev, 🇺🇸, piapi, iv, hpapi
-
-reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
-
 darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
+
+reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
 
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
