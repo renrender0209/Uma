@@ -1,8 +1,8 @@
+darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
+
 ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
 adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
-
-darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
 
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
