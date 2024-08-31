@@ -2,6 +2,8 @@ adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
 
 projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
+darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
+
 projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
 reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
@@ -9,7 +11,5 @@ reallyaweso.me, 🇩🇪, pipedapi, invidious, musicapi
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
 
 ggtyler.dev, 🇺🇸, piapi, iv, hpapi
-
-darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
 
 lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
