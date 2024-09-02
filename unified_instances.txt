@@ -2,13 +2,13 @@ projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
 ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
-projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
+adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
 
 reallyaweso.me, 🇦🇹, pipedapi, invidious, musicapi
 
-lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
+projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
-adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
+lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
 
