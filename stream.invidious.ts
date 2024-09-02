@@ -12,7 +12,7 @@ export default async function get_and_load_stream(
     .then(res => res.json())
     .then(async data => {
       if ('adaptiveFormats' in data) {
-        score += (1 / (performance.now() - t));
+        score += (2 / (performance.now() - t));
 
         const audioUrl = data.adaptiveFormats
           .filter((
@@ -55,7 +55,7 @@ async function checkAudioBlob(
     .then(blob => {
       if (blob.type.startsWith('audio')) {
         console.log('\n✅ loaded blob on ' + instance);
-        score += (1 / (performance.now() - t));
+        score += (2 / (performance.now() - t));
       }
       else throw new Error();
     })
