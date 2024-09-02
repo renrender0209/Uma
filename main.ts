@@ -16,6 +16,48 @@ Promise
     `);
   });
 
+
+async function checkAudioBlob(
+  url: string, instance: string
+) {
+  let t = performance.now();
+
+  await fetch(url)
+    .then(_ => _.blob())
+    .then(blob => {
+      if (blob.type.startsWith('audio')) {
+        console.log('\n✅ loaded blob on ' + instance);
+        t = (1 / (performance.now() - t));
+      }
+      else throw new Error();
+    })
+    .catch(() => {
+      console.log('\n❌ failed to load blob on ' + instance);
+    });
+  return t;
+
+}
+
+async function checkHyperpipe(
+  instance: string, authorUrl: string
+) {
+  let t = performance.now();
+
+  await fetch(instance + authorUrl)
+    .then(res => res.json())
+    .then(data => {
+      console.log('\n✅ loaded music artist on ' + instance);
+      if ('playlistId' in data)
+        t = 1 / (performance.now() - t);
+    })
+    .catch(() => {
+      console.log('\n❌ failed to load music artist on ' + instance);
+    });
+
+  return t;
+}
+
+
 async function fetchAudioUrl(instance: string) {
 
   const [name, _, piped, invidious, hyperpipe] = instance.split(', ');
@@ -34,33 +76,9 @@ async function fetchAudioUrl(instance: string) {
         score += (1 / (performance.now() - f));
         const audioUrl = data.adaptiveFormats.filter(f => f.type.startsWith('audio')).sort((a, b) => a.bitrate - b.bitrate)[0].url;
         const proxiedUrl = audioUrl.replace(new URL(audioUrl).origin, invidiousInstance);
-        const t = performance.now();
 
-        await fetch(proxiedUrl)
-          .then(_ => _.blob())
-          .then(blob => {
-            if (blob.type.startsWith('audio')) {
-              console.log('\n✅ loaded stream on ' + invidiousInstance);
-              score += (1 / (performance.now() - t));
-            }
-            else throw new Error();
-          })
-          .catch(() => {
-            console.log('\n❌ failed to load stream on ' + invidiousInstance);
-          });
+        score += await checkAudioBlob(proxiedUrl, invidiousInstance);
 
-        const m = performance.now();
-        
-        await fetch(hyperpipeInstance + data.authorUrl)
-          .then(res => res.json())
-          .then(data => {
-            console.log('\n✅ loaded music artist on ' + hyperpipeInstance);
-            if ('playlistId' in data)
-              score += (1 / (performance.now() - m));
-          })
-          .catch(() => {
-            console.log('\n❌ failed to load music artist on ' + hyperpipeInstance);
-          });
       }
       else throw new Error();
 
@@ -78,32 +96,9 @@ async function fetchAudioUrl(instance: string) {
         score += (1 / (performance.now() - g));
         const audioUrl = data.audioStreams.filter(f => f.mimeType.startsWith('audio')).sort((a, b) => a.bitrate - b.bitrate)[0].url;
         const proxiedUrl = audioUrl.replace(new URL(audioUrl).origin, pipedInstance);
-        const t = performance.now();
 
-        await fetch(proxiedUrl)
-          .then(_ => _.blob())
-          .then(blob => {
-            if (blob.type.startsWith('audio')) {
-              console.log('\n✅ loaded stream on ' + pipedInstance);
-              score += (1 / (performance.now() - t));
-            }
-            else throw new Error();
-          })
-          .catch(() => {
-            console.log('\n❌ failed to load stream on ' + pipedInstance);
-          });
-        const m = performance.now();
-        
-        await fetch(hyperpipeInstance + data.uploaderUrl)
-          .then(res => res.json())
-          .then(data => {
-            console.log('\n✅ loaded music artist on ' + hyperpipeInstance);
-            if ('playlistId' in data)
-              score += (1 / (performance.now() - m));
-          })
-          .catch(() => {
-            console.log('\n❌ failed to load music artist on ' + name);
-          });
+        score += await checkAudioBlob(proxiedUrl, pipedInstance);
+
       }
       else throw new Error();
 
@@ -184,9 +179,9 @@ async function fetchAudioUrl(instance: string) {
 }
 
 
-function diff (textArr1, textArr2) {
+function diff(textArr1, textArr2) {
   const data = [];
-  for(let i = 0; i < textArr1.length; i++)
+  for (let i = 0; i < textArr1.length; i++)
     if (textArr1[i] !== textArr2[i])
       data.push(textArr1[i].split(', ')[0] + ((i - textArr2.indexOf(textArr1[i])) > 0 ? ' 🔺' : ' 🔻'));
   return data.join(', ');
