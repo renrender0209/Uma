@@ -4,9 +4,9 @@ projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
 reallyaweso.me, 🇦🇹, pipedapi, invidious, musicapi
 
-ggtyler.dev, 🇺🇸, piapi, iv, hpapi
-
 lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
+
+ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
 adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
 
