@@ -10,7 +10,7 @@ projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
 lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
 
-darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
-
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
+
+darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
