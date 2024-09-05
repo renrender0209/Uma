@@ -1,5 +1,3 @@
-
-
 export default async function get_and_load_stream(
   unified: Record<'piped' | 'invidious' | 'hyperpipe', string>,
   stream: string,
@@ -55,7 +53,7 @@ async function checkAudioBlob(
     .then(blob => {
       if (blob.type.startsWith('audio')) {
         console.log('\n✅ loaded blob on ' + instance);
-        score += (2 / (performance.now() - t));
+        score += (3 / (performance.now() - t));
       }
       else throw new Error();
     })
