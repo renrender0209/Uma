@@ -10,7 +10,7 @@ lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
 
 ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
-darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
-
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
+
+darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
