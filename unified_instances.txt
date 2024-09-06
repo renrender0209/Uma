@@ -6,9 +6,9 @@ reallyaweso.me, 🇦🇹, pipedapi, invidious, musicapi
 
 projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
-projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
-
 lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
+
+projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
 darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
 
