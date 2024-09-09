@@ -18,5 +18,4 @@ lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
 
-
-private.coffee, 🇦🇹, api.piped, invidious,
+private.coffee, 🇦🇹, api.piped, invidious, 
