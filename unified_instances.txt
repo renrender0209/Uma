@@ -13,3 +13,5 @@ lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
 darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
+
+drgns.space, 🇺🇸, pipedapi, invidious, hyperpipeapi
