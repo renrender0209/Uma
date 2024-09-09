@@ -13,9 +13,9 @@ Promise
       .sort((a: number[], b: number[]) => b[1] - a[1])
       .map((v: number[]) => v[0]))
   .then(async (sortedList) => {
-    const piped_instances = await piped_instances();
+    
     writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
-    writeFileSync('piped_instances.txt', piped_instances);
+    writeFileSync('piped_instances.txt', await piped_instances());
     exec(`
     git add *.txt;
     git config user.email 'action@github.com';
