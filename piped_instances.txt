@@ -9,7 +9,6 @@ https://pipedapi.adminforge.de
 https://api.piped.yt
 https://pipedapi.drgns.space
 https://pipedapi.ducks.party
-https://pipedapi.ngn.tf
 https://piped-api.codespace.cz
 https://pipedapi.reallyaweso.me
 https://pipedapi.phoenixthrush.com
