@@ -12,10 +12,11 @@ Promise
     (list) => list
       .sort((a: number[], b: number[]) => b[1] - a[1])
       .map((v: number[]) => v[0]))
-  .then((sortedList) => {
+  .then(async (sortedList) => {
     writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
+    writeFileSync('piped_instances.txt', await piped_instances());
     exec(`
-    git add unified_instances.txt;
+    git add *.txt;
     git config user.email 'action@github.com';
     git config user.name 'github-actions';
     git commit -m '${diff(data, sortedList)}' || true && git push || true
@@ -49,4 +50,26 @@ function diff(textArr1: string, textArr2: string) {
       data.push(textArr1[i].split(', ')[0] + ((i - textArr2.indexOf(textArr1[i])) > 0 ? ' 🔺' : ' 🔻'));
   return data.join(', ');
 }
+
+const s = (i: string) => fetch(i + '/suggestions?query=text')
+  .then(res => res.json())
+  .then(data => {
+    if (data.length)
+      return i;
+    else throw new Error();
+  })
+  .catch(() => '');
+const allPipedInstancesUrl = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
+const piped_instances = () => fetch(allPipedInstancesUrl)
+  .then(res => res.text())
+  .then(text => text.split('--- | --- | --- | --- | ---')[1])
+  .then(table => table.split('\n'))
+  .then(instances => instances.map(instance => instance.split(' | ')[1]))
+  .then(async instances => {
+    instances.shift();
+    return instances;
+  })
+  .then(instances => Promise.all(instances.map(s)))
+  .then(instances => instances.filter(i => i))
+  .then(instances => instances.join('\n\n'));
 
