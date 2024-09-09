@@ -1,5 +1,6 @@
 https://pipedapi.kavin.rocks
 https://pipedapi.leptons.xyz
+https://piped-api.lunar.icu
 https://pipedapi.r4fo.com
 https://pipedapi-libre.kavin.rocks
 https://pipedapi.in.projectsegfau.lt
