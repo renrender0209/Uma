@@ -5,7 +5,7 @@ export default async function getPlaylistFromArtist(
   authorUrl: string,
   score: number
 ) {
-  const instance = unified.hyperpipe;
+  const instance = unified.hyperpipe || 'https://hyperpipeapi.onrender.com';
   const t = performance.now();
 
 
