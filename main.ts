@@ -73,5 +73,5 @@ const piped_instances = () => fetch(allPipedInstancesUrl)
   })
   .then(instances => Promise.all(instances.map(s)))
   .then(instances => instances.filter(i => i))
-  .then(instances => instances.join('\n\n'));
+  .then(instances => instances.join('\n'));
 
