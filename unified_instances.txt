@@ -1,14 +1,14 @@
 privacydev.net, 🇫🇷, api.piped, invidious, NA
 
-ggtyler.dev, 🇺🇸, piapi, iv, hpapi
-
 darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
 
-projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
+ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
 adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
 
 projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
+
+projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
 reallyaweso.me, 🇦🇹, pipedapi, invidious, musicapi
 
