@@ -4,7 +4,7 @@ import getSearchResults from './search.time.invidious';
 import getArtists from './search.artist.piped';
 
 const data = readFileSync('unified_instances.txt', 'utf8').split('\n\n');
-
+  
 Promise
   .all(
     data.map(start))
@@ -13,8 +13,9 @@ Promise
       .sort((a: number[], b: number[]) => b[1] - a[1])
       .map((v: number[]) => v[0]))
   .then(async (sortedList) => {
+    const piped_instances = await piped_instances();
     writeFileSync('unified_instances.txt', sortedList.join('\n\n'));
-    writeFileSync('piped_instances.txt', await piped_instances());
+    writeFileSync('piped_instances.txt', piped_instances);
     exec(`
     git add *.txt;
     git config user.email 'action@github.com';
@@ -65,8 +66,9 @@ const piped_instances = () => fetch(allPipedInstancesUrl)
   .then(text => text.split('--- | --- | --- | --- | ---')[1])
   .then(table => table.split('\n'))
   .then(instances => instances.map(instance => instance.split(' | ')[1]))
-  .then(async instances => {
+  .then(instances => {
     instances.shift();
+    console.log(instances);
     return instances;
   })
   .then(instances => Promise.all(instances.map(s)))
