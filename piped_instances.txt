@@ -3,6 +3,8 @@ https://pipedapi.leptons.xyz
 https://piped-api.lunar.icu
 https://pipedapi.r4fo.com
 https://pipedapi-libre.kavin.rocks
+https://pipedapi.in.projectsegfau.lt
+https://api.piped.privacydev.net
 https://pipedapi.smnz.de
 https://pipedapi.adminforge.de
 https://api.piped.yt
