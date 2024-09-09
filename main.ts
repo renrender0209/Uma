@@ -32,7 +32,7 @@ async function start(instance: string) {
   const unified = {
     piped: `https://${piped}.${name}`,
     invidious: `https://${invidious}.${name}`,
-    hyperpipe: hyperpipe ? `https://${hyperpipe}.${name}`: 'https://hyperpipeapi.onrender.com'
+    hyperpipe: hyperpipe === 'NA' ? 'https://hyperpipeapi.onrender.com':`https://${hyperpipe}.${name}`
   };
 
   return getSearchResults(unified, 'ASMR', 0)
