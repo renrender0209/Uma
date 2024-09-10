@@ -1,10 +1,10 @@
-projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
-
 adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
 
-private.coffee, 🇦🇹, api.piped, invidious, NA
-
 privacydev.net, 🇫🇷, api.piped, invidious, NA
+
+projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
+
+private.coffee, 🇦🇹, api.piped, invidious, NA
 
 reallyaweso.me, 🇦🇹, pipedapi, invidious, musicapi
 
