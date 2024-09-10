@@ -4,7 +4,6 @@ https://piped-api.lunar.icu
 https://pipedapi.r4fo.com
 https://pipedapi-libre.kavin.rocks
 https://pipedapi.in.projectsegfau.lt
-https://api.piped.privacydev.net
 https://pipedapi.smnz.de
 https://pipedapi.adminforge.de
 https://api.piped.yt
@@ -15,4 +14,3 @@ https://piped-api.codespace.cz
 https://pipedapi.reallyaweso.me
 https://pipedapi.phoenixthrush.com
 https://api.piped.private.coffee
-https://pipedapi.darkness.services
