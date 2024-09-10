@@ -1,12 +1,12 @@
-privacydev.net, 🇫🇷, api.piped, invidious, NA
+projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
 
-ggtyler.dev, 🇺🇸, piapi, iv, hpapi
+privacydev.net, 🇫🇷, api.piped, invidious, NA
 
 darkness.services, 🇺🇸, pipedapi, invidious, hyperpipeapi
 
-adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
+ggtyler.dev, 🇺🇸, piapi, iv, hpapi
 
-projectsegfau.lt, 🇺🇸, pipedapi.us, inv.us, hyperpipebackend.us
+adminforge.de, 🇩🇪, pipedapi, invidious, musicapi
 
 projectsegfau.lt, 🇪🇺, api.piped, invidious, hyperpipebackend.eu
 
@@ -14,9 +14,9 @@ reallyaweso.me, 🇦🇹, pipedapi, invidious, musicapi
 
 private.coffee, 🇦🇹, api.piped, invidious, NA
 
-drgns.space, 🇺🇸, pipedapi, invidious, hyperpipeapi
-
 lunar.icu, 🇩🇪, piped-api, invidious, hyperpipe-api
+
+drgns.space, 🇺🇸, pipedapi, invidious, hyperpipeapi
 
 projectsegfau.lt, 🇮🇳, pipedapi.in, inv.in, hyperpipebackend.in
 
