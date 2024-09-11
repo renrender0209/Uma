@@ -76,7 +76,7 @@ fetch(allPipedInstancesUrl)
           }))
       .then(() => {
         console.log(dynamic_instances);
-        writeFileSync('dynamic_instances.json', JSON.stringify(dynamic_instances, null, '\t'));
+        writeFileSync('dynamic_instances.json', JSON.stringify(dynamic_instances, null, 4));
       });
   });
 
