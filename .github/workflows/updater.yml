@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: oven-sh/setup-bun@v2
-    - run: bun main.ts
+    - run: bun updater.ts
     - run: git add dynamic_instances.json
     - run: git commit -m 'update'
     - run: git push
