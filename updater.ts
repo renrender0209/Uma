@@ -36,16 +36,22 @@ const unified_instances = {
     : 'https://invidious.darkness.services'
 };
 
-const getSuggestions = (i: string,t = performance.now()) =>
-  fetch(i + '/opensearch/suggestions?query=text')
-  .then(res => res.json())
-  .then(data => {
-    const score = 1 / (performance.now() - t);
-    if (data.length)
-      array = [score, i];
-    else throw new Error();
-  })
-  .catch(() => [0, '']);
+async function getSuggestions(i: string) {
+  const t = performance.now();
+  let array = [0, ''];
+
+  await fetch(i + '/opensearch/suggestions?query=text')
+    .then(res => res.json())
+    .then(data => {
+      const score = 1 / (performance.now() - t);
+      if (data.length)
+        array = [score, i];
+      else throw new Error();
+    })
+    .catch(() => [0, '']);
+
+  return array;
+}
 
 fetch(allPipedInstancesUrl)
   .then(res => res.text())
