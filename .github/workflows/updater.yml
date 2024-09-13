@@ -17,4 +17,9 @@ jobs:
     - uses: oven-sh/setup-bun@v2
     - run: bun updater.ts
     - name: Update List
-      uses: int128/update-generated-files-action@v2
+      uses: test-room-7/action-update-file@v1
+      with:
+          file-path: ./dynamic_instances.json
+          commit-msg: Update List
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
