@@ -60,7 +60,10 @@ fetch(allPipedInstancesUrl)
   .then(instances => instances.map(instance => instance.split(' | ')[1]))
   .then(instances => {
     instances.shift();
-    const dynamic_instances = {};
+    const dynamic_instances = {
+      piped : [],
+      invidious : []
+    };
 
     Promise.all(instances.map(getSuggestions))
       .then(array =>
@@ -69,10 +72,10 @@ fetch(allPipedInstancesUrl)
           .filter(i => i[0])
           .map(i => i[1])
           .forEach(i => {
-            dynamic_instances[i] =
-              i in unified_instances ?
-                unified_instances[i] : '';
-
+            dynamic_instances.piped.push(i);
+            
+            if (i in unified_instances)
+              dynamic_instances.invidious.push(unified_instances[i]);
           }))
       .then(() => {
         console.log(dynamic_instances);
