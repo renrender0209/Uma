@@ -75,7 +75,7 @@ fetch(allPipedInstancesUrl)
             dynamic_instances.piped.push(i);
             
             if (i in unified_instances)
-              dynamic_instances.invidious.push(unified_instances[i]);
+              dynamic_instances.invidious.unshift(unified_instances[i]);
           }))
       .then(() => {
         console.log(dynamic_instances);
