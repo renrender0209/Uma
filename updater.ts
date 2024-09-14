@@ -72,10 +72,12 @@ fetch(allPipedInstancesUrl)
           .filter(i => i[0])
           .map(i => i[1])
           .forEach(i => {
-            dynamic_instances.piped.push(i);
-            
-            if (i in unified_instances)
+            if (i in unified_instances){
               dynamic_instances.invidious.unshift(unified_instances[i]);
+              dynamic_instances.piped.unshift(i);
+            }
+            else dynamic_instances.piped.push(i);
+            
           }))
       .then(() => {
         console.log(dynamic_instances);
