@@ -8,14 +8,14 @@
         "https://piped-api.lunar.icu",
         "https://pipedapi.kavin.rocks",
         "https://pipedapi.leptons.xyz",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.r4fo.com",
-        "https://pipedapi.coldforge.xyz",
-        "https://api.piped.yt",
-        "https://piped-api.codespace.cz",
         "https://pipedapi.frontendfriendly.xyz",
+        "https://pipedapi.coldforge.xyz",
         "https://pipedapi.ducks.party",
-        "https://pipedapi.ngn.tf"
+        "https://piped-api.codespace.cz",
+        "https://pipedapi.ngn.tf",
+        "https://api.piped.yt",
+        "https://pipedapi.r4fo.com",
+        "https://pipedapi-libre.kavin.rocks"
     ],
     "invidious": [
         "https://invidious.privacydev.net",
