@@ -1,27 +1,27 @@
 {
     "piped": [
-        "https://pipedapi.drgns.space",
-        "https://api.piped.private.coffee",
         "https://api.piped.privacydev.net",
+        "https://pipedapi.drgns.space",
         "https://pipedapi.reallyaweso.me",
-        "https://piped-api.lunar.icu",
         "https://pipedapi.adminforge.de",
+        "https://api.piped.private.coffee",
+        "https://piped-api.lunar.icu",
         "https://pipedapi.r4fo.com",
         "https://pipedapi.kavin.rocks",
-        "https://pipedapi.ducks.party",
         "https://pipedapi.leptons.xyz",
-        "https://pipedapi.ngn.tf",
-        "https://piped-api.codespace.cz",
-        "https://pipedapi.coldforge.xyz",
+        "https://api.piped.yt",
         "https://pipedapi-libre.kavin.rocks",
-        "https://api.piped.yt"
+        "https://piped-api.codespace.cz",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.coldforge.xyz",
+        "https://pipedapi.ngn.tf"
     ],
     "invidious": [
-        "https://invidious.drgns.space",
-        "https://invidious.private.coffee",
         "https://invidious.privacydev.net",
+        "https://invidious.drgns.space",
         "https://invidious.reallyaweso.me",
-        "https://invidious.lunar.icu",
-        "https://invidious.adminforge.de"
+        "https://invidious.adminforge.de",
+        "https://invidious.private.coffee",
+        "https://invidious.lunar.icu"
     ]
 }
