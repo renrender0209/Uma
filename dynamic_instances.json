@@ -1,30 +1,30 @@
 {
     "piped": [
-        "https://api.piped.private.coffee",
-        "https://api.piped.privacydev.net",
         "https://piapi.ggtyler.dev",
+        "https://api.piped.privacydev.net",
         "https://pipedapi.drgns.space",
-        "https://pipedapi.adminforge.de",
+        "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
+        "https://pipedapi.adminforge.de",
         "https://piped-api.lunar.icu",
-        "https://pipedapi.kavin.rocks",
         "https://pipedapi.leptons.xyz",
-        "https://pipedapi.phoenixthrush.com",
-        "https://pipedapi.r4fo.com",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.smnz.de",
-        "https://piped-api.codespace.cz",
+        "https://pipedapi.kavin.rocks",
         "https://pipedapi.ducks.party",
+        "https://pipedapi.ngn.tf",
+        "https://pipedapi.phoenixthrush.com",
+        "https://pipedapi-libre.kavin.rocks",
+        "https://piped-api.codespace.cz",
         "https://api.piped.yt",
-        "https://pipedapi.ngn.tf"
+        "https://pipedapi.smnz.de",
+        "https://pipedapi.r4fo.com"
     ],
     "invidious": [
-        "https://invidious.private.coffee",
-        "https://invidious.privacydev.net",
         "https://iv.ggtyler.dev",
+        "https://invidious.privacydev.net",
         "https://invidious.drgns.space",
-        "https://invidious.adminforge.de",
+        "https://invidious.private.coffee",
         "https://invidious.reallyaweso.me",
+        "https://invidious.adminforge.de",
         "https://invidious.lunar.icu"
     ]
 }
