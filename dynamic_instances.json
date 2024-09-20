@@ -1,30 +1,32 @@
 {
     "piped": [
-        "https://piapi.ggtyler.dev",
         "https://api.piped.privacydev.net",
-        "https://pipedapi.drgns.space",
-        "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
         "https://pipedapi.adminforge.de",
+        "https://api.piped.private.coffee",
+        "https://pipedapi.drgns.space",
+        "https://piapi.ggtyler.dev",
+        "https://pipedapi.darkness.services",
         "https://piped-api.lunar.icu",
-        "https://pipedapi.leptons.xyz",
         "https://pipedapi.kavin.rocks",
-        "https://pipedapi.ducks.party",
-        "https://pipedapi.ngn.tf",
-        "https://pipedapi.phoenixthrush.com",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://piped-api.codespace.cz",
+        "https://pipedapi.leptons.xyz",
         "https://api.piped.yt",
+        "https://pipedapi.phoenixthrush.com",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.r4fo.com",
         "https://pipedapi.smnz.de",
-        "https://pipedapi.r4fo.com"
+        "https://piped-api.codespace.cz",
+        "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.ngn.tf"
     ],
     "invidious": [
-        "https://iv.ggtyler.dev",
         "https://invidious.privacydev.net",
-        "https://invidious.drgns.space",
-        "https://invidious.private.coffee",
         "https://invidious.reallyaweso.me",
         "https://invidious.adminforge.de",
+        "https://invidious.private.coffee",
+        "https://invidious.drgns.space",
+        "https://iv.ggtyler.dev",
+        "https://invidious.darkness.services",
         "https://invidious.lunar.icu"
     ]
 }
