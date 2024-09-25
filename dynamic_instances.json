@@ -8,15 +8,15 @@
         "https://piped-api.lunar.icu",
         "https://pipedapi.darkness.services",
         "https://pipedapi.kavin.rocks",
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi.ducks.party",
+        "https://piped-api.codespace.cz",
+        "https://pipedapi.smnz.de",
         "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.r4fo.com",
         "https://pipedapi.phoenixthrush.com",
-        "https://pipedapi.leptons.xyz",
-        "https://pipedapi.smnz.de",
-        "https://piped-api.codespace.cz",
-        "https://pipedapi.ducks.party",
-        "https://api.piped.yt",
-        "https://pipedapi.ngn.tf"
+        "https://pipedapi.ngn.tf",
+        "https://api.piped.yt"
     ],
     "invidious": [
         "https://invidious.private.coffee",
