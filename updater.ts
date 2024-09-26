@@ -1,3 +1,4 @@
+// @ts-ignore
 import { writeFileSync } from 'node:fs';
 
 const allPipedInstancesUrl = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
@@ -40,7 +41,7 @@ async function getSuggestions(i: string) {
   const t = performance.now();
   let array = [0, ''];
 
-  await fetch(i + '/opensearch/suggestions?query=text')
+  await fetch(i + '/opensearch/suggestions?query=the')
     .then(res => res.json())
     .then(data => {
       const score = 1 / (performance.now() - t);
@@ -53,6 +54,7 @@ async function getSuggestions(i: string) {
   return array;
 }
 
+
 fetch(allPipedInstancesUrl)
   .then(res => res.text())
   .then(text => text.split('--- | --- | --- | --- | ---')[1])
@@ -60,29 +62,52 @@ fetch(allPipedInstancesUrl)
   .then(instances => instances.map(instance => instance.split(' | ')[1]))
   .then(instances => {
     instances.shift();
-    const dynamic_instances = {
-      piped : [],
-      invidious : []
+
+    const dynamic_instances: {
+      piped: string[],
+      invidious: string[],
+      unified: number
+    } = {
+      piped: [],
+      invidious: [],
+      unified: 0
     };
 
     Promise.all(instances.map(getSuggestions))
-      .then(array =>
+      .then((array) =>
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0])
-          .map(i => i[1])
           .forEach(i => {
-            if (i in unified_instances){
-              dynamic_instances.invidious.unshift(unified_instances[i]);
-              dynamic_instances.piped.unshift(i);
+            if (i[1] in unified_instances) {
+
+              dynamic_instances.unified++;
+              dynamic_instances.piped.unshift(i[1] as string);
+              dynamic_instances.invidious.unshift(unified_instances[i[1]]);
             }
-            else dynamic_instances.piped.push(i);
-            
+            else dynamic_instances.piped.push(i[1] as string);
+
           }))
       .then(() => {
-        console.log(dynamic_instances);
-        writeFileSync('dynamic_instances.json', JSON.stringify(dynamic_instances, null, 4));
+
+        fetch('https://api.invidious.io/instances.json')
+          .then(res => res.json())
+          .then((json: [
+            string,
+            {
+              api: boolean,
+              uri: string
+            }
+          ][]) => json
+            .filter(v => v[1].api && !dynamic_instances.invidious.includes(v[1].uri))
+            .forEach(v => dynamic_instances.invidious.push(v[1].uri)))
+          .then(() => {
+            console.log(dynamic_instances);
+            writeFileSync('dynamic_instances.json', JSON.stringify(dynamic_instances, null, 4));
+
+          })
       });
-  });
+  })
+
 
 
