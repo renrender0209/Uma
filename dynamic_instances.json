@@ -1,18 +1,17 @@
 {
     "piped": [
         "https://api.piped.privacydev.net",
+        "https://api.piped.private.coffee",
         "https://piped-api.lunar.icu",
         "https://pipedapi.reallyaweso.me",
         "https://pipedapi.adminforge.de",
-        "https://api.piped.private.coffee",
         "https://pipedapi.drgns.space",
-        "https://pipedapi.darkness.services",
         "https://pipedapi.kavin.rocks",
         "https://api.piped.yt",
-        "https://pipedapi.phoenixthrush.com",
-        "https://pipedapi.r4fo.com",
-        "https://pipedapi.ducks.party",
         "https://pipedapi.smnz.de",
+        "https://pipedapi.phoenixthrush.com",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.r4fo.com",
         "https://piped-api.codespace.cz",
         "https://pipedapi.leptons.xyz",
         "https://pipedapi.ngn.tf",
@@ -20,16 +19,15 @@
     ],
     "invidious": [
         "https://invidious.privacydev.net",
+        "https://invidious.private.coffee",
         "https://invidious.lunar.icu",
         "https://invidious.reallyaweso.me",
         "https://invidious.adminforge.de",
-        "https://invidious.private.coffee",
         "https://invidious.drgns.space",
-        "https://invidious.darkness.services",
         "https://inv.nadeko.net",
         "https://invidious.nerdvpn.de",
         "https://invidious.jing.rocks",
         "https://invidious.privacyredirect.com"
     ],
-    "unified": 7
+    "unified": 6
 }
