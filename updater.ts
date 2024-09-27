@@ -100,6 +100,7 @@ fetch(allPipedInstancesUrl)
             }
           ][]) => json
             .filter(v => v[1].api && !dynamic_instances.invidious.includes(v[1].uri))
+            .filter(v => v[0] !== 'invidious.nerdvpn.de') // causing 403 issues
             .forEach(v => dynamic_instances.invidious.push(v[1].uri)))
           .then(() => {
             console.log(dynamic_instances);
