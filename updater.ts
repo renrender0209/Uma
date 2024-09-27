@@ -12,8 +12,8 @@ const unified_instances = {
   'https://pipedapi.reallyaweso.me'
     : 'https://invidious.reallyaweso.me',
 
-  'https://api.piped.private.coffee'
-    : 'https://invidious.private.coffee',
+/*  'https://api.piped.private.coffee'
+    : 'https://invidious.private.coffee',*/
 
   'https://api.piped.privacydev.net'
     : 'https://invidious.privacydev.net',
