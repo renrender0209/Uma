@@ -4,13 +4,14 @@
         "https://pipedapi.adminforge.de",
         "https://pipedapi.reallyaweso.me",
         "https://pipedapi.drgns.space",
+        "https://pipedapi.darkness.services",
         "https://piped-api.lunar.icu",
         "https://pipedapi.kavin.rocks",
-        "https://pipedapi.r4fo.com",
         "https://pipedapi.leptons.xyz",
+        "https://api.piped.yt",
+        "https://pipedapi.r4fo.com",
         "https://pipedapi-libre.kavin.rocks",
         "https://api.piped.private.coffee",
-        "https://api.piped.yt",
         "https://pipedapi.phoenixthrush.com",
         "https://piped-api.codespace.cz",
         "https://pipedapi.ducks.party",
@@ -23,10 +24,11 @@
         "https://invidious.adminforge.de",
         "https://invidious.reallyaweso.me",
         "https://invidious.drgns.space",
+        "https://invidious.darkness.services",
         "https://invidious.lunar.icu",
         "https://inv.nadeko.net",
         "https://invidious.jing.rocks",
         "https://invidious.privacyredirect.com"
     ],
-    "unified": 5
+    "unified": 6
 }
