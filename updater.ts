@@ -1,8 +1,8 @@
 // @ts-ignore
 import { writeFileSync } from "node:fs";
 
-const allPipedInstancesUrl =
-  "https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md";
+const allPipedInstancesUrl = "https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md";
+const hyperpipeInstancesUrl = "https://raw.githubusercontent.com/n-ce/Uma/main/hyperpipe.json";
 const unified_instances = {
   /* 'https://pipedapi.drgns.space'
     : 'https://invidious.drgns.space', */
@@ -69,7 +69,7 @@ fetch(allPipedInstancesUrl)
       unified: 0,
     };
 
-    const hyperpipeList = await fetch("./hyperpipe.json").then((res) => res.json());
+    const hyperpipeList = await fetch(hyperpipeInstancesUrl).then((res) => res.json());
 
     await Promise.all(instances.map(getSuggestions)).then((array) =>
       array
