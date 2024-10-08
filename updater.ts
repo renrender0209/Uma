@@ -21,20 +21,20 @@ const unified_instances = {
   'https://pipedapi.adminforge.de'
     : 'https://invidious.adminforge.de',
 
-  'https://pipedapi.us.projectsegfau.lt'
-    : 'https://inv.us.projectsegfault',
+ /* 'https://pipedapi.us.projectsegfau.lt'
+    : 'https://inv.us.projectsegfault', */
 
   'https://api.piped.projectsegfau.lt'
     : 'https://invidious.projectsegfault',
 
-  'https://piped-api.lunar.icu'
-    : 'https://invidious.lunar.icu',
+/*  'https://piped-api.lunar.icu'
+    : 'https://invidious.lunar.icu', */
 
 /*  'https://piapi.ggtyler.dev'
     : 'https://iv.ggtyler.dev', */
 
-  'https://pipedapi.darkness.services'
-    : 'https://invidious.darkness.services'
+/*  'https://pipedapi.darkness.services'
+    : 'https://invidious.darkness.services' */
 };
 
 async function getSuggestions(i: string) {
