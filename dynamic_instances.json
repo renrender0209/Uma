@@ -2,19 +2,19 @@
     "piped": [
         "https://pipedapi.adminforge.de",
         "https://api.piped.privacydev.net",
-        "https://pipedapi.kavin.rocks",
-        "https://pipedapi.leptons.xyz",
-        "https://pipedapi.darkness.services",
-        "https://pipedapi.smnz.de",
         "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.r4fo.com",
-        "https://pipedapi.drgns.space",
-        "https://piapi.ggtyler.dev",
-        "https://pipedapi.phoenixthrush.com",
-        "https://pipedapi.ducks.party",
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi.kavin.rocks",
         "https://api.piped.yt",
+        "https://pipedapi.darkness.services",
         "https://piped-api.codespace.cz",
-        "https://pipedapi.ngn.tf"
+        "https://pipedapi.drgns.space",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.smnz.de",
+        "https://pipedapi.ngn.tf",
+        "https://piapi.ggtyler.dev",
+        "https://pipedapi.phoenixthrush.com"
     ],
     "invidious": [
         "https://invidious.adminforge.de",
