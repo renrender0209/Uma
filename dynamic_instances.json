@@ -7,24 +7,22 @@
         "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.r4fo.com",
         "https://pipedapi.darkness.services",
-        "https://api.piped.private.coffee",
         "https://pipedapi.nosebs.ru",
+        "https://api.piped.private.coffee",
         "https://pipedapi.leptons.xyz",
+        "https://piped-api.codespace.cz",
+        "https://pipedapi.drgns.space",
+        "https://api.piped.yt",
         "https://pipedapi.ducks.party",
         "https://pipedapi.smnz.de",
-        "https://pipedapi.drgns.space",
-        "https://piped-api.codespace.cz",
         "https://pipedapi.ngn.tf",
-        "https://api.piped.yt",
-        "https://piapi.ggtyler.dev",
-        "https://pipedapi.phoenixthrush.com"
+        "https://piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://invidious.privacydev.net",
         "https://invidious.adminforge.de",
         "https://invidious.reallyaweso.me",
         "https://invidious.jing.rocks",
-        "https://yt.drgnz.club",
         "https://invidious.privacyredirect.com"
     ],
     "hyperpipe": [
