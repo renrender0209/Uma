@@ -66,12 +66,16 @@ fetch(allPipedInstancesUrl)
     const dynamic_instances: {
       piped: string[],
       invidious: string[],
+      hyperpipe: string[],
       unified: number
     } = {
       piped: [],
       invidious: [],
+      hyperpipe: [],
       unified: 0
     };
+
+   const hyperpipeList = await fetch('./hyperpipe.json').then(res=>res.json());
 
     Promise.all(instances.map(getSuggestions))
       .then((array) =>
@@ -84,6 +88,10 @@ fetch(allPipedInstancesUrl)
               dynamic_instances.unified++;
               dynamic_instances.piped.unshift(i[1] as string);
               dynamic_instances.invidious.unshift(unified_instances[i[1]]);
+
+             if(i[1] in hyperpipeList)
+              dynamic_instances.hyperpipe.unshift(hyperpipeList[i[1]] as string);
+     
             }
             else dynamic_instances.piped.push(i[1] as string);
 
