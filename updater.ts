@@ -3,8 +3,8 @@ import { writeFileSync } from 'node:fs';
 
 const allPipedInstancesUrl = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const unified_instances = {
-  'https://pipedapi.drgns.space'
-    : 'https://invidious.drgns.space',
+ /* 'https://pipedapi.drgns.space'
+    : 'https://invidious.drgns.space', */
 
   'https://pipedapi.in.projectsegfau.lt'
     : 'https://inv.in.projectsegfault',
@@ -30,8 +30,8 @@ const unified_instances = {
   'https://piped-api.lunar.icu'
     : 'https://invidious.lunar.icu',
 
-  'https://piapi.ggtyler.dev'
-    : 'https://iv.ggtyler.dev',
+/*  'https://piapi.ggtyler.dev'
+    : 'https://iv.ggtyler.dev', */
 
   'https://pipedapi.darkness.services'
     : 'https://invidious.darkness.services'
