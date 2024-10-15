@@ -64,7 +64,11 @@ fetch(allPipedInstancesUrl)
       unified: number;
     } = {
       piped: [],
-      invidious: [],
+      invidious: [
+        "invi.susurrando.com",
+        "invidious.catspeed.cc",
+        "invidious.schenkel.eti.br"  
+      ],
       hyperpipe: [],
       unified: 0,
     };
@@ -109,7 +113,6 @@ fetch(allPipedInstancesUrl)
             .filter(
               (v) => !["invidious.nerdvpn.de", "inv.nadeko.net"].includes(v[0])
             ) // causing 403 issues
-            .concat(["invi.susurrando.com", "invidious.catspeed.cc", "invidious.schenkel.eti.br"])
             .forEach((v) => dynamic_instances.invidious.push(v[1].uri))
       )
       .then(() => {
