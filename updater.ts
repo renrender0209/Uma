@@ -1,37 +1,27 @@
 // @ts-ignore
 import { writeFileSync } from "node:fs";
+import { readFileSync } from 'fs';
 
 const allPipedInstancesUrl = "https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md";
-const hyperpipeInstancesUrl = "https://raw.githubusercontent.com/n-ce/Uma/main/hyperpipe.json";
-const unified_instances = {
-  /* 'https://pipedapi.drgns.space'
-    : 'https://invidious.drgns.space', */
+const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
+const hyperpipeList = JSON.parse(readFileSync('./hyperpipe.json', 'utf8'));
+const unified_instances = {};
 
-  "https://pipedapi.in.projectsegfau.lt": "https://inv.in.projectsegfault",
+async function test(i, v) {
+  await fetch(v + '/api/v1/search/suggestions?q=the')
+    .then(res => res.json())
+    .then(data => {
+      if (data && 'suggestions' in data && data.suggestions.length)
+        unified_instances[i] = v;
+      else throw new Error();
+    })
+    .catch(() => '');
+}
 
-  "https://pipedapi.reallyaweso.me": "https://invidious.reallyaweso.me",
+for (const instance in invidious_instances)
+  await test(instance, invidious_instances[instance]);
 
-  /*  'https://api.piped.private.coffee'
-    : 'https://invidious.private.coffee',*/
 
-  "https://api.piped.privacydev.net": "https://invidious.privacydev.net",
-
-  "https://pipedapi.adminforge.de": "https://invidious.adminforge.de",
-
-  /* 'https://pipedapi.us.projectsegfau.lt'
-    : 'https://inv.us.projectsegfault', */
-
-  "https://api.piped.projectsegfau.lt": "https://invidious.projectsegfault",
-
-  /*  'https://piped-api.lunar.icu'
-    : 'https://invidious.lunar.icu', */
-
-  /*  'https://piapi.ggtyler.dev'
-    : 'https://iv.ggtyler.dev', */
-
-  /*  'https://pipedapi.darkness.services'
-    : 'https://invidious.darkness.services' */
-};
 
 async function getSuggestions(i: string) {
   const t = performance.now();
@@ -73,7 +63,6 @@ fetch(allPipedInstancesUrl)
       unified: 0,
     };
 
-    const hyperpipeList = await fetch(hyperpipeInstancesUrl).then((res) => res.json());
 
     await Promise.all(instances.map(getSuggestions)).then((array) =>
       array
