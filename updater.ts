@@ -46,7 +46,7 @@ fetch(allPipedInstancesUrl)
   .then((instances) => instances.map((instance) => instance.split(" | ")[1]))
   .then(async (instances) => {
     instances.shift();
-
+    
     const dynamic_instances: {
       piped: string[];
       invidious: string[];
@@ -63,7 +63,10 @@ fetch(allPipedInstancesUrl)
     };
 
 
-    await Promise.all(instances.map(getSuggestions)).then((array) =>
+    await Promise.all(
+      instances
+      .filter(i=> i !== 'https://api.piped.private.coffee')
+      .map(getSuggestions)).then((array) =>
       array
         .sort((a, b) => <number>b[0] - <number>a[0])
         .filter((i) => i[0])
