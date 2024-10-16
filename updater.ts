@@ -56,7 +56,6 @@ fetch(allPipedInstancesUrl)
       piped: [],
       invidious: [
         "https://invi.susurrando.com",
-        "https://invidious.catspeed.cc",
         "https://invidious.schenkel.eti.br"  
       ],
       hyperpipe: [],
