@@ -1,8 +1,6 @@
-// @ts-ignore
-import { writeFileSync } from "node:fs";
-import { readFileSync } from 'fs';
+import { writeFileSync, readFileSync } from 'fs';
 
-const allPipedInstancesUrl = "https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md";
+const allPipedInstancesUrl = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
 const hyperpipeList = JSON.parse(readFileSync('./hyperpipe.json', 'utf8'));
 const unified_instances = {};
@@ -25,25 +23,25 @@ for (const instance in invidious_instances)
 
 async function getSuggestions(i: string) {
   const t = performance.now();
-  let array = [0, ""];
+  let array = [0, ''];
 
-  await fetch(i + "/opensearch/suggestions?query=the")
+  await fetch(i + '/opensearch/suggestions?query=the')
     .then((res) => res.json())
     .then((data) => {
       const score = 1 / (performance.now() - t);
       if (data.length) array = [score, i];
       else throw new Error();
     })
-    .catch(() => [0, ""]);
+    .catch(() => [0, '']);
 
   return array;
 }
 
 fetch(allPipedInstancesUrl)
   .then((res) => res.text())
-  .then((text) => text.split("--- | --- | --- | --- | ---")[1])
-  .then((table) => table.split("\n"))
-  .then((instances) => instances.map((instance) => instance.split(" | ")[1]))
+  .then((text) => text.split('--- | --- | --- | --- | ---')[1])
+  .then((table) => table.split('\n'))
+  .then((instances) => instances.map((instance) => instance.split(' | ')[1]))
   .then(async (instances) => {
     instances.shift();
     
@@ -54,7 +52,7 @@ fetch(allPipedInstancesUrl)
       unified: number;
     } = {
       piped: [],
-      invidious: [ "https://invi.susurrando.com" ],
+      invidious: [ 'https://invi.susurrando.com' ],
       hyperpipe: [],
       unified: 0,
     };
@@ -82,7 +80,7 @@ fetch(allPipedInstancesUrl)
         })
     );
 
-    fetch("https://api.invidious.io/instances.json")
+    fetch('https://api.invidious.io/instances.json')
       .then((res) => res.json())
       .then(
         (
@@ -99,14 +97,14 @@ fetch(allPipedInstancesUrl)
               (v) => v[1].api && !dynamic_instances.invidious.includes(v[1].uri)
             )
             .filter(
-              (v) => !["invidious.nerdvpn.de", "inv.nadeko.net"].includes(v[0])
+              (v) => !['invidious.nerdvpn.de', 'inv.nadeko.net'].includes(v[0])
             ) // causing 403 issues
             .forEach((v) => dynamic_instances.invidious.push(v[1].uri))
       )
       .then(() => {
         console.log(dynamic_instances);
         writeFileSync(
-          "dynamic_instances.json",
+          'dynamic_instances.json',
           JSON.stringify(dynamic_instances, null, 4)
         );
       });
