@@ -2,23 +2,18 @@ import { writeFileSync, readFileSync } from 'fs';
 
 const allPipedInstancesUrl = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
-const hyperpipeList = JSON.parse(readFileSync('./hyperpipe.json', 'utf8'));
+const hyperpipe_instances = JSON.parse(readFileSync('./hyperpipe.json', 'utf8'));
 const unified_instances = {};
 
-async function test(i, v) {
-  await fetch(v + '/api/v1/search/suggestions?q=the')
+for (const instance in invidious_instances)
+  await fetch(invidious_instances[instance] + '/api/v1/search/suggestions?q=the')
     .then(res => res.json())
     .then(data => {
       if (data && 'suggestions' in data && data.suggestions.length)
-        unified_instances[i] = v;
+        unified_instances[instance] = invidious_instances[instance];
       else throw new Error();
     })
     .catch(() => '');
-}
-
-for (const instance in invidious_instances)
-  await test(instance, invidious_instances[instance]);
-
 
 
 async function getSuggestions(i: string) {
@@ -71,9 +66,9 @@ fetch(allPipedInstancesUrl)
             dynamic_instances.piped.unshift(i[1] as string);
             dynamic_instances.invidious.unshift(unified_instances[i[1]]);
 
-            if (i[1] in hyperpipeList)
+            if (i[1] in hyperpipe_instances)
               dynamic_instances.hyperpipe.unshift(
-                hyperpipeList[i[1]] as string
+                hyperpipe_instances[i[1]] as string
               );
           }
           else dynamic_instances.piped.push(i[1] as string);
@@ -95,10 +90,8 @@ fetch(allPipedInstancesUrl)
           json
             .filter(
               (v) => v[1].api && !dynamic_instances.invidious.includes(v[1].uri)
-            )
-            .filter(
-              (v) => !['invidious.nerdvpn.de', 'inv.nadeko.net'].includes(v[0])
-            ) // causing 403 issues
+                && !['invidious.nerdvpn.de', 'inv.nadeko.net'].includes(v[0])
+            ) // ^ causing 403 issues
             .forEach((v) => dynamic_instances.invidious.push(v[1].uri))
       )
       .then(() => {
