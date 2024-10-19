@@ -8,13 +8,12 @@
         "https://pipedapi.kavin.rocks",
         "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
-        "https://piped-api.codespace.cz",
-        "https://pipedapi.r4fo.com",
-        "https://pipedapi.ducks.party",
         "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.nosebs.ru",
-        "https://pipedapi.ngn.tf",
-        "https://pipedapi.drgns.space"
+        "https://pipedapi.r4fo.com",
+        "https://piped-api.codespace.cz",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.drgns.space",
+        "https://pipedapi.ngn.tf"
     ],
     "invidious": [
         "https://iv.ggtyler.dev",
