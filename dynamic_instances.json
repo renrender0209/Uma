@@ -6,14 +6,13 @@
         "https://pipedapi.darkness.services",
         "https://pipedapi.adminforge.de",
         "https://pipedapi.kavin.rocks",
-        "https://pipedapi.leptons.xyz",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.r4fo.com",
         "https://piped-api.codespace.cz",
         "https://pipedapi.ducks.party",
         "https://pipedapi.ngn.tf",
-        "https://pipedapi.drgns.space",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.r4fo.com",
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
         "https://iv.ggtyler.dev",
