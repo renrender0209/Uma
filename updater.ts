@@ -47,7 +47,7 @@ fetch(allPipedInstancesUrl)
       unified: number;
     } = {
       piped: [],
-      invidious: [ 'https://invi.susurrando.com' ],
+      invidious: [ 'https://invi.susurrando.com', 'https://invidious.catspeed.cc' ],
       hyperpipe: [],
       unified: 0,
     };
