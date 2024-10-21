@@ -1,24 +1,26 @@
 {
     "piped": [
-        "https://pipedapi.adminforge.de",
         "https://piapi.ggtyler.dev",
         "https://pipedapi.reallyaweso.me",
+        "https://pipedapi.adminforge.de",
+        "https://api.piped.privacydev.net",
         "https://pipedapi.darkness.services",
         "https://pipedapi.kavin.rocks",
+        "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.r4fo.com",
         "https://piped-api.lunar.icu",
-        "https://pipedapi.drgns.space",
         "https://pipedapi.leptons.xyz",
         "https://piped-api.codespace.cz",
+        "https://pipedapi.drgns.space",
         "https://pipedapi.ducks.party",
-        "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.nosebs.ru",
-        "https://pipedapi.r4fo.com",
         "https://pipedapi.ngn.tf"
     ],
     "invidious": [
-        "https://invidious.adminforge.de",
         "https://iv.ggtyler.dev",
         "https://invidious.reallyaweso.me",
+        "https://invidious.adminforge.de",
+        "https://invidious.privacydev.net",
         "https://invidious.darkness.services",
         "https://invi.susurrando.com",
         "https://invidious.catspeed.cc",
@@ -26,10 +28,10 @@
         "https://yt.drgnz.club"
     ],
     "hyperpipe": [
-        "https://musicapi.adminforge.de",
         "https://hpapi.ggtyler.dev",
         "https://musicapi.reallyaweso.me",
+        "https://musicapi.adminforge.de",
         "https://hyperpipeapi.darkness.services"
     ],
-    "unified": 4
+    "unified": 5
 }
