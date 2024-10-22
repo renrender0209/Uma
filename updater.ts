@@ -9,7 +9,7 @@ for (const instance in invidious_instances)
   await fetch(invidious_instances[instance] + '/api/v1/search/suggestions?q=the')
     .then(res => res.json())
     .then(data => {
-      if (data && 'suggestions' in data && data.suggestions.length)
+      if (data?.suggestions?.length)
         unified_instances[instance] = invidious_instances[instance];
       else throw new Error();
     })
@@ -33,13 +33,13 @@ async function getSuggestions(i: string) {
 }
 
 fetch(allPipedInstancesUrl)
-  .then((res) => res.text())
-  .then((text) => text.split('--- | --- | --- | --- | ---')[1])
-  .then((table) => table.split('\n'))
-  .then((instances) => instances.map((instance) => instance.split(' | ')[1]))
-  .then(async (instances) => {
+  .then(res => res.text())
+  .then(text => text.split('--- | --- | --- | --- | ---')[1])
+  .then(table => table.split('\n'))
+  .then(instances => instances.map((instance) => instance.split(' | ')[1]))
+  .then(instances => {
     instances.shift();
-    
+
     const dynamic_instances: {
       piped: string[];
       invidious: string[];
@@ -47,58 +47,40 @@ fetch(allPipedInstancesUrl)
       unified: number;
     } = {
       piped: [],
-      invidious: [ 'https://invi.susurrando.com', 'https://invidious.catspeed.cc' ],
+      invidious: ['https://invi.susurrando.com', 'https://invidious.jing.rocks'],
       hyperpipe: [],
       unified: 0,
     };
 
-
-    await Promise.all(
+    Promise.all(
       instances
-      .filter(i=> i !== 'https://api.piped.private.coffee')
-      .map(getSuggestions)).then((array) =>
-      array
-        .sort((a, b) => <number>b[0] - <number>a[0])
-        .filter((i) => i[0])
-        .forEach((i) => {
-          if (i[1] in unified_instances) {
-            dynamic_instances.unified++;
-            dynamic_instances.piped.unshift(i[1] as string);
-            dynamic_instances.invidious.unshift(unified_instances[i[1]]);
+        .filter(i => i !== 'https://api.piped.private.coffee')
+        .map(getSuggestions))
+      .then((array) => {
+        array
+          .sort((a, b) => <number>b[0] - <number>a[0])
+          .filter((i) => i[0])
+          .forEach((i) => {
+            if (i[1] in unified_instances) {
+              dynamic_instances.unified++;
+              dynamic_instances.piped.unshift(i[1] as string);
+              dynamic_instances.invidious.unshift(unified_instances[i[1]]);
 
-            if (i[1] in hyperpipe_instances)
-              dynamic_instances.hyperpipe.unshift(
-                hyperpipe_instances[i[1]] as string
-              );
-          }
-          else dynamic_instances.piped.push(i[1] as string);
-        })
-    );
-
-    fetch('https://api.invidious.io/instances.json')
-      .then((res) => res.json())
-      .then(
-        (
-          json: [
-            string,
-            {
-              api: boolean;
-              uri: string;
+              if (i[1] in hyperpipe_instances)
+                dynamic_instances.hyperpipe.unshift(
+                  hyperpipe_instances[i[1]] as string
+                );
             }
-          ][]
-        ) =>
-          json
-            .filter(
-              (v) => v[1].api && !dynamic_instances.invidious.includes(v[1].uri)
-                && !['invidious.nerdvpn.de', 'inv.nadeko.net'].includes(v[0])
-            ) // ^ causing 403 issues
-            .forEach((v) => dynamic_instances.invidious.push(v[1].uri))
-      )
-      .then(() => {
+            else dynamic_instances.piped.push(i[1] as string);
+          });
+        
         console.log(dynamic_instances);
         writeFileSync(
           'dynamic_instances.json',
           JSON.stringify(dynamic_instances, null, 4)
         );
-      });
+      }
+      );
+
   });
+
