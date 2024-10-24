@@ -1,37 +1,39 @@
 {
     "piped": [
-        "https://api.piped.privacydev.net",
-        "https://pipedapi.adminforge.de",
-        "https://piapi.ggtyler.dev",
         "https://pipedapi.reallyaweso.me",
-        "https://pipedapi.kavin.rocks",
-        "https://pipedapi.leptons.xyz",
-        "https://piped-api.lunar.icu",
+        "https://api.piped.privacydev.net",
+        "https://piapi.ggtyler.dev",
         "https://pipedapi.darkness.services",
-        "https://api.piped.yt",
+        "https://pipedapi.adminforge.de",
+        "https://pipedapi.kavin.rocks",
         "https://pipedapi.drgns.space",
-        "https://piped-api.codespace.cz",
-        "https://pipedapi.ducks.party",
+        "https://api.piped.yt",
         "https://pipedapi.smnz.de",
         "https://pipedapi.r4fo.com",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.nosebs.ru",
-        "https://pipedapi.us.projectsegfau.lt",
         "https://pipedapi.ngn.tf",
-        "https://pipedapi.in.projectsegfau.lt"
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.us.projectsegfau.lt",
+        "https://piped-api.lunar.icu",
+        "https://piped-api.codespace.cz",
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.in.projectsegfau.lt",
+        "https://pipedapi.nosebs.ru"
     ],
     "invidious": [
-        "https://invidious.privacydev.net",
-        "https://invidious.adminforge.de",
-        "https://iv.ggtyler.dev",
         "https://invidious.reallyaweso.me",
+        "https://invidious.privacydev.net",
+        "https://iv.ggtyler.dev",
+        "https://invidious.darkness.services",
+        "https://invidious.adminforge.de",
         "https://invi.susurrando.com",
         "https://invidious.jing.rocks"
     ],
     "hyperpipe": [
-        "https://musicapi.adminforge.de",
+        "https://musicapi.reallyaweso.me",
         "https://hpapi.ggtyler.dev",
-        "https://musicapi.reallyaweso.me"
+        "https://hyperpipeapi.darkness.services",
+        "https://musicapi.adminforge.de"
     ],
-    "unified": 4
+    "unified": 5
 }
