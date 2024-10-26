@@ -1,37 +1,38 @@
 {
     "piped": [
         "https://api.piped.privacydev.net",
-        "https://pipedapi.reallyaweso.me",
         "https://pipedapi.adminforge.de",
-        "https://piapi.ggtyler.dev",
+        "https://pipedapi.reallyaweso.me",
         "https://pipedapi.darkness.services",
+        "https://piapi.ggtyler.dev",
         "https://pipedapi.kavin.rocks",
         "https://pipedapi.drgns.space",
+        "https://pipedapi-libre.kavin.rocks",
         "https://api.piped.yt",
+        "https://pipedapi.r4fo.com",
+        "https://pipedapi.us.projectsegfau.lt",
         "https://pipedapi.smnz.de",
         "https://piped-api.codespace.cz",
-        "https://pipedapi.ducks.party",
-        "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
-        "https://pipedapi.us.projectsegfau.lt",
-        "https://pipedapi.r4fo.com",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.ngn.tf"
+        "https://piped-api.lunar.icu",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.ngn.tf",
+        "https://pipedapi.in.projectsegfau.lt"
     ],
     "invidious": [
         "https://invidious.privacydev.net",
-        "https://invidious.reallyaweso.me",
         "https://invidious.adminforge.de",
-        "https://iv.ggtyler.dev",
+        "https://invidious.reallyaweso.me",
         "https://invidious.darkness.services",
+        "https://iv.ggtyler.dev",
         "https://invi.susurrando.com",
         "https://invidious.jing.rocks"
     ],
     "hyperpipe": [
-        "https://musicapi.reallyaweso.me",
         "https://musicapi.adminforge.de",
-        "https://hpapi.ggtyler.dev",
-        "https://hyperpipeapi.darkness.services"
+        "https://musicapi.reallyaweso.me",
+        "https://hyperpipeapi.darkness.services",
+        "https://hpapi.ggtyler.dev"
     ],
     "unified": 5
 }
