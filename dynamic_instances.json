@@ -1,40 +1,40 @@
 {
     "piped": [
-        "https://pipedapi.adminforge.de",
         "https://piapi.ggtyler.dev",
         "https://pipedapi.reallyaweso.me",
-        "https://pipedapi.darkness.services",
+        "https://pipedapi.adminforge.de",
         "https://piped-api.lunar.icu",
-        "https://pipedapi.kavin.rocks",
-        "https://pipedapi.ducks.party",
-        "https://pipedapi.leptons.xyz",
-        "https://pipedapi.drgns.space",
-        "https://pipedapi.smnz.de",
-        "https://piped-api.codespace.cz",
-        "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.darkness.services",
         "https://pipedapi.r4fo.com",
-        "https://api.piped.privacydev.net",
+        "https://pipedapi.kavin.rocks",
         "https://pipedapi.nosebs.ru",
+        "https://pipedapi.drgns.space",
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi.smnz.de",
         "https://api.piped.yt",
+        "https://piped-api.codespace.cz",
+        "https://api.piped.privacydev.net",
         "https://pipedapi.ngn.tf",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.in.projectsegfau.lt"
     ],
     "invidious": [
-        "https://invidious.adminforge.de",
         "https://iv.ggtyler.dev",
         "https://invidious.reallyaweso.me",
-        "https://invidious.darkness.services",
+        "https://invidious.adminforge.de",
         "https://invidious.lunar.icu",
+        "https://invidious.darkness.services",
         "https://invi.susurrando.com",
         "https://invidious.jing.rocks",
         "https://invidious.catspeed.cc"
     ],
     "hyperpipe": [
-        "https://musicapi.adminforge.de",
         "https://hpapi.ggtyler.dev",
         "https://musicapi.reallyaweso.me",
-        "https://hyperpipeapi.darkness.services",
-        "https://hyperpipe-api.lunar.icu"
+        "https://musicapi.adminforge.de",
+        "https://hyperpipe-api.lunar.icu",
+        "https://hyperpipeapi.darkness.services"
     ],
     "unified": 5
 }
