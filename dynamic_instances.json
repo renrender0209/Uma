@@ -11,12 +11,12 @@
         "https://pipedapi.leptons.xyz",
         "https://api.piped.yt",
         "https://piped-api.codespace.cz",
-        "https://pipedapi.drgns.space",
         "https://pipedapi.smnz.de",
         "https://pipedapi.ducks.party",
-        "https://pipedapi.in.projectsegfau.lt",
         "https://api.piped.privacydev.net",
-        "https://pipedapi.ngn.tf"
+        "https://pipedapi.ngn.tf",
+        "https://pipedapi.in.projectsegfau.lt",
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
         "https://iv.ggtyler.dev",
