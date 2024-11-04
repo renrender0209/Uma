@@ -1,40 +1,40 @@
 {
     "piped": [
-        "https://pipedapi.adminforge.de",
         "https://piapi.ggtyler.dev",
-        "https://pipedapi.reallyaweso.me",
-        "https://pipedapi.darkness.services",
+        "https://pipedapi.adminforge.de",
         "https://piped-api.lunar.icu",
-        "https://pipedapi.kavin.rocks",
-        "https://pipedapi.leptons.xyz",
-        "https://api.piped.privacydev.net",
-        "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.darkness.services",
+        "https://pipedapi.reallyaweso.me",
         "https://pipedapi.r4fo.com",
+        "https://pipedapi.kavin.rocks",
         "https://pipedapi.nosebs.ru",
+        "https://api.piped.yt",
+        "https://pipedapi.leptons.xyz",
         "https://piped-api.codespace.cz",
+        "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.ducks.party",
         "https://pipedapi.drgns.space",
-        "https://api.piped.yt",
+        "https://pipedapi.in.projectsegfau.lt",
+        "https://api.piped.privacydev.net",
         "https://pipedapi.ngn.tf",
-        "https://pipedapi.smnz.de",
-        "https://pipedapi.in.projectsegfau.lt"
+        "https://pipedapi.smnz.de"
     ],
     "invidious": [
-        "https://invidious.adminforge.de",
         "https://iv.ggtyler.dev",
-        "https://invidious.reallyaweso.me",
-        "https://invidious.darkness.services",
+        "https://invidious.adminforge.de",
         "https://invidious.lunar.icu",
+        "https://invidious.darkness.services",
+        "https://invidious.reallyaweso.me",
         "https://invi.susurrando.com",
         "https://invidious.jing.rocks",
         "https://invidious.catspeed.cc"
     ],
     "hyperpipe": [
-        "https://musicapi.adminforge.de",
         "https://hpapi.ggtyler.dev",
-        "https://musicapi.reallyaweso.me",
+        "https://musicapi.adminforge.de",
+        "https://hyperpipe-api.lunar.icu",
         "https://hyperpipeapi.darkness.services",
-        "https://hyperpipe-api.lunar.icu"
+        "https://musicapi.reallyaweso.me"
     ],
     "unified": 5
 }
