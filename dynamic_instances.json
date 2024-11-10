@@ -6,15 +6,14 @@
         "https://pipedapi.kavin.rocks",
         "https://pipedapi.leptons.xyz",
         "https://piped-api.lunar.icu",
-        "https://api.piped.privacydev.net",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.r4fo.com",
-        "https://piped-api.codespace.cz",
-        "https://pipedapi.nosebs.ru",
-        "https://pipedapi.ducks.party",
         "https://api.piped.yt",
         "https://pipedapi.drgns.space",
-        "https://pipedapi.smnz.de"
+        "https://pipedapi.ducks.party",
+        "https://piped-api.codespace.cz",
+        "https://pipedapi.smnz.de",
+        "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.r4fo.com",
+        "https://pipedapi.nosebs.ru"
     ],
     "invidious": [
         "https://iv.ggtyler.dev",
