@@ -54,6 +54,7 @@ fetch(allPipedInstancesUrl)
         'https://invidious.catspeed.cc'
       ],
       hyperpipe: [],
+      cobalt: 'https://cobalt-api.kwiatekmiki.com',
       unified: 0,
     };
 
