@@ -55,6 +55,7 @@ fetch(allPipedInstancesUrl)
       ],
       hyperpipe: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
+      proxy: 'https://invidious.jing.rocks',
       unified: 0,
     };
 
