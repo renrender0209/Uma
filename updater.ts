@@ -9,7 +9,7 @@ for (const instance in invidious_instances)
   await fetch(invidious_instances[instance] + '/api/v1/search/suggestions?q=the')
     .then(res => res.json())
     .then(data => {
-      if (data?.suggestions?.length)
+      if (data?.suggestions?.length && instance !== 'https://invidious.darkness.services')
         unified_instances[instance] = invidious_instances[instance];
       else throw new Error();
     })
