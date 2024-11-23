@@ -59,9 +59,8 @@ fetch(allPipedInstancesUrl)
     };
 
     Promise.all(
-      instances
-        .filter(i => i !== 'https://api.piped.private.coffee')
-        .map(getSuggestions))
+      instances.map(getSuggestions)
+    )
       .then((array) => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
