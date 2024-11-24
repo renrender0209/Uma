@@ -4,16 +4,16 @@
         "https://pipedapi.adminforge.de",
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
-        "https://pipedapi.r4fo.com",
+        "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.leptons.xyz",
+        "https://pipedapi.nosebs.ru",
         "https://piped-api.lunar.icu",
         "https://api.piped.yt",
         "https://api.piped.privacydev.net",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.smnz.de",
-        "https://pipedapi.ducks.party",
         "https://pipedapi.drgns.space",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.smnz.de",
+        "https://pipedapi.r4fo.com"
     ],
     "invidious": [
         "https://iv.ggtyler.dev",
