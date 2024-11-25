@@ -1,25 +1,25 @@
 {
     "piped": [
         "https://pipedapi.adminforge.de",
+        "https://piapi.ggtyler.dev",
         "https://pipedapi.reallyaweso.me",
         "https://api.piped.private.coffee",
         "https://pipedapi.darkness.services",
-        "https://piapi.ggtyler.dev",
-        "https://api.piped.yt",
+        "https://pipedapi.smnz.de",
+        "https://piped-api.lunar.icu",
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.drgns.space",
         "https://pipedapi.ducks.party",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.leptons.xyz",
-        "https://piped-api.lunar.icu",
         "https://pipedapi.nosebs.ru",
-        "https://pipedapi.smnz.de"
+        "https://api.piped.yt"
     ],
     "invidious": [
         "https://invidious.adminforge.de",
+        "https://iv.ggtyler.dev",
         "https://invidious.reallyaweso.me",
         "https://invidious.private.coffee",
         "https://invidious.darkness.services",
-        "https://iv.ggtyler.dev",
         "https://invi.susurrando.com",
         "https://invidious.jing.rocks",
         "https://iv.duti.dev",
@@ -27,9 +27,9 @@
     ],
     "hyperpipe": [
         "https://musicapi.adminforge.de",
+        "https://hpapi.ggtyler.dev",
         "https://musicapi.reallyaweso.me",
-        "https://hyperpipeapi.darkness.services",
-        "https://hpapi.ggtyler.dev"
+        "https://hyperpipeapi.darkness.services"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "proxy": "https://invidious.jing.rocks",
