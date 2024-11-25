@@ -61,6 +61,7 @@ fetch(allPipedInstancesUrl)
 
     Promise.all(
       instances
+      .filter( i => i!=='https://pipedapi.kavin.rocks' )
       .map(getSuggestions)
     )
       .then((array) => {
