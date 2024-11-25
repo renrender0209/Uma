@@ -9,7 +9,7 @@ for (const instance in invidious_instances)
   await fetch(invidious_instances[instance] + '/api/v1/search/suggestions?q=the')
     .then(res => res.json())
     .then(data => {
-      if (data?.suggestions?.length && invidious_instances[instance] !== 'https://invidious.darkness.services')
+      if (data?.suggestions?.length)
         unified_instances[instance] = invidious_instances[instance];
       else throw new Error();
     })
@@ -61,7 +61,6 @@ fetch(allPipedInstancesUrl)
 
     Promise.all(
       instances
-      .filter( i => i!=='https://pipedapi.kavin.rocks' )
       .map(getSuggestions)
     )
       .then((array) => {
