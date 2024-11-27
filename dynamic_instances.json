@@ -6,12 +6,11 @@
         "https://pipedapi.darkness.services",
         "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
-        "https://pipedapi.nosebs.ru",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.smnz.de",
         "https://api.piped.yt",
-        "https://pipedapi.drgns.space",
         "https://pipedapi.ducks.party",
+        "https://pipedapi.smnz.de",
+        "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.drgns.space",
         "https://piapi.ggtyler.dev"
     ],
     "invidious": [
