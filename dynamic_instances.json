@@ -4,15 +4,15 @@
         "https://pipedapi.reallyaweso.me",
         "https://api.piped.private.coffee",
         "https://pipedapi.darkness.services",
+        "https://pipedapi-libre.kavin.rocks",
         "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
-        "https://api.piped.yt",
-        "https://pipedapi.smnz.de",
-        "https://pipedapi.drgns.space",
+        "https://pipedapi.nosebs.ru",
         "https://pipedapi.ducks.party",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://piapi.ggtyler.dev",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.smnz.de",
+        "https://api.piped.yt",
+        "https://pipedapi.drgns.space",
+        "https://piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://invidious.adminforge.de",
