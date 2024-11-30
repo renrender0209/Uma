@@ -48,7 +48,6 @@ fetch(allPipedInstancesUrl)
     } = {
       piped: [],
       invidious: [
-        'https://invi.susurrando.com',
         'https://invidious.jing.rocks',
         'https://iv.duti.dev',
         'https://invidious.catspeed.cc'
