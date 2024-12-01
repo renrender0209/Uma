@@ -3,14 +3,14 @@
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
         "https://pipedapi.adminforge.de",
-        "https://pipedapi.drgns.space",
-        "https://piapi.ggtyler.dev",
+        "https://pipedapi.leptons.xyz",
         "https://pipedapi.smnz.de",
         "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.nosebs.ru",
-        "https://api.piped.yt",
+        "https://pipedapi.drgns.space",
         "https://pipedapi.ducks.party",
-        "https://pipedapi.leptons.xyz"
+        "https://piapi.ggtyler.dev",
+        "https://api.piped.yt"
     ],
     "invidious": [
         "https://invidious.private.coffee",
