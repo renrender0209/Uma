@@ -56,7 +56,7 @@ fetch(allPipedInstancesUrl)
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
       proxy: 'https://invidious.jing.rocks',
       unified: 0,
-      fallback: 'https://video-api-transform.vercel.app'
+      fallback: 'https://video-api-transform.vercel.app/api'
     };
 
     Promise.all(
