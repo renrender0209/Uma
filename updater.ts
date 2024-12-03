@@ -50,7 +50,8 @@ fetch(allPipedInstancesUrl)
       invidious: [
         'https://invidious.jing.rocks',
         'https://iv.duti.dev',
-        'https://invidious.catspeed.cc'
+        'https://invidious.catspeed.cc',
+        'https://invidious.technicalvoid.dev'
       ],
       hyperpipe: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
