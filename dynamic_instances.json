@@ -1,34 +1,33 @@
 {
     "piped": [
-        "https://pipedapi.reallyaweso.me",
-        "https://api.piped.private.coffee",
         "https://pipedapi.adminforge.de",
+        "https://api.piped.private.coffee",
+        "https://pipedapi.reallyaweso.me",
         "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
-        "https://pipedapi.ducks.party",
+        "https://api.piped.yt",
         "https://pipedapi.drgns.space",
         "https://piapi.ggtyler.dev",
-        "https://api.piped.yt",
-        "https://pipedapi.smnz.de",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.nosebs.ru",
         "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.smnz.de"
     ],
     "invidious": [
-        "https://invidious.reallyaweso.me",
-        "https://invidious.private.coffee",
         "https://invidious.adminforge.de",
+        "https://invidious.private.coffee",
+        "https://invidious.reallyaweso.me",
         "https://invidious.jing.rocks",
         "https://iv.duti.dev",
         "https://invidious.catspeed.cc",
         "https://invidious.technicalvoid.dev"
     ],
     "hyperpipe": [
-        "https://musicapi.reallyaweso.me",
-        "https://musicapi.adminforge.de"
+        "https://musicapi.adminforge.de",
+        "https://musicapi.reallyaweso.me"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "proxy": "https://invidious.jing.rocks",
     "unified": 3,
-    "fallback": "https://video-api-transform.vercel.app",
-    "featuredPlaylists": "https://raw.githubusercontent.com/wiki/n-ce/ytify/ytm_pls.md"
+    "fallback": "https://video-api-transform.vercel.app"
 }
