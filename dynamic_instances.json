@@ -7,10 +7,10 @@
         "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
         "https://pipedapi-libre.kavin.rocks",
-        "https://api.piped.yt",
-        "https://pipedapi.smnz.de",
         "https://pipedapi.drgns.space",
-        "https://pipedapi.ducks.party"
+        "https://pipedapi.smnz.de",
+        "https://pipedapi.ducks.party",
+        "https://api.piped.yt"
     ],
     "invidious": [
         "https://invidious.private.coffee",
