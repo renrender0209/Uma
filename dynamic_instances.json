@@ -1,17 +1,19 @@
 {
     "piped": [
+        "https://api.piped.private.coffee",
         "https://piapi.ggtyler.dev",
         "https://pipedapi.adminforge.de",
-        "https://piped-api.lunar.icu",
-        "https://pipedapi.leptons.xyz",
-        "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.kavin.rocks",
+        "https://pipedapi.drgns.space",
         "https://api.piped.yt",
         "https://pipedapi.smnz.de",
         "https://pipedapi.ducks.party",
-        "https://pipedapi.drgns.space"
+        "https://pipedapi.leptons.xyz",
+        "https://piped-api.lunar.icu",
+        "https://pipedapi-libre.kavin.rocks"
     ],
     "invidious": [
+        "https://invidious.private.coffee",
         "https://iv.ggtyler.dev",
         "https://invidious.adminforge.de",
         "https://invidious.jing.rocks",
@@ -23,6 +25,6 @@
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "proxy": "https://invidious.jing.rocks",
-    "unified": 2,
+    "unified": 3,
     "fallback": "https://video-api-transform.vercel.app/api"
 }
