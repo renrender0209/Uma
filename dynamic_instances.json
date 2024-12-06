@@ -1,23 +1,21 @@
 {
     "piped": [
         "https://pipedapi.reallyaweso.me",
-        "https://api.piped.private.coffee",
         "https://pipedapi.adminforge.de",
+        "https://api.piped.private.coffee",
         "https://piapi.ggtyler.dev",
-        "https://piped-api.lunar.icu",
-        "https://pipedapi.leptons.xyz",
         "https://pipedapi.kavin.rocks",
+        "https://piped-api.lunar.icu",
         "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.leptons.xyz",
         "https://pipedapi.drgns.space",
-        "https://pipedapi.ducks.party",
         "https://api.piped.yt",
-        "https://pipedapi.smnz.de",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.smnz.de"
     ],
     "invidious": [
         "https://invidious.reallyaweso.me",
-        "https://invidious.private.coffee",
         "https://invidious.adminforge.de",
+        "https://invidious.private.coffee",
         "https://iv.ggtyler.dev",
         "https://invidious.technicalvoid.dev",
         "https://invidious.jing.rocks",
