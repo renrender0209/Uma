@@ -5,14 +5,13 @@
         "https://pipedapi.adminforge.de",
         "https://piapi.ggtyler.dev",
         "https://pipedapi.kavin.rocks",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
-        "https://api.piped.yt",
-        "https://pipedapi.nosebs.ru",
+        "https://piped-api.lunar.icu",
         "https://pipedapi.drgns.space",
+        "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.ducks.party",
-        "https://pipedapi.smnz.de"
+        "https://pipedapi.smnz.de",
+        "https://pipedapi.nosebs.ru"
     ],
     "invidious": [
         "https://invidious.reallyaweso.me",
