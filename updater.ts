@@ -54,7 +54,7 @@ fetch(allPipedInstancesUrl)
       ],
       hyperpipe: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
-      proxy: 'https://invidious.jing.rocks',
+      proxy: 'https://invidious.adminforge.de',
       unified: 0,
       fallback: 'https://video-api-transform.vercel.app/api'
     };
