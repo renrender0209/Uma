@@ -47,12 +47,12 @@ fetch(allPipedInstancesUrl)
       unified: number;
     } = {
       piped: [],
-      invidious: [],
+      invidious: [ 'https://inv.nadeko.net' ],
       hyperpipe: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
       proxy: 'https://invidious.adminforge.de',
       unified: 0,
-      fallback: 'https://video-api-transform.vercel.app/api'
+      fallback: ''
     };
 
     Promise.all(
