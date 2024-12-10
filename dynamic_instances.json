@@ -2,16 +2,16 @@
     "piped": [
         "https://piapi.ggtyler.dev",
         "https://pipedapi.adminforge.de",
-        "https://piped-api.lunar.icu",
-        "https://pipedapi.kavin.rocks",
-        "https://pipedapi.reallyaweso.me",
-        "https://pipedapi-libre.kavin.rocks",
-        "https://api.piped.private.coffee",
-        "https://pipedapi.nosebs.ru",
         "https://pipedapi.ducks.party",
-        "https://api.piped.yt",
+        "https://pipedapi.kavin.rocks",
+        "https://piped-api.lunar.icu",
+        "https://api.piped.private.coffee",
+        "https://pipedapi.smnz.de",
         "https://pipedapi.drgns.space",
-        "https://pipedapi.smnz.de"
+        "https://pipedapi.reallyaweso.me",
+        "https://pipedapi.nosebs.ru",
+        "https://api.piped.yt",
+        "https://pipedapi-libre.kavin.rocks"
     ],
     "invidious": [
         "https://iv.ggtyler.dev",
