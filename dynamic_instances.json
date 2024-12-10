@@ -1,30 +1,30 @@
 {
     "piped": [
-        "https://piapi.ggtyler.dev",
         "https://pipedapi.adminforge.de",
+        "https://piapi.ggtyler.dev",
         "https://pipedapi.kavin.rocks",
-        "https://pipedapi.smnz.de",
-        "https://pipedapi.drgns.space",
-        "https://api.piped.yt",
-        "https://api.piped.private.coffee",
-        "https://pipedapi.reallyaweso.me",
-        "https://piped-api.lunar.icu",
-        "https://pipedapi.leptons.xyz",
-        "https://pipedapi.ducks.party",
         "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.nosebs.ru"
+        "https://piped-api.lunar.icu",
+        "https://pipedapi.nosebs.ru",
+        "https://pipedapi.leptons.xyz",
+        "https://api.piped.yt",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.reallyaweso.me",
+        "https://api.piped.private.coffee",
+        "https://pipedapi.smnz.de",
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
-        "https://iv.ggtyler.dev",
         "https://invidious.adminforge.de",
+        "https://iv.ggtyler.dev",
         "https://inv.nadeko.net"
     ],
     "hyperpipe": [
-        "https://hpapi.ggtyler.dev",
-        "https://musicapi.adminforge.de"
+        "https://musicapi.adminforge.de",
+        "https://hpapi.ggtyler.dev"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "proxy": "https://invidious.adminforge.de",
     "unified": 2,
-    "fallback": ""
+    "fallback": "https://video-api-transform.vercel.app/api"
 }
