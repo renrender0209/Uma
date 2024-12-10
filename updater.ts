@@ -47,7 +47,10 @@ fetch(allPipedInstancesUrl)
       unified: number;
     } = {
       piped: [],
-      invidious: [ 'https://inv.nadeko.net' ],
+      invidious: [
+        'https://inv.nadeko.net',
+        'https://invidious.nerdvpn.de'
+      ],
       hyperpipe: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
       proxy: 'https://invidious.adminforge.de',
