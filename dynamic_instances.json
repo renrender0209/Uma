@@ -3,16 +3,16 @@
         "https://pipedapi.adminforge.de",
         "https://piapi.ggtyler.dev",
         "https://pipedapi.kavin.rocks",
-        "https://api.piped.yt",
+        "https://pipedapi-libre.kavin.rocks",
         "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
-        "https://api.piped.private.coffee",
-        "https://pipedapi.reallyaweso.me",
-        "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.nosebs.ru",
+        "https://api.piped.yt",
         "https://pipedapi.ducks.party",
         "https://pipedapi.drgns.space",
         "https://pipedapi.smnz.de",
-        "https://pipedapi.nosebs.ru"
+        "https://api.piped.private.coffee",
+        "https://pipedapi.reallyaweso.me"
     ],
     "invidious": [
         "https://invidious.adminforge.de",
