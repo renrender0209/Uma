@@ -59,15 +59,15 @@ fetch(allPipedInstancesUrl)
     };
     
     Promise.all(invidious_instances.map(getIVS))
-      .then((array) => {
-        array
+      .then(array => array
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0])
-          .forEach(i => dynamic_instances.invidious.push(i[1] as string));  
+          .forEach(i => dynamic_instances.invidious.push(i[1] as string))
+           );  
     
 
     Promise.all(instances.map(getSuggestions))
-      .then((array) => {
+      .then(array => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0])
