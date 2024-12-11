@@ -48,7 +48,6 @@ fetch(allPipedInstancesUrl)
     } = {
       piped: [],
       invidious: [
-        'https://invidious.nerdvpn.de',
         'https://invidious.technicalvoid.dev'
       ],
       hyperpipe: [],
