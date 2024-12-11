@@ -1,27 +1,27 @@
 {
     "piped": [
-        "https://api.piped.private.coffee",
-        "https://pipedapi.ducks.party",
         "https://piapi.ggtyler.dev",
+        "https://api.piped.private.coffee",
         "https://pipedapi-libre.kavin.rocks",
-        "https://piped-api.lunar.icu",
         "https://pipedapi.adminforge.de",
-        "https://api.piped.yt",
-        "https://pipedapi.smnz.de",
-        "https://pipedapi.reallyaweso.me",
+        "https://pipedapi.nosebs.ru",
+        "https://piped-api.lunar.icu",
         "https://pipedapi.darkness.services",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.smnz.de",
+        "https://api.piped.yt",
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.reallyaweso.me"
     ],
     "invidious": [
-        "https://inv.nadeko.net",
-        "https://iv.duti.dev",
-        "https://invidious.jing.rocks",
-        "https://invidious.technicalvoid.dev",
         "https://invidious.adminforge.de",
-        "https://invidious.reallyaweso.me",
-        "https://invidious.nerdvpn.de",
+        "https://inv.nadeko.net",
         "https://iv.ggtyler.dev",
-        "https://invidious.darkness.services"
+        "https://invidious.technicalvoid.dev",
+        "https://invidious.jing.rocks",
+        "https://iv.duti.dev",
+        "https://invidious.darkness.services",
+        "https://invidious.reallyaweso.me",
+        "https://invidious.nerdvpn.de"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "proxy": "https://invidious.adminforge.de",
