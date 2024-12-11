@@ -19,6 +19,23 @@ async function getSuggestions(i: string) {
   return array;
 }
 
+async function getIVS(i: string) {
+  const t = performance.now();
+  let array = [0, ''];
+  
+  await fetch(i + '/api/v1/search/suggestions?q=the')
+    .then(res => res.json())
+    .then(data => {
+      const score = 1 / (performance.now() - t);  
+      if (data?.suggestions?.length) array = [score, i];        
+      else throw new Error();
+    })
+    .catch(() => [0,'']);
+
+  return array;
+}
+
+
 fetch(allPipedInstancesUrl)
   .then(res => res.text())
   .then(text => text.split('--- | --- | --- | --- | ---')[1])
@@ -41,21 +58,19 @@ fetch(allPipedInstancesUrl)
       fallback: 'https://video-api-transform.vercel.app/api'
     };
     
-    for (const instance of invidious_instances)
-      await fetch(instance + '/api/v1/search/suggestions?q=the')
-        .then(res => res.json())
-        .then(data => {
-          if (data?.suggestions?.length)
-            dynamic_instances.invidious.push(instance);
-          else throw new Error();
-        })
-        .catch(() => '');
+    Promise.all(invidious_instances.map(getIVS))
+      .then((array) => {
+        array
+          .sort((a, b) => <number>b[0] - <number>a[0])
+          .filter(i => i[0])
+          .forEach(i => dynamic_instances.invidious.push(i[1] as string));  
+    
 
     Promise.all(instances.map(getSuggestions))
       .then((array) => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
-          .map(i => i[0])
+          .filter(i => i[0])
           .forEach(i => dynamic_instances.piped.push(i[1] as string));
         
         console.log(dynamic_instances);
