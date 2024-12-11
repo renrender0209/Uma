@@ -3,14 +3,14 @@ import { writeFileSync, readFileSync } from 'fs';
 const allPipedInstancesUrl = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
 const hyperpipe_instances = JSON.parse(readFileSync('./hyperpipe.json', 'utf8'));
-const unified_instances = {};
+const invidious = [];
 
 for (const instance in invidious_instances)
-  await fetch(invidious_instances[instance] + '/api/v1/search/suggestions?q=the')
+  await fetch(instance + '/api/v1/search/suggestions?q=the')
     .then(res => res.json())
     .then(data => {
-      if (data?.suggestions?.length && instance !== 'https://pipedapi.reallyaweso.me')
-        unified_instances[instance] = invidious_instances[instance];
+      if (data?.suggestions?.length)
+        invidious.push(instance);
       else throw new Error();
     })
     .catch(() => '');
@@ -41,44 +41,24 @@ fetch(allPipedInstancesUrl)
     instances.shift();
 
     const dynamic_instances: {
-      piped: string[];
-      invidious: string[];
-      hyperpipe: string[];
-      unified: number;
+      piped: string[],
+      invidious: string[],
+      cobalt: string,
+      proxy: string,
+      fallback: string
     } = {
       piped: [],
-      invidious: [
-        'https://invidious.nerdvpn.de'
-      ],
-      hyperpipe: [],
+      invidious: invidious,
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
       proxy: 'https://invidious.adminforge.de',
-      unified: 0,
       fallback: 'https://video-api-transform.vercel.app/api'
     };
 
-    Promise.all(
-      instances
-      .filter( i => i !== 'https://pipedapi.kavin.rocks' )
-      .map(getSuggestions)
-    )
+    Promise.all(instances.map(getSuggestions))
       .then((array) => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
-          .filter((i) => i[0])
-          .forEach((i) => {
-            if (i[1] in unified_instances) {
-              dynamic_instances.unified++;
-              dynamic_instances.piped.unshift(i[1] as string);
-              dynamic_instances.invidious.unshift(unified_instances[i[1]]);
-
-              if (i[1] in hyperpipe_instances)
-                dynamic_instances.hyperpipe.unshift(
-                  hyperpipe_instances[i[1]] as string
-                );
-            }
-            else dynamic_instances.piped.push(i[1] as string);
-          });
+          .forEach((i) => dynamic_instances.piped.push(i[0][1] as string));
         
         console.log(dynamic_instances);
         writeFileSync(
