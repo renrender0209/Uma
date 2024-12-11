@@ -47,9 +47,7 @@ fetch(allPipedInstancesUrl)
       unified: number;
     } = {
       piped: [],
-      invidious: [
-        'https://invidious.technicalvoid.dev'
-      ],
+      invidious: [],
       hyperpipe: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
       proxy: 'https://invidious.adminforge.de',
