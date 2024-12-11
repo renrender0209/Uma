@@ -2,19 +2,6 @@ import { writeFileSync, readFileSync } from 'fs';
 
 const allPipedInstancesUrl = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
-const hyperpipe_instances = JSON.parse(readFileSync('./hyperpipe.json', 'utf8'));
-const invidious = [];
-
-for (const instance in invidious_instances)
-  await fetch(instance + '/api/v1/search/suggestions?q=the')
-    .then(res => res.json())
-    .then(data => {
-      if (data?.suggestions?.length)
-        invidious.push(instance);
-      else throw new Error();
-    })
-    .catch(() => '');
-
 
 async function getSuggestions(i: string) {
   const t = performance.now();
@@ -48,17 +35,28 @@ fetch(allPipedInstancesUrl)
       fallback: string
     } = {
       piped: [],
-      invidious: invidious,
+      invidious: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
       proxy: 'https://invidious.adminforge.de',
       fallback: 'https://video-api-transform.vercel.app/api'
     };
+    
+    for (const instance of invidious_instances)
+      await fetch(instance + '/api/v1/search/suggestions?q=the')
+        .then(res => res.json())
+        .then(data => {
+          if (data?.suggestions?.length)
+            dynamic_instances.invidious.push(instance);
+          else throw new Error();
+        })
+        .catch(() => '');
 
     Promise.all(instances.map(getSuggestions))
       .then((array) => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
-          .forEach((i) => dynamic_instances.piped.push(i[0][1] as string));
+          .map(i => i[0])
+          .forEach(i => dynamic_instances.piped.push(i[1] as string));
         
         console.log(dynamic_instances);
         writeFileSync(
