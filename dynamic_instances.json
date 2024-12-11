@@ -1,25 +1,25 @@
 {
     "piped": [
-        "https://piapi.ggtyler.dev",
         "https://pipedapi.adminforge.de",
+        "https://piapi.ggtyler.dev",
         "https://pipedapi.reallyaweso.me",
         "https://pipedapi.kavin.rocks",
-        "https://pipedapi-libre.kavin.rocks",
         "https://piped-api.lunar.icu",
+        "https://pipedapi-libre.kavin.rocks",
         "https://api.piped.yt",
         "https://pipedapi.smnz.de",
         "https://api.piped.private.coffee",
         "https://pipedapi.ducks.party"
     ],
     "invidious": [
-        "https://iv.ggtyler.dev",
         "https://invidious.adminforge.de",
+        "https://iv.ggtyler.dev",
         "https://invidious.reallyaweso.me",
         "https://invidious.technicalvoid.dev"
     ],
     "hyperpipe": [
-        "https://hpapi.ggtyler.dev",
         "https://musicapi.adminforge.de",
+        "https://hpapi.ggtyler.dev",
         "https://musicapi.reallyaweso.me"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
