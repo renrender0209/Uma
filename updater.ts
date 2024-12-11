@@ -48,8 +48,8 @@ fetch(allPipedInstancesUrl)
     } = {
       piped: [],
       invidious: [
-        'https://inv.nadeko.net',
-        'https://invidious.nerdvpn.de'
+        'https://invidious.nerdvpn.de',
+        'https://invidious.technicalvoid.dev'
       ],
       hyperpipe: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
@@ -60,7 +60,7 @@ fetch(allPipedInstancesUrl)
 
     Promise.all(
       instances
-      .filter( i => i !== 'https://pipedapi.darkness.services' )
+      .filter( i => i !== 'https://pipedapi.nosebs.ru' )
       .map(getSuggestions)
     )
       .then((array) => {
