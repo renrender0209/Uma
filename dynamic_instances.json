@@ -5,12 +5,12 @@
         "https://pipedapi.reallyaweso.me",
         "https://pipedapi.kavin.rocks",
         "https://piped-api.lunar.icu",
-        "https://api.piped.yt",
         "https://api.piped.private.coffee",
-        "https://pipedapi.ducks.party",
+        "https://api.piped.yt",
         "https://pipedapi-libre.kavin.rocks",
-        "https://pipedapi.nosebs.ru",
-        "https://pipedapi.smnz.de"
+        "https://pipedapi.ducks.party",
+        "https://pipedapi.smnz.de",
+        "https://pipedapi.nosebs.ru"
     ],
     "invidious": [
         "https://iv.ggtyler.dev",
