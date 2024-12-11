@@ -1,9 +1,9 @@
 {
     "piped": [
-        "https://piapi.ggtyler.dev",
         "https://pipedapi.adminforge.de",
-        "https://piped-api.lunar.icu",
+        "https://piapi.ggtyler.dev",
         "https://api.piped.yt",
+        "https://piped-api.lunar.icu",
         "https://api.piped.private.coffee",
         "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.reallyaweso.me",
@@ -11,12 +11,12 @@
         "https://pipedapi.ducks.party"
     ],
     "invidious": [
-        "https://iv.ggtyler.dev",
-        "https://invidious.adminforge.de"
+        "https://invidious.adminforge.de",
+        "https://iv.ggtyler.dev"
     ],
     "hyperpipe": [
-        "https://hpapi.ggtyler.dev",
-        "https://musicapi.adminforge.de"
+        "https://musicapi.adminforge.de",
+        "https://hpapi.ggtyler.dev"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "proxy": "https://invidious.adminforge.de",
