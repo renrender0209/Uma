@@ -1,28 +1,27 @@
 {
     "piped": [
+        "https://piped-api.lunar.icu",
         "https://pipedapi.darkness.services",
         "https://api.piped.private.coffee",
-        "https://pipedapi.reallyaweso.me",
-        "https://piped-api.lunar.icu",
-        "https://pipedapi.ducks.party",
-        "https://api.piped.yt",
         "https://pipedapi-libre.kavin.rocks",
+        "https://pipedapi.reallyaweso.me",
+        "https://pipedapi.nosebs.ru",
+        "https://api.piped.yt",
+        "https://pipedapi.ducks.party",
         "https://pipedapi.adminforge.de",
-        "https://piapi.ggtyler.dev",
         "https://pipedapi.smnz.de",
-        "https://pipedapi.nosebs.ru"
+        "https://piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://invidious.technicalvoid.dev",
+        "https://invidious.darkness.services",
+        "https://invidious.adminforge.de",
         "https://iv.duti.dev",
         "https://inv.nadeko.net",
-        "https://invidious.nerdvpn.de",
-        "https://invidious.darkness.services",
-        "https://invidious.jing.rocks",
-        "https://invidious.adminforge.de",
         "https://iv.ggtyler.dev",
         "https://invidious.schenkel.eti.br",
-        "https://invidious.reallyaweso.me"
+        "https://invidious.reallyaweso.me",
+        "https://invidious.nerdvpn.de"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "proxy": "https://invidious.adminforge.de",
