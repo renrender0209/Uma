@@ -3,23 +3,22 @@
         "https://pipedapi.darkness.services",
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
+        "https://piped-api.lunar.icu",
+        "https://pipedapi.ducks.party",
         "https://pipedapi-libre.kavin.rocks",
         "https://pipedapi.nosebs.ru",
         "https://pipedapi.adminforge.de",
-        "https://piped-api.lunar.icu",
         "https://pipedapi.smnz.de",
-        "https://piapi.ggtyler.dev",
         "https://pipedapi.drgns.space",
-        "https://pipedapi.ducks.party"
+        "https://piapi.ggtyler.dev"
     ],
     "invidious": [
+        "https://iv.duti.dev",
         "https://invidious.adminforge.de",
         "https://invidious.reallyaweso.me",
-        "https://invidious.schenkel.eti.br",
+        "https://iv.ggtyler.dev",
         "https://invidious.jing.rocks",
-        "https://invidious.nerdvpn.de",
-        "https://iv.duti.dev",
-        "https://iv.ggtyler.dev"
+        "https://invidious.nerdvpn.de"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com",
     "proxy": "https://invidious.adminforge.de",
