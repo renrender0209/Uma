@@ -54,8 +54,7 @@ fetch(allPipedInstancesUrl)
       piped: [],
       invidious: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
-      proxy: 'https://invidious.adminforge.de',
-      fallback: 'https://video-api-transform.vercel.app/api'
+      proxy: 'https://invidious.adminforge.de'
     };
     
     Promise.all(invidious_instances.map(getIVS))
