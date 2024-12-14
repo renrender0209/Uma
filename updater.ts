@@ -54,7 +54,7 @@ fetch(allPipedInstancesUrl)
       piped: [],
       invidious: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
-      proxy: 'https://invidious.jing.rocks'
+      proxy: 'https://invidious.adminforge.de'
     };
     
     Promise.all(
