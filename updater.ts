@@ -57,7 +57,11 @@ fetch(allPipedInstancesUrl)
       proxy: 'https://invidious.jing.rocks'
     };
     
-    Promise.all(invidious_instances.map(getIVS))
+    Promise.all(
+      invidious_instances
+      .filter(i=>i!='https://invidious.nerdvpn.de')
+      .map(getIVS)
+    )
       .then(array => array
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0])
