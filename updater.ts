@@ -53,7 +53,7 @@ fetch(allPipedInstancesUrl)
     } = {
       piped: [],
       invidious: [],
-      cobalt: 'https://api.co.rooot.gay',
+      cobalt: 'https://cobalt-api.kwiatekmiki.com',
       proxy: 'https://invidious.adminforge.de',
       fallback: 'https://video-api-transform.vercel.app/api'
     };
@@ -70,7 +70,7 @@ fetch(allPipedInstancesUrl)
       .then(array => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
-          .filter(i => i[0] && i[1] !== 'https://pipedapi.kavin.rocks')
+          .filter(i => i[0] && !['https://pipedapi.kavin.rocks','https://pipedapi.leptons.xyz'].includes(i[1]))
           .forEach(i => dynamic_instances.piped.push(i[1] as string));
         
         console.log(dynamic_instances);
