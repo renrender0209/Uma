@@ -53,7 +53,7 @@ fetch(allPipedInstancesUrl)
     } = {
       piped: [],
       invidious: [],
-      cobalt: 'https://cobalt-backend.canine.tools',
+      cobalt: 'https://api.co.rooot.gay',
       proxy: 'https://invidious.adminforge.de',
       fallback: 'https://video-api-transform.vercel.app/api'
     };
