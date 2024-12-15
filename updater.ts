@@ -59,6 +59,7 @@ fetch(allPipedInstancesUrl)
     
     Promise.all(
       invidious_instances
+      .filter(i=>i!==  "https://invidious.schenkel.eti.br")
       .map(getIVS)
     )
       .then(array => array
@@ -72,7 +73,7 @@ fetch(allPipedInstancesUrl)
       .then(array => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
-          .filter(i => i[0])
+          .filter(i => i[0] && !['https://pipedapi.kavin.rocks','https://pipedapi.leptons.xyz'].includes(i[1]))
           .forEach(i => dynamic_instances.piped.push(i[1] as string));
         
         console.log(dynamic_instances);
@@ -84,4 +85,3 @@ fetch(allPipedInstancesUrl)
       );
 
   });
-
