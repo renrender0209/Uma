@@ -63,7 +63,7 @@ fetch(allPipedInstancesUrl)
     )
       .then(array => array
           .sort((a, b) => <number>b[0] - <number>a[0])
-          .filter(i => i[0] && i[1] !== 'https://invidious.technicalvoid.dev')
+          .filter(i => i[0])
           .forEach(i => dynamic_instances.invidious.push(i[1] as string))
            );  
     
