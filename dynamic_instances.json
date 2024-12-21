@@ -1,8 +1,9 @@
 {
     "piped": [
-        "https://api.piped.private.coffee",
+        "https://pipedapi.darkness.services",
         "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
+        "https://api.piped.private.coffee",
         "https://pipedapi.ducks.party",
         "https://pipedapi.drgns.space",
         "https://pipedapi-libre.kavin.rocks",
@@ -12,9 +13,11 @@
     ],
     "invidious": [
         "https://lekker.gay",
-        "https://iv.duti.dev",
         "https://invidious.technicalvoid.dev",
+        "https://invidious.nikkosphere.com",
+        "https://iv.duti.dev",
         "https://inv.clovius.club",
+        "https://invidious.darkness.services",
         "https://invidious.adminforge.de",
         "https://invidious.reallyaweso.me",
         "https://invidious.jing.rocks"
