@@ -81,7 +81,7 @@ fetch(allPipedInstancesUrl)
         
         
         console.log(dynamic_instances);
-        if( dynamic_instances.invidious.length > 3 )
+        if(dynamic_instances.invidious.length)
         writeFileSync(
           'dynamic_instances.json',
           JSON.stringify(dynamic_instances, null, 4)
