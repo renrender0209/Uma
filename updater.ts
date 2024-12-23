@@ -54,7 +54,7 @@ fetch(allPipedInstancesUrl)
       piped: [],
       invidious: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
-      proxy: 'https://invidious.adminforge.de'
+      proxy: ''
     };
     
     Promise.all(
@@ -65,7 +65,8 @@ fetch(allPipedInstancesUrl)
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0] && i[1] !== 'https://invidious.schenkel.eti.br')
           .forEach(i => dynamic_instances.invidious.push(i[1] as string))
-           );  
+           )
+    .then(() => { dynamic_instances.proxy = dynamic_instances.invidious[0] });
     
 
     Promise.all(instances.map(getSuggestions))
@@ -74,6 +75,7 @@ fetch(allPipedInstancesUrl)
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0] && i[1] !== 'https://pipedapi.kavin.rocks')
           .forEach(i => dynamic_instances.piped.push(i[1] as string));
+        
         
         console.log(dynamic_instances);
         if( dynamic_instances.invidious.length > 3 )
