@@ -48,14 +48,10 @@ fetch(allPipedInstancesUrl)
       piped: string[],
       invidious: string[],
       cobalt: string,
-      proxy: string,
-      fallback: string
     } = {
       piped: [],
       invidious: [],
-      cobalt: 'https://cobalt-api.kwiatekmiki.com',
-      proxy: 'https://invidious.nikkosphere.com'
-      
+      cobalt: '',
     };
     
     await Promise.all(
@@ -85,8 +81,7 @@ fetch(allPipedInstancesUrl)
           JSON.stringify({
       piped: ['https://pipedapi.leptons.xyz'],
       invidious: ['https://invidious.nikkosphere.com'],
-      cobalt: 'https://cobalt-api.kwiatekmiki.com',
-      proxy: 'https://invidious.nikkosphere.com'    
+      cobalt: 'https://cobalt-api.kwiatekmiki.com'
     }, null, 4)
         );
 
