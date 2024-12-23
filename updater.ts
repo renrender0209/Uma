@@ -52,11 +52,14 @@ fetch(allPipedInstancesUrl)
       fallback: string
     } = {
       piped: [],
-      invidious: [],
+      invidious: [
+        'https://invidious.nikkosphere.com'
+      ],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
-      proxy: ''
+      proxy: 'https://invidious.nikkosphere.com'
+      
     };
-    
+    /*
     Promise.all(
       invidious_instances
       .map(getIVS)
@@ -67,7 +70,7 @@ fetch(allPipedInstancesUrl)
           .forEach(i => dynamic_instances.invidious.push(i[1] as string))
            )
     .then(() => { dynamic_instances.proxy = dynamic_instances.invidious[0] });
-    
+    */
 
     Promise.all(instances.map(getSuggestions))
       .then(array => {
