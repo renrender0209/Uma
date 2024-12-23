@@ -41,7 +41,7 @@ fetch(allPipedInstancesUrl)
   .then(text => text.split('--- | --- | --- | --- | ---')[1])
   .then(table => table.split('\n'))
   .then(instances => instances.map((instance) => instance.split(' | ')[1]))
-  .then(instances => {
+  .then(async instances => {
     instances.shift();
 
     const dynamic_instances: {
