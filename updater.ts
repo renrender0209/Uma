@@ -52,15 +52,13 @@ fetch(allPipedInstancesUrl)
       fallback: string
     } = {
       piped: [],
-      invidious: [
-        'https://invidious.nikkosphere.com'
-      ],
+      invidious: [],
       cobalt: 'https://cobalt-api.kwiatekmiki.com',
       proxy: 'https://invidious.nikkosphere.com'
       
     };
-    /*
-    Promise.all(
+    
+    await Promise.all(
       invidious_instances
       .map(getIVS)
     )
@@ -70,23 +68,26 @@ fetch(allPipedInstancesUrl)
           .forEach(i => dynamic_instances.invidious.push(i[1] as string))
            )
     .then(() => { dynamic_instances.proxy = dynamic_instances.invidious[0] });
-    */
+    
 
-    Promise.all(instances.map(getSuggestions))
+    await Promise.all(instances.map(getSuggestions))
       .then(array => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0] && i[1] !== 'https://pipedapi.kavin.rocks')
-          .forEach(i => dynamic_instances.piped.push(i[1] as string));
-        
-        
-        console.log(dynamic_instances);
-        if(dynamic_instances.invidious.length)
-        writeFileSync(
+          .forEach(i => dynamic_instances.piped.push(i[1] as string));     
+        console.log(dynamic_instances);      
+      });
+      
+    if(dynamic_instances.invidious.length)
+    writeFileSync(
           'dynamic_instances.json',
-          JSON.stringify(dynamic_instances, null, 4)
+          JSON.stringify({
+      piped: ['https://pipedapi.leptons.xyz'],
+      invidious: ['https://invidious.nikkosphere.com'],
+      cobalt: 'https://cobalt-api.kwiatekmiki.com',
+      proxy: 'https://invidious.nikkosphere.com'    
+    }, null, 4)
         );
-      }
-      );
 
   });
