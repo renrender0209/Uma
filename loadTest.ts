@@ -16,7 +16,8 @@ export async function loadTest(i: string): Promise<string | null> {
       }) => (data.adaptiveFormats
         .filter((f) => f.type.startsWith('audio'))
       [0].url)
-    );
+    )
+  .catch(() => '');
 
   if (!url) return '';
 
@@ -25,7 +26,8 @@ export async function loadTest(i: string): Promise<string | null> {
   const proxiedUrl = url.replace(origin, i) + '&host=' + origin.slice(8);
 
   const passed = await fetch(proxiedUrl)
-    .then(res => res.ok);
+    .then(res => res.ok)
+  .catch(()=>'');
 
   return passed ? i : '';
 
