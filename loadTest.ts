@@ -1,4 +1,4 @@
-export async function loadAndTest(i: string): Promise<string | null> {
+export async function loadTest(i: string): Promise<string | null> {
   
   const url = await fetch(`${i}/api/v1/videos/LuoB1OQvjqk`)
     .then(res => res.json())
