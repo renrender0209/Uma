@@ -26,8 +26,8 @@ export async function loadTest(i: string): Promise<string | null> {
   const proxiedUrl = url.replace(origin, i) + '&host=' + origin.slice(8);
 
   const passed = await fetch(proxiedUrl)
-    .then(res => res.ok)
-  .catch(()=>'');
+    .then(res => res.status === 200)
+    .catch(() => false);
 
   return passed ? i : '';
 
