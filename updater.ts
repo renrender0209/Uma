@@ -83,8 +83,8 @@ fetch(allPipedInstancesUrl)
       writeFileSync(
         'dynamic_instances.json',
         JSON.stringify({
-          piped: ['https://pipedapi.leptons.xyz'],
-          invidious: ['https://invidious.nikkosphere.com'],
+          piped: [dynamic_instances.piped[0]],
+          invidious: dynamic_instances.invidious,
           cobalt: 'https://cobalt-api.kwiatekmiki.com'
         }, null, 4)
       );
