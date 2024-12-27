@@ -3,7 +3,9 @@
         "https://pipedapi.drgns.space"
     ],
     "invidious": [
-        "https://inv.clovius.club"
+        "https://inv.clovius.club",
+        "https://invidious.nikkosphere.com",
+        "https://iv.ggtyler.dev"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com"
 }
