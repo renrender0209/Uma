@@ -23,15 +23,15 @@ async function getSuggestions(i: string) {
 async function getIVS(i: string) {
   const t = performance.now();
   let array = [0, ''];
-  
+
   await fetch(i + '/api/v1/search/suggestions?q=the')
     .then(res => res.json())
     .then(data => {
-      const score = 1 / (performance.now() - t);  
-      if (data?.suggestions?.length) array = [score, i];        
+      const score = 1 / (performance.now() - t);
+      if (data?.suggestions?.length) array = [score, i];
       else throw new Error();
     })
-    .catch(() => [0,'']);
+    .catch(() => [0, '']);
 
   return array;
 }
@@ -54,40 +54,39 @@ fetch(allPipedInstancesUrl)
       invidious: [],
       cobalt: '',
     };
-    
+
     await Promise.all(
       invidious_instances
-      .map(getIVS)
+        .map(getIVS)
     )
       .then(array => array
-          .sort((a, b) => <number>b[0] - <number>a[0])
-          .filter(i => i[0])
-          .forEach(
-            i => loadTest(i[1])
-              .then(passed => {
-                if (passed) dynamic_instances.invidious.push(i[1] as string)
-              })
-           )
-    .finally(() => { dynamic_instances.proxy = dynamic_instances.invidious[0] }));
-    
+        .sort((a, b) => <number>b[0] - <number>a[0])
+        .filter(i => i[0])
+        .forEach(
+          i => loadTest(i[1])
+            .then((passed: boolean) => {
+              if (passed) dynamic_instances.invidious.push(i[1] as string)
+            })
+        ))
+
 
     await Promise.all(instances.map(getSuggestions))
       .then(array => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0] && i[1] !== 'https://pipedapi.kavin.rocks')
-          .forEach(i => dynamic_instances.piped.push(i[1] as string));     
-        console.log(dynamic_instances);      
+          .forEach(i => dynamic_instances.piped.push(i[1] as string));
+        console.log(dynamic_instances);
       });
-      
-    if(dynamic_instances.invidious.length)
-    writeFileSync(
-          'dynamic_instances.json',
-          JSON.stringify({
-      piped: ['https://pipedapi.leptons.xyz'],
-      invidious: ['https://invidious.nikkosphere.com'],
-      cobalt: 'https://cobalt-api.kwiatekmiki.com'
-    }, null, 4)
-        );
+
+    if (dynamic_instances.invidious.length)
+      writeFileSync(
+        'dynamic_instances.json',
+        JSON.stringify({
+          piped: ['https://pipedapi.leptons.xyz'],
+          invidious: ['https://invidious.nikkosphere.com'],
+          cobalt: 'https://cobalt-api.kwiatekmiki.com'
+        }, null, 4)
+      );
 
   });
