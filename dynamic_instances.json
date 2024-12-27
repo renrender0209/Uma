@@ -1,11 +1,10 @@
 {
     "piped": [
-        "https://pipedapi.adminforge.de"
+        "https://piped-api.lunar.icu"
     ],
     "invidious": [
         "https://inv.clovius.club",
-        "https://invidious.nikkosphere.com",
-        "https://iv.ggtyler.dev"
+        "https://invidious.nikkosphere.com"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com"
 }
