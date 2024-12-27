@@ -68,7 +68,7 @@ fetch(allPipedInstancesUrl)
                 if (passed) dynamic_instances.invidious.push(i[1] as string)
               })
            )
-    .finally(() => { dynamic_instances.proxy = dynamic_instances.invidious[0] });
+    .finally(() => { dynamic_instances.proxy = dynamic_instances.invidious[0] }));
     
 
     await Promise.all(instances.map(getSuggestions))
