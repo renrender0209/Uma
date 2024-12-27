@@ -63,9 +63,12 @@ fetch(allPipedInstancesUrl)
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0])
           .forEach(
-            i => loadTest(i[1]).then(passed => {if (passed) dynamic_instances.invidious.push(i[1] as string)})
+            i => loadTest(i[1])
+              .then(passed => {
+                if (passed) dynamic_instances.invidious.push(i[1] as string)
+              })
            )
-    .then(() => { dynamic_instances.proxy = dynamic_instances.invidious[0] });
+    .finally(() => { dynamic_instances.proxy = dynamic_instances.invidious[0] });
     
 
     await Promise.all(instances.map(getSuggestions))
