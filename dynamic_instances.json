@@ -1,9 +1,8 @@
 {
     "piped": [
-        "https://pipedapi.darkness.services"
+        "https://piped-api.privacy.com.de"
     ],
     "invidious": [
-        "https://inv.clovius.club",
         "https://invidious.nikkosphere.com",
         "https://iv.ggtyler.dev"
     ],
