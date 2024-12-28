@@ -1,9 +1,8 @@
 {
     "piped": [
-        "https://pipedapi.ducks.party"
+        "https://piped-api.lunar.icu"
     ],
     "invidious": [
-        "https://inv.clovius.club",
         "https://invidious.nikkosphere.com",
         "https://iv.ggtyler.dev"
     ],
