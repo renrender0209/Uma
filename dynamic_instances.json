@@ -1,9 +1,11 @@
 {
     "piped": [
-        "https://api.piped.private.coffee"
+        "https://piped-api.lunar.icu"
     ],
     "invidious": [
-        "https://inv.clovius.club"
+        "https://inv.clovius.club",
+        "https://invidious.nikkosphere.com",
+        "https://iv.ggtyler.dev"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com"
 }
