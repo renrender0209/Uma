@@ -1,9 +1,10 @@
 {
     "piped": [
-        "https://pipedapi-libre.kavin.rocks"
+        "https://piped-api.privacy.com.de"
     ],
     "invidious": [
-        "https://inv.clovius.club"
+        "https://inv.clovius.club",
+        "https://invidious.nikkosphere.com"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com"
 }
