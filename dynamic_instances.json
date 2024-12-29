@@ -1,10 +1,9 @@
 {
     "piped": [
-        "https://piped-api.lunar.icu"
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
-        "https://inv.clovius.club",
-        "https://iv.ggtyler.dev"
+        "https://inv.clovius.club"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com"
 }
