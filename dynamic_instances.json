@@ -1,10 +1,10 @@
 {
     "piped": [
-        "https://pipedapi.drgns.space"
+        "https://pipedapi.ducks.party"
     ],
     "invidious": [
-        "https://inv.clovius.club",
         "https://invidious.nikkosphere.com",
+        "https://inv.clovius.club",
         "https://iv.ggtyler.dev"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com"
