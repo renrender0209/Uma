@@ -1,9 +1,8 @@
 {
     "piped": [
-        "https://pipedapi.ducks.party"
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
-        "https://iv.ggtyler.dev",
         "https://invidious.nikkosphere.com"
     ],
     "cobalt": "https://cobalt-api.kwiatekmiki.com"
