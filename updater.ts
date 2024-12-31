@@ -75,11 +75,16 @@ fetch(allPipedInstancesUrl)
       .then(array => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
-          .filter(async i => i[0] && (i[1] === await hlsTest(i[i])))
-          .forEach(i => dynamic_instances.piped.push(i[1] as string));
-        console.log(dynamic_instances);
+          .filter(i => i[0])
+          .forEach(
+            i => hlsTest(i[1])
+              .then((hls:string) => {
+                if (hls) dynamic_instances.piped.push(i[1] as string)
+              }))
       });
 
+    console.log(dynamic_instances);
+    
     if (dynamic_instances.invidious.length)
       writeFileSync(
         'dynamic_instances.json',
