@@ -88,7 +88,7 @@ fetch(allPipedInstancesUrl)
       writeFileSync(
         'dynamic_instances.json',
         JSON.stringify({
-          piped: [dynamic_instances.piped[0] || 'https://pipedapi.kavin.rocks'],
+          piped: [dynamic_instances.piped[0] || 'https://pipedapi.reallyaweso.me'],
           invidious: dynamic_instances.invidious
         }, null, 4)
       );
