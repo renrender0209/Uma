@@ -52,8 +52,7 @@ fetch(allPipedInstancesUrl)
       cobalt: string,
     } = {
       piped: [],
-      invidious: [],
-      cobalt: '',
+      invidious: []
     };
 
     await Promise.all(
@@ -90,8 +89,7 @@ fetch(allPipedInstancesUrl)
         'dynamic_instances.json',
         JSON.stringify({
           piped: [dynamic_instances.piped[0] || 'https://pipedapi.kavin.rocks'],
-          invidious: dynamic_instances.invidious,
-          cobalt: 'https://cobalt-api.kwiatekmiki.com'
+          invidious: dynamic_instances.invidious
         }, null, 4)
       );
 
