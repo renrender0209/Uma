@@ -1,5 +1,6 @@
 import { writeFileSync, readFileSync } from 'fs';
 import { loadTest } from './loadTest';
+import { hlsTest } from './hlsTest';
 
 const allPipedInstancesUrl = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
@@ -74,7 +75,7 @@ fetch(allPipedInstancesUrl)
       .then(array => {
         array
           .sort((a, b) => <number>b[0] - <number>a[0])
-          .filter(i => i[0] && i[1] !== 'https://pipedapi.kavin.rocks')
+          .filter(async i => i[0] && (i[1] === await hlsTest(i[i])))
           .forEach(i => dynamic_instances.piped.push(i[1] as string));
         console.log(dynamic_instances);
       });
@@ -83,7 +84,7 @@ fetch(allPipedInstancesUrl)
       writeFileSync(
         'dynamic_instances.json',
         JSON.stringify({
-          piped: [dynamic_instances.piped[0]],
+          piped: [dynamic_instances.piped[0] || 'https://pipedapi.kavin.rocks'],
           invidious: dynamic_instances.invidious,
           cobalt: 'https://cobalt-api.kwiatekmiki.com'
         }, null, 4)
