@@ -51,8 +51,9 @@ fetch(allPipedInstancesUrl)
       invidious: string[],
       cobalt: string,
     } = {
-      piped: [],
-      invidious: []
+      piped: ['https://pipedapi.reallyaweso.me'],
+      invidious: [],
+      supermix: 'https://backendmix.vercel.app/supermix'
     };
 
     await Promise.all(
@@ -87,10 +88,7 @@ fetch(allPipedInstancesUrl)
     if (dynamic_instances.invidious.length)
       writeFileSync(
         'dynamic_instances.json',
-        JSON.stringify({
-          piped: [dynamic_instances.piped[0] || 'https://pipedapi.reallyaweso.me'],
-          invidious: dynamic_instances.invidious
-        }, null, 4)
+        JSON.stringify( dynamic_instances, null, 4)
       );
 
   });
