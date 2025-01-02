@@ -3,8 +3,7 @@
         "https://pipedapi.reallyaweso.me"
     ],
     "invidious": [
-        "https://inv.clovius.club",
-        "https://invidious.nikkosphere.com"
+        "https://inv.clovius.club"
     ],
     "supermix": "https://backendmix.vercel.app/supermix"
 }
