@@ -51,7 +51,7 @@ fetch(allPipedInstancesUrl)
       invidious: string[],
       cobalt: string,
     } = {
-      piped: ['https://pipedapi.reallyaweso.me'],
+      piped: ['https://pol1.piapi.ggtyler.dev'],
       invidious: [],
       supermix: 'https://backendmix.vercel.app/supermix'
     };
