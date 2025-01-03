@@ -1,5 +1,5 @@
 export const hlsTest = async (i: string): Promise<string | null> =>
-  fetch(`${i}/streams/LuoB1OQvjqk`)
+  await fetch(`${i}/streams/LuoB1OQvjqk`)
     .then(res => res.json())
     .then(data => {
       if (data.hls)
