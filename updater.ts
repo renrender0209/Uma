@@ -56,13 +56,13 @@ fetch(piped_instances)
     });
 
     await getInstances(instances, async i => {
-      console.log(i);
       const hls = await hlsTest(i[1]);
       console.log(i[1], hls);
-      if (hls) dynamic_instances.piped.push(i[1] as string);     
+      if (hls)
+        dynamic_instances.piped.push(i[1] as string);     
     });
   })
-.then(() => {
+.finally(() => {
     console.log(dynamic_instances);
 
     if (dynamic_instances.invidious.length)
