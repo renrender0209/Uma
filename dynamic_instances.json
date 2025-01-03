@@ -1,6 +1,7 @@
 {
     "piped": [
-        "https://pol1.piapi.ggtyler.dev"
+        "https://pol1.piapi.ggtyler.dev",
+        "https://api.piped.private.coffee"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev"
