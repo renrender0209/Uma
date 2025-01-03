@@ -1,102 +1,80 @@
-import { writeFileSync, readFileSync } from 'fs';
-import { loadTest } from './loadTest';
-import { hlsTest } from './hlsTest';
+import { writeFileSync, readFileSync } from "fs";
+import { loadTest } from "./loadTest";
+import { hlsTest } from "./hlsTest";
 
-const allPipedInstancesUrl = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
+const piped_instances = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
+const dynamic_instances: {
+  piped: string[];
+  invidious: string[];
+  supermix: string;
+} = {
+  piped: [],
+  invidious: [],
+  supermix: 'https://backendmix.vercel.app/supermix',
+};
 
 async function getSuggestions(i: string) {
   const t = performance.now();
-  let array = [0, ''];
+  const isIV = invidious_instances.includes(i);
+  const q = isIV ?
+    '/api/v1/search/suggestions?q=the' :
+    '/opensearch/suggestions?query=the';
 
-  await fetch(i + '/opensearch/suggestions?query=the')
-    .then((res) => res.json())
-    .then((data) => {
-      const score = 1 / (performance.now() - t);
-      if (data.length) array = [score, i];
-      else throw new Error();
-    })
-    .catch(() => [0, '']);
-
-  return array;
-}
-
-async function getIVS(i: string) {
-  const t = performance.now();
-  let array = [0, ''];
-
-  await fetch(i + '/api/v1/search/suggestions?q=the')
-    .then(res => res.json())
+  return fetch(i + q)
+    .then(_ => _.json())
     .then(data => {
       const score = 1 / (performance.now() - t);
-      if (data?.suggestions?.length) array = [score, i];
+      if (isIV ? data?.suggestions?.length : data.length)
+        return [score, i];
       else throw new Error();
     })
     .catch(() => [0, '']);
-
-  return array;
 }
 
+async function getInstances(instanceArray: string[], callback: (value: (string | number)[], index: number) => void) {
+  Promise.all(instanceArray.map(getSuggestions)).then(array =>
+    array
+      .sort((a, b) => <number>b[0] - <number>a[0])
+      .filter((i) => i[0])
+      .forEach(callback)
+  );
+}
 
-fetch(allPipedInstancesUrl)
-  .then(res => res.text())
-  .then(text => text.split('--- | --- | --- | --- | ---')[1])
-  .then(table => table.split('\n'))
-  .then(instances => instances.map((instance) => instance.split(' | ')[1]))
+fetch(piped_instances)
+  .then(r => r.text())
+  .then(t => t.split("--- | --- | --- | --- | ---")[1])
+  .then(t => t.split("\n"))
+  .then(i => i.map(_ => _.split(" | ")[1]))
   .then(async instances => {
-    instances.shift();
-    instances.unshift('https://pol1.piapi.ggtyler.dev');
+    instances[0] = "https://pol1.piapi.ggtyler.dev";
 
-    const dynamic_instances: {
-      piped: string[],
-      invidious: string[],
-      cobalt: string,
-    } = {
-      piped: [],
-      invidious: [],
-      supermix: 'https://backendmix.vercel.app/supermix'
-    };
-
-    await Promise.all(
-      invidious_instances
-        .map(getIVS)
-    )
-      .then(array => array
-        .sort((a, b) => <number>b[0] - <number>a[0])
-        .filter(i => i[0])
-        .forEach(
-          i => loadTest(i[1])
-            .then((passed: boolean) => {
-              if (passed) dynamic_instances.invidious.push(i[1] as string)
-            })
-        ))
+    await getInstances(invidious_instances, (i) =>
+      loadTest(i[1])
+        .then((passed: boolean) => {
+          if (passed)
+            dynamic_instances.invidious.push(i[1] as string);
+        }));
 
 
-    await Promise.all(instances.map(getSuggestions))
-      .then(array => {
-        array
-          .sort((a, b) => <number>b[0] - <number>a[0])
-          .filter(i => i[0])
-          .forEach(
-            (i, n) => {
-              console.log(i,n)
-              if (n === 0) dynamic_instances.piped.push(i[1] as string)
-              else hlsTest(i[1])
-              .then((hls:string) => {
-                if (hls) dynamic_instances.piped.push(i[1] as string)
-              })
-            }
-            
-          )
-        
-      });
+    await getInstances(instances, (i, n) => {
+      console.log(i, n);
+      if (n === 0)
+        dynamic_instances.piped.push(i[1] as string);
+      else
+        hlsTest(i[1])
+          .then((hls: string) => {
+            if (hls)
+              dynamic_instances.piped.push(i[1] as string);
+          });
+    })
+
 
     console.log(dynamic_instances);
-    
+
     if (dynamic_instances.invidious.length)
       writeFileSync(
-        'dynamic_instances.json',
-        JSON.stringify( dynamic_instances, null, 4)
+        "dynamic_instances.json",
+        JSON.stringify(dynamic_instances, null, 4)
       );
-
   });
