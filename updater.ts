@@ -55,7 +55,7 @@ fetch(piped_instances)
       });
 
     const iv = await getInstances(invidious_instances);
-    (await Promise.all(iv.map(hlsTest)))
+    (await Promise.all(iv.map(loadTest)))
       .filter(p => p)
       .forEach(i => {
         di.invidious.push(i)
