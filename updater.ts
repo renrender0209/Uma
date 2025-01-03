@@ -1,6 +1,6 @@
-import { writeFileSync, readFileSync } from "fs";
-import { loadTest } from "./loadTest";
-import { hlsTest } from "./hlsTest";
+import { writeFileSync, readFileSync } from 'fs';
+import { loadTest } from './loadTest';
+import { hlsTest } from './hlsTest';
 
 const piped_instances = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
@@ -33,7 +33,7 @@ async function getSuggestions(i: string) {
 }
 
 async function getInstances(instanceArray: string[], callback: (value: (string | number)[], index: number) => void) {
-  Promise.all(instanceArray.map(getSuggestions)).then(array =>
+  await Promise.all(instanceArray.map(getSuggestions)).then(array =>
     array
       .sort((a, b) => <number>b[0] - <number>a[0])
       .filter((i) => i[0])
@@ -43,11 +43,11 @@ async function getInstances(instanceArray: string[], callback: (value: (string |
 
 fetch(piped_instances)
   .then(r => r.text())
-  .then(t => t.split("--- | --- | --- | --- | ---")[1])
-  .then(t => t.split("\n"))
-  .then(i => i.map(_ => _.split(" | ")[1]))
+  .then(t => t.split('--- | --- | --- | --- | ---')[1])
+  .then(t => t.split('\n'))
+  .then(i => i.map(_ => _.split(' | ')[1]))
   .then(async instances => {
-    instances[0] = "https://pol1.piapi.ggtyler.dev";
+    instances[0] = 'https://pol1.piapi.ggtyler.dev';
 
     await getInstances(invidious_instances, (i) =>
       loadTest(i[1])
@@ -74,7 +74,7 @@ fetch(piped_instances)
 
     if (dynamic_instances.invidious.length)
       writeFileSync(
-        "dynamic_instances.json",
+        'dynamic_instances.json',
         JSON.stringify(dynamic_instances, null, 4)
       );
   });
