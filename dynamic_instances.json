@@ -1,11 +1,11 @@
 {
     "piped": [
         "https://pol1.piapi.ggtyler.dev",
-        "https://api.piped.private.coffee"
+        "https://api.piped.private.coffee",
+        "https://pipedapi.nosebs.ru"
     ],
     "invidious": [
-        "https://pol1.iv.ggtyler.dev",
-        "https://invidious.nikkosphere.com"
+        "https://pol1.iv.ggtyler.dev"
     ],
     "supermix": "https://backendmix.vercel.app/supermix"
 }
