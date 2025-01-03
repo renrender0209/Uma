@@ -3,7 +3,7 @@ export const hlsTest = async (i: string): Promise<string | null> =>
     .then(res => res.json())
     .then(data => {
       if (data.hls)
-        return data.hls;
+        return i;
       else throw new Error(data.error);
     })
   .catch(() => '');
