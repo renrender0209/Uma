@@ -79,6 +79,7 @@ fetch(allPipedInstancesUrl)
           .filter(i => i[0])
           .forEach(
             (i, n) => {
+              console.log(i,n)
               if (n === 0) dynamic_instances.piped.push(i[1] as string)
               else hlsTest(i[1])
               .then((hls:string) => {
