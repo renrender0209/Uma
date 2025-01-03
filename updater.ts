@@ -56,19 +56,14 @@ fetch(piped_instances)
             dynamic_instances.invidious.push(i[1] as string);
         }));
 
-
     await getInstances(instances, (i, n) => {
       console.log(i, n);
-      if (n === 0)
-        dynamic_instances.piped.push(i[1] as string);
-      else
-        hlsTest(i[1])
-          .then((hls: string) => {
-            if (hls)
-              dynamic_instances.piped.push(i[1] as string);
-          });
+      if (n === 0) dynamic_instances.piped.push(i[1] as string);
+      else hlsTest(i[1])
+        .then((hls: string) => {
+          if (hls.length) dynamic_instances.piped.push(i[1] as string);
+        });
     })
-
 
     console.log(dynamic_instances);
 
