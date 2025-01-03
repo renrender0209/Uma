@@ -9,8 +9,8 @@ const di: {
   invidious: string[];
   supermix: string;
 } = {
-  piped: [],
-  invidious: [],
+  piped: [ 'https://pol1.piapi.ggtyler.dev' ],
+  invidious: [ 'https://pol1.iv.ggtyler.dev' ],
   supermix: 'https://backendmix.vercel.app/supermix',
 };
 
@@ -45,7 +45,7 @@ fetch(piped_instances)
   .then(t => t.split('\n'))
   .then(i => i.map(_ => _.split(' | ')[1]))
   .then(async instances => {
-    instances[0] = 'https://pol1.piapi.ggtyler.dev';
+    instances.shift();
 
     const pi = await getInstances(instances);
     (await Promise.all(pi.map(hlsTest)))
@@ -62,9 +62,6 @@ fetch(piped_instances)
       });
 
     console.log(di);
-
-    if (!di.invidious.length) di.invidious.push(iv[0])
-    if (!di.piped.length) di.piped.push(pi[0])
 
     writeFileSync(
       'dynamic_instances.json',
