@@ -1,6 +1,9 @@
 {
-    "piped": [],
+    "piped": [
+        "https://pipedapi-libre.kavin.rocks"
+    ],
     "invidious": [
+        "https://inv.clovius.club",
         "https://invidious.nikkosphere.com"
     ],
     "supermix": "https://backendmix.vercel.app/supermix"
