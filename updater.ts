@@ -49,20 +49,16 @@ fetch(piped_instances)
   .then(async instances => {
     instances[0] = 'https://pol1.piapi.ggtyler.dev';
 
-    await getInstances(invidious_instances, (i) =>
-      loadTest(i[1])
-        .then((passed: boolean) => {
-          if (passed)
-            dynamic_instances.invidious.push(i[1] as string);
-        }));
+    await getInstances(invidious_instances, async i => {
+      console.log(i);
+      if (await loadTest(i[1]))
+        dynamic_instances.invidious.push(i[1] as string);
+    });
 
-    await getInstances(instances, (i, n) => {
-      console.log(i, n);
-      if (n === 0) dynamic_instances.piped.push(i[1] as string);
-      else hlsTest(i[1])
-        .then((hls: string) => {
-          if (hls.length) dynamic_instances.piped.push(i[1] as string);
-        });
+    await getInstances(instances, async i => {
+      console.log(i);
+      if (await hlsTest(i[1]))
+        dynamic_instances.piped.push(i[1] as string);     
     })
 
     console.log(dynamic_instances);
