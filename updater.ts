@@ -45,13 +45,14 @@ fetch(allPipedInstancesUrl)
   .then(instances => instances.map((instance) => instance.split(' | ')[1]))
   .then(async instances => {
     instances.shift();
+    instances.unshift('https://pol1.piapi.ggtyler.dev');
 
     const dynamic_instances: {
       piped: string[],
       invidious: string[],
       cobalt: string,
     } = {
-      piped: ['https://pol1.piapi.ggtyler.dev'],
+      piped: [],
       invidious: [],
       supermix: 'https://backendmix.vercel.app/supermix'
     };
@@ -77,9 +78,9 @@ fetch(allPipedInstancesUrl)
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0])
           .forEach(
-            (i,n) => hlsTest(i[1])
+            (i, n) => hlsTest(i[1])
               .then((hls:string) => {
-                if (n === 0 || hls) dynamic_instances.piped.push(i[1] as string)
+                if (n === 1 || hls) dynamic_instances.piped.push(i[1] as string)
               }))
       });
 
