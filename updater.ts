@@ -4,7 +4,7 @@ import { hlsTest } from './hlsTest';
 
 const piped_instances = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
-const dynamic_instances: {
+const di: {
   piped: string[];
   invidious: string[];
   supermix: string;
@@ -32,14 +32,12 @@ async function getSuggestions(i: string) {
     .catch(() => [0, '']);
 }
 
-async function getInstances(instanceArray: string[], callback: (value: (string | number)[], index: number) => void) {
-  await Promise.all(instanceArray.map(getSuggestions)).then(array =>
-    array
-      .sort((a, b) => <number>b[0] - <number>a[0])
-      .filter((i) => i[0])
-      .forEach(callback)
-  );
-}
+const getInstances = async (instanceArray: string[]): Promise<string[]> => Promise.all(instanceArray.map(getSuggestions)).then(array =>
+  array
+    .sort((a, b) => <number>b[0] - <number>a[0])
+    .filter((i) => i[0])
+    .map(i => i[1] as string)
+);
 
 fetch(piped_instances)
   .then(r => r.text())
@@ -48,25 +46,34 @@ fetch(piped_instances)
   .then(i => i.map(_ => _.split(' | ')[1]))
   .then(async instances => {
     instances[0] = 'https://pol1.piapi.ggtyler.dev';
-    
-    await getInstances(instances, async i => {
-      const hls = await hlsTest(i[1]);
-      console.log(i[1], hls);
+
+    const pi = await getInstances(instances);
+
+    for await (const i of pi) {
+      const hls = await hlsTest(i);
+      console.log(i, hls);
       if (hls)
-        dynamic_instances.piped.push(i[1] as string);     
-    });
-    
-    await getInstances(invidious_instances, async i => {
+        di.piped.push(i);
+    }
+
+    const iv = await getInstances(invidious_instances);
+
+    for await (const i of iv) {
       console.log(i);
-      if (await loadTest(i[1]))
-        dynamic_instances.invidious.push(i[1] as string);
-    });
+      if (await loadTest(i))
+        di.invidious.push(i);
+    }
 
-    console.log(dynamic_instances);
+    console.log(di);
 
-    if (dynamic_instances.invidious.length)
-      writeFileSync(
-        'dynamic_instances.json',
-        JSON.stringify(dynamic_instances, null, 4)
-      );
+    if (!di.invidious.length)
+      di.invidious.push(iv[0])
+    if (!di.piped.length)
+      di.piped.push(pi[0])
+
+
+    writeFileSync(
+      'dynamic_instances.json',
+      JSON.stringify(di, null, 4)
+    );
   });
