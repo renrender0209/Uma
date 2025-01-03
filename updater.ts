@@ -78,13 +78,13 @@ fetch(allPipedInstancesUrl)
           .sort((a, b) => <number>b[0] - <number>a[0])
           .filter(i => i[0])
           .forEach(
-            (i, n) => hlsTest(i[1])
+            (i, n) => {
+              if (n === 0) dynamic_instances.piped.push(i[1] as string)
+              else hlsTest(i[1])
               .then((hls:string) => {
                 if (hls) dynamic_instances.piped.push(i[1] as string)
               })
-            .catch(()=> {
-                if (n === 0) dynamic_instances.piped.push(i[1] as string)
-            })
+            }
             
           )
         
