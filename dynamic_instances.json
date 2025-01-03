@@ -3,11 +3,10 @@
         "https://pol1.piapi.ggtyler.dev",
         "https://api.piped.private.coffee",
         "https://pipedapi.smnz.de",
-        "https://pipedapi.drgns.space"
+        "https://pipedapi.nosebs.ru"
     ],
     "invidious": [
-        "https://invidious.nikkosphere.com",
-        "https://inv.clovius.club"
+        "https://invidious.nikkosphere.com"
     ],
     "supermix": "https://backendmix.vercel.app/supermix"
 }
