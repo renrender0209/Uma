@@ -1,10 +1,10 @@
 {
     "piped": [
-        "https://pipedapi.darkness.services"
+        "https://pipedapi.ducks.party"
     ],
     "invidious": [
-        "https://invidious.nikkosphere.com",
-        "https://inv.clovius.club"
+        "https://inv.clovius.club",
+        "https://invidious.nikkosphere.com"
     ],
     "supermix": "https://backendmix.vercel.app/supermix"
 }
