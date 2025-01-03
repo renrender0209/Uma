@@ -48,29 +48,23 @@ fetch(piped_instances)
     instances[0] = 'https://pol1.piapi.ggtyler.dev';
 
     const pi = await getInstances(instances);
-
-    for await (const i of pi) {
-      const hls = await hlsTest(i);
-      console.log(i, hls);
-      if (hls)
-        di.piped.push(i);
-    }
+    (await Promise.all(pi.map(hlsTest)))
+      .filter(h => h)
+      .forEach(i => {
+        di.piped.push(i)
+      });
 
     const iv = await getInstances(invidious_instances);
-
-    for await (const i of iv) {
-      console.log(i);
-      if (await loadTest(i))
-        di.invidious.push(i);
-    }
+    (await Promise.all(iv.map(hlsTest)))
+      .filter(p => p)
+      .forEach(i => {
+        di.invidious.push(i)
+      });
 
     console.log(di);
 
-    if (!di.invidious.length)
-      di.invidious.push(iv[0])
-    if (!di.piped.length)
-      di.piped.push(pi[0])
-
+    if (!di.invidious.length) di.invidious.push(iv[0])
+    if (!di.piped.length) di.piped.push(pi[0])
 
     writeFileSync(
       'dynamic_instances.json',
