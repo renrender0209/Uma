@@ -80,8 +80,14 @@ fetch(allPipedInstancesUrl)
           .forEach(
             (i, n) => hlsTest(i[1])
               .then((hls:string) => {
-                if (n === 1 || hls) dynamic_instances.piped.push(i[1] as string)
-              }))
+                if (hls) dynamic_instances.piped.push(i[1] as string)
+              })
+            .catch(()=> {
+                if (n === 0) dynamic_instances.piped.push(i[1] as string)
+            })
+            
+          )
+        
       });
 
     console.log(dynamic_instances);
