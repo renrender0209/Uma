@@ -3,6 +3,7 @@ export async function loadTest(i: string): Promise<string | null> {
   const url = await fetch(`${i}/api/v1/videos/LuoB1OQvjqk`)
     .then(res => res.json())
     .then(data => {
+      console.log(i, `data: ${Boolean(data.adaptiveFormats.length)}`);
       if (data && 'adaptiveFormats' in data)
         return data;
       else throw new Error(data.error);
