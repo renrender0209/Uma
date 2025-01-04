@@ -1,11 +1,11 @@
 {
     "piped": [
         "https://pol1.piapi.ggtyler.dev",
-        "https://api.piped.private.coffee"
+        "https://pipedapi.kavin.rocks"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://lekker.gay"
+        "https://invidious.nikkosphere.com"
     ],
     "supermix": "https://backendmix.vercel.app/supermix"
 }
