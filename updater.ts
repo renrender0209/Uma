@@ -63,6 +63,12 @@ fetch(piped_instances)
 
     console.log(di);
 
+    if (di.piped.length === 1)
+      di.piped.push(pi[0]);
+    if (di.invidious.length === 1)
+      di.invidious.push(iv[0]);
+
+
     writeFileSync(
       'dynamic_instances.json',
       JSON.stringify(di, null, 4)
