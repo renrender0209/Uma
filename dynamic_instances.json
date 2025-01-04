@@ -5,9 +5,7 @@
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://invidious.nikkosphere.com",
-        "https://inv.clovius.club",
-        "https://pol1.iv.ggtyler.dev"
+        "https://invidious.nikkosphere.com"
     ],
     "supermix": "https://backendmix.vercel.app/supermix"
 }
