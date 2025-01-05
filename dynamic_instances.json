@@ -1,10 +1,9 @@
 {
     "piped": [
         "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.leptons.xyz",
-        "https://pipedapi.smnz.de",
         "https://api.piped.private.coffee",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi.smnz.de"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
