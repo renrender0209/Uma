@@ -1,8 +1,8 @@
 {
     "piped": [
         "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.smnz.de",
-        "https://pipedapi.leptons.xyz"
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi.smnz.de"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
