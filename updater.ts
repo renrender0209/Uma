@@ -11,7 +11,7 @@ const di: {
 } = {
   piped: [ 'https://pol1.piapi.ggtyler.dev' ],
   invidious: [ 'https://pol1.iv.ggtyler.dev' ],
-  supermix: 'https://backendmix.vercel.app/supermix',
+  supermix: 'https://backendmix.vercel.app',
 };
 
 async function getSuggestions(i: string) {
@@ -48,11 +48,15 @@ fetch(piped_instances)
     instances.shift();
 
     const pi = await getInstances(instances);
+    
+    /*
     (await Promise.all(pi.map(hlsTest)))
-      .filter(h => h)
-      .forEach(i => {
+      .filter(h => h)*/
+      pi.forEach(i => {
         di.piped.push(i)
       });
+      
+    
 
     const iv = await getInstances(invidious_instances);
     (await Promise.all(iv.map(loadTest)))
@@ -62,9 +66,10 @@ fetch(piped_instances)
       });
 
     console.log(di);
-
+/*
     if (di.piped.length === 1)
       di.piped.push(pi[0]);
+      */
     if (di.invidious.length === 1)
       di.invidious.push(iv[0]);
 
