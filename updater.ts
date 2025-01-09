@@ -60,7 +60,7 @@ fetch(piped_instances)
 
     const iv = await getInstances(invidious_instances);
     (await Promise.all(iv.map(loadTest)))
-      .filter(p => p)
+      .filter(p => p && p !== 'https://invidious.adminforge.de')
       .forEach(i => {
         di.invidious.push(i)
       });
