@@ -5,21 +5,22 @@
         "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
         "https://pipedapi.darkness.services",
-        "https://pipedapi.reallyaweso.me",
         "https://api.piped.private.coffee",
-        "https://pipedapi.ducks.party",
-        "https://piped-api.privacy.com.de",
-        "https://pipedapi.adminforge.de",
-        "https://pipedapi.nosebs.ru",
-        "https://pipedapi.smnz.de",
         "https://pipedapi.drgns.space",
-        "https://piapi.ggtyler.dev"
+        "https://pipedapi.reallyaweso.me",
+        "https://pipedapi.adminforge.de",
+        "https://pipedapi.smnz.de",
+        "https://pipedapi.ducks.party",
+        "https://piapi.ggtyler.dev",
+        "https://pipedapi.nosebs.ru",
+        "https://piped-api.privacy.com.de"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://invidious.nikkosphere.com",
         "https://lekker.gay",
-        "https://inv.clovius.club"
+        "https://inv.clovius.club",
+        "https://invidious.adminforge.de",
+        "https://invidious.nikkosphere.com"
     ],
     "supermix": "https://backendmix.vercel.app"
 }
