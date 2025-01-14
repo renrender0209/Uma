@@ -1,17 +1,18 @@
 import { writeFileSync, readFileSync } from 'fs';
 import { loadTest } from './loadTest';
 import { hlsTest } from './hlsTest';
+import { gethp } from './hyperpipe';
 
 const piped_instances = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
 const di: {
   piped: string[];
   invidious: string[];
-  supermix: string;
+  hyperpipe: string;
 } = {
   piped: [ 'https://pol1.piapi.ggtyler.dev' ],
   invidious: [ 'https://pol1.iv.ggtyler.dev' ],
-  supermix: 'https://backendmix.vercel.app',
+  hyperpipe: 'https://hyperpipeapi.onrender.com',
 };
 
 async function getSuggestions(i: string) {
@@ -65,6 +66,8 @@ fetch(piped_instances)
         di.invidious.push(i)
       });
 
+    di.hyperpipe = await gethp();
+    
     console.log(di);
 /*
     if (di.piped.length === 1)
