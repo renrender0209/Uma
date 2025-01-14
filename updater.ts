@@ -66,7 +66,7 @@ fetch(piped_instances)
         di.invidious.push(i)
       });
 
-    di.hyperpipe = await gethp();
+   // di.hyperpipe = await gethp();
     
     console.log(di);
 /*
