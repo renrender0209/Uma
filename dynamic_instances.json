@@ -1,12 +1,12 @@
 {
     "piped": [
-        "https://pipedapi.nosebs.ru",
+        "https://piped-api.privacy.com.de",
         "https://pipedapi.drgns.space"
     ],
     "invidious": [
-        "https://inv.clovius.club",
         "https://invidious.nikkosphere.com",
+        "https://inv.clovius.club",
         "https://invidious.f5.si"
     ],
-    "hyperpipe": "https://hyperpipe-api.lunar.icu"
+    "hyperpipe": "https://hpapi.ggtyler.dev"
 }
