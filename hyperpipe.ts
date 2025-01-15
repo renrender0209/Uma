@@ -24,12 +24,13 @@ export async function gethp() {
     return fetch(`${i}/channel/UCERrDZ8oN0U_n9MphMKERcg`)
       .then(_ => _.json())
       .then(data => {
-        const score = 1 / (performance.now() - t);
-        if (data.playlistId)
+        const score = 1e9 / (performance.now() - t);
+        console.log(`hyperpipe: ${i} - ${score}`);
+        if (data.playlistId?.length)
           return [score, i];
         else throw new Error();
       })
-      .catch(() => [0, '']);
+      .catch(() => [0, i]);
   }
 
   const data = await Promise
