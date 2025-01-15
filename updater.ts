@@ -67,7 +67,8 @@ fetch(piped_instances)
       .forEach(i => {
         di.invidious.push(i)
       });
-
+    
+    await gethp(); // Warmup
     di.hyperpipe = await gethp();
     
     console.log(di);
