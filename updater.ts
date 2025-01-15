@@ -10,9 +10,9 @@ const di: {
   invidious: string[];
   hyperpipe: string;
 } = {
-  piped: [ 'https://pol1.piapi.ggtyler.dev' ],
-  invidious: [ 'https://pol1.iv.ggtyler.dev' ],
-  hyperpipe: 'https://hyperpipeapi.onrender.com',
+  piped: [],
+  invidious: [],
+  hyperpipe: '',
 };
 
 async function getSuggestions(i: string) {
@@ -50,11 +50,12 @@ fetch(piped_instances)
 
     const pi = await getInstances(instances);
     
-    /*
-    (await Promise.all(pi.map(hlsTest)))
-      .filter(h => h)*/
-      pi.forEach(i => {
-        di.piped.push(i)
+    const piPassed = (await Promise.all(pi.map(hlsTest)))
+      .filter(h => h));
+
+    (piPassed.length >= 2 ? piPassed : pi)
+      .forEach(i => {
+        di.piped.push(i);
       });
       
     
@@ -66,13 +67,13 @@ fetch(piped_instances)
         di.invidious.push(i)
       });
 
-   // di.hyperpipe = await gethp();
+    di.hyperpipe = await gethp();
     
     console.log(di);
-/*
+
     if (di.piped.length === 1)
       di.piped.push(pi[0]);
-      */
+    
     if (di.invidious.length === 1)
       di.invidious.push(iv[0]);
 
