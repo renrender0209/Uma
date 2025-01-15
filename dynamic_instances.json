@@ -1,12 +1,12 @@
 {
     "piped": [
         "https://pipedapi.kavin.rocks",
-        "https://api.piped.yt"
+        "https://pipedapi.adminforge.de"
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
         "https://inv.clovius.club",
         "https://invidious.f5.si"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com"
+    "hyperpipe": "https://hyperpipe-api.lunar.icu"
 }
