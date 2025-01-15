@@ -51,12 +51,13 @@ fetch(piped_instances)
     const pi = await getInstances(instances);
     
     const piPassed = (await Promise.all(pi.map(hlsTest)))
-      .filter(h => h));
+      .filter(h => h);
 
-    (piPassed.length >= 2 ? piPassed : pi)
-      .forEach(i => {
-        di.piped.push(i);
-      });
+    (piPassed.length >= 2 ? 
+     piPassed : pi.slice(0,2)
+    ).forEach(i => {
+      di.piped.push(i);
+    });
       
     
 
