@@ -1,12 +1,13 @@
 {
     "piped": [
-        "https://pipedapi.smnz.de",
         "https://pipedapi.drgns.space",
+        "https://pipedapi.smnz.de",
         "https://piped-api.privacy.com.de"
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
-        "https://invidious.nikkosphere.com"
+        "https://inv.clovius.club",
+        "https://invidious.f5.si"
     ],
-    "hyperpipe": "https://hyperpipeapi.drgns.space"
+    "hyperpipe": "https://hpapi.ggtyler.dev"
 }
