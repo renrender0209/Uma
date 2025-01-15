@@ -4,9 +4,8 @@
         "https://piped-api.privacy.com.de"
     ],
     "invidious": [
-        "https://invidious.nikkosphere.com",
         "https://inv.clovius.club",
-        "https://invidious.f5.si"
+        "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": "https://hyperpipeapi.drgns.space"
 }
