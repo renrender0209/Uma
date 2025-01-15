@@ -1,7 +1,7 @@
 {
     "piped": [
-        "https://pipedapi.smnz.de",
         "https://pipedapi.drgns.space",
+        "https://pipedapi.smnz.de",
         "https://piped-api.privacy.com.de"
     ],
     "invidious": [
