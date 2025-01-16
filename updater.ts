@@ -26,7 +26,7 @@ async function getSuggestions(i: string) {
     .then(_ => _.json())
     .then(data => {
       const score = Math.floor(1e5 / (performance.now() - t));
-      if (isIV ? data?.suggestions?.length : data.length)
+      if (isIV ? data?.suggestions?.length : data[0].length)
         return [score, i];
       else throw new Error();
     })
