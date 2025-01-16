@@ -1,6 +1,6 @@
 {
     "piped": [
-        "https://piped-api.lunar.icu",
+        "https://pipedapi.kavin.rocks",
         "https://pipedapi.leptons.xyz"
     ],
     "invidious": [
@@ -8,5 +8,5 @@
         "https://inv.clovius.club",
         "https://invidious.f5.si"
     ],
-    "hyperpipe": "https://hyperpipe-api.lunar.icu"
+    "hyperpipe": "https://hpapi.ggtyler.dev"
 }
