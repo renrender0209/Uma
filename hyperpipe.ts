@@ -24,8 +24,8 @@ export async function gethp() {
     return fetch(`${i}/channel/UCERrDZ8oN0U_n9MphMKERcg`)
       .then(_ => _.json())
       .then(data => {
-        const score = Math.floor(1e6 / (performance.now() - t));
-        console.log(`hyperpipe: ${i} - ${score}`);
+        const score = Math.floor(1e5 / (performance.now() - t));
+        console.log(`${i} - ${score}`);
         if (data.playlistId?.length)
           return [score, i];
         else throw new Error();
