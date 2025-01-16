@@ -25,12 +25,12 @@ async function getSuggestions(i: string) {
   return fetch(i + q)
     .then(_ => _.json())
     .then(data => {
-      const score = 1 / (performance.now() - t);
+      const score = Math.floor(1e5 / (performance.now() - t));
       if (isIV ? data?.suggestions?.length : data.length)
         return [score, i];
       else throw new Error();
     })
-    .catch(() => [0, '']);
+    .catch(() => [0, i]);
 }
 
 const getInstances = async (instanceArray: string[]): Promise<string[]> => Promise.all(instanceArray.map(getSuggestions)).then(array =>
