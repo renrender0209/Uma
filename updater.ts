@@ -49,36 +49,28 @@ fetch(piped_instances)
     instances.shift();
 
     const pi = await getInstances(instances);
-    
-    const piPassed = (await Promise.all(pi.map(hlsTest)))
-      .filter(h => h);
-
-    (piPassed.length >= 2 ? 
-     piPassed : pi.slice(0,2)
-    ).forEach(i => {
-      di.piped.push(i);
-    });
-      
-    
+    (await Promise.all(pi.map(hlsTest)))
+      .filter(h => h)
+      .forEach(i => {
+        di.piped.push(i);
+      });
 
     const iv = await getInstances(invidious_instances);
     (await Promise.all(iv.map(loadTest)))
-      .filter(p => p && p !== 'https://invidious.adminforge.de')
+      .filter(p => p)
       .forEach(i => {
         di.invidious.push(i)
       });
     
-    await gethp(); // Warmup
     di.hyperpipe = await gethp();
     
     console.log(di);
 
-    if (di.piped.length === 1)
-      di.piped.push(pi[0]);
+    if (di.piped.length < 3)
+      di.piped = pi;
     
-    if (di.invidious.length === 1)
+    if (!di.invidious.length)
       di.invidious.push(iv[0]);
-
 
     writeFileSync(
       'dynamic_instances.json',
