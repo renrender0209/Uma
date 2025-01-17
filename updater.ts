@@ -47,8 +47,12 @@ fetch(piped_instances)
   .then(i => i.map(_ => _.split(' | ')[1]))
   .then(async instances => {
     instances.shift();
+    const piped_instances = instances
+      .filter(i => i !== 'https://pipedapi.kavin.rocks')
+      .concat(['https://pol1.ggtyler.dev','https://nyc1.ggtyler.dev']);
+    
 
-    const pi = await getInstances(instances);
+    const pi = await getInstances(piped_instances);
     (await Promise.all(pi.map(hlsTest)))
       .filter(h => h)
       .forEach(i => {
