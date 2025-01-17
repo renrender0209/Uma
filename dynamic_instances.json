@@ -1,8 +1,8 @@
 {
     "piped": [
         "https://pipedapi.kavin.rocks",
-        "https://api.piped.yt",
         "https://piped-api.lunar.icu",
+        "https://api.piped.yt",
         "https://pipedapi.leptons.xyz",
         "https://pipedapi.adminforge.de",
         "https://api.piped.private.coffee",
@@ -14,8 +14,9 @@
         "https://pipedapi.darkness.services"
     ],
     "invidious": [
+        "https://inv.clovius.club",
         "https://invidious.nikkosphere.com",
-        "https://inv.clovius.club"
+        "https://invidious.f5.si"
     ],
-    "hyperpipe": "https://hyperpipeapi.drgns.space"
+    "hyperpipe": "https://hyperpipeapi.onrender.com"
 }
