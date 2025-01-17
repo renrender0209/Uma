@@ -5,6 +5,7 @@ import { gethp } from './hyperpipe';
 
 const piped_instances = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
+const unified_instances = JSON.parse(readFileSync('./unified_instances.json', 'utf8'));
 const di: {
   piped: string[];
   invidious: string[];
@@ -55,8 +56,12 @@ fetch(piped_instances)
     const pi = await getInstances(piped_instances);
     (await Promise.all(pi.map(hlsTest)))
       .filter(h => h)
-      .forEach(i => {
-        di.piped.push(i);
+      .forEach(async i => {
+        if (i in unified_instances){
+          const iv = unified_instances[i];
+          const passed = await loadTest(iv);
+          if (passed) di.piped.push(i);
+        }
       });
 
     const iv = await getInstances(invidious_instances);
@@ -70,8 +75,9 @@ fetch(piped_instances)
     
     console.log(di);
 
-    if (di.piped.length < 3)
-      di.piped = pi;
+    pi
+      .filter(i => !di.piped.includes(i))
+      .forEach(i => di.piped.push(i));
     
     if (!di.invidious.length)
       di.invidious.push(iv[0]);
