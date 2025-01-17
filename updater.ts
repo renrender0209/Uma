@@ -49,7 +49,7 @@ fetch(piped_instances)
     instances.shift();
     const piped_instances = instances
       .filter(i => i !== 'https://pipedapi.kavin.rocks')
-      .concat(['https://pol1.ggtyler.dev','https://nyc1.ggtyler.dev']);
+      .concat(['https://pol1.piapi.ggtyler.dev','https://nyc1.piapi.ggtyler.dev']);
     
 
     const pi = await getInstances(piped_instances);
