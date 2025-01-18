@@ -1,22 +1,22 @@
 {
     "piped": [
-        "https://piped-api.lunar.icu",
         "https://nyc1.piapi.ggtyler.dev",
+        "https://piapi.ggtyler.dev",
+        "https://piped-api.lunar.icu",
         "https://pipedapi.leptons.xyz",
-        "https://api.piped.yt",
+        "https://pipedapi.drgns.space",
         "https://pipedapi.adminforge.de",
         "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.drgns.space",
-        "https://piapi.ggtyler.dev",
+        "https://api.piped.yt",
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
-        "https://pipedapi.nosebs.ru",
-        "https://pipedapi.darkness.services"
+        "https://pipedapi.darkness.services",
+        "https://pipedapi.nosebs.ru"
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
         "https://inv.clovius.club",
         "https://lekker.gay"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com"
+    "hyperpipe": "https://hpapi.ggtyler.dev"
 }
