@@ -7,13 +7,15 @@ const piped_instances = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
 const unified_instances = JSON.parse(readFileSync('./unified_instances.json', 'utf8'));
 const di: {
-  piped: string[];
-  invidious: string[];
-  hyperpipe: string;
+  piped: string[],
+  invidious: string[],
+  hyperpipe: string,
+  status: number
 } = {
   piped: [],
   invidious: [],
   hyperpipe: '',
+  status: 1
 };
 
 async function getSuggestions(i: string) {
@@ -51,7 +53,6 @@ fetch(piped_instances)
     const piped_instances = instances
       .filter(i => i !== 'https://pipedapi.kavin.rocks')
       .concat(['https://pol1.piapi.ggtyler.dev','https://nyc1.piapi.ggtyler.dev', 'https://cal1.piapi.ggtyler.dev']);
-    
 
     const pi = await getInstances(piped_instances);
     (await Promise.all(pi.map(hlsTest)))
@@ -74,13 +75,17 @@ fetch(piped_instances)
     di.hyperpipe = await gethp();
     
     console.log(di);
-
+    
+    if (!di.piped.length)
+      di.status--;
     pi
       .filter(i => !di.piped.includes(i))
       .forEach(i => di.piped.push(i));
     
-    if (!di.invidious.length)
+    if (!di.invidious.length) {
+      di.status--;
       di.invidious.push(iv[0]);
+    }
 
     writeFileSync(
       'dynamic_instances.json',
