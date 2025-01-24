@@ -1,16 +1,17 @@
 {
     "piped": [
-        "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.leptons.xyz",
-        "https://pol1.piapi.ggtyler.dev",
+        "https://nyc1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
-        "https://pipedapi.drgns.space",
+        "https://pol1.piapi.ggtyler.dev",
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
+        "https://pipedapi.drgns.space",
+        "https://pipedapi.nosebs.ru",
         "https://pipedapi.darkness.services"
     ],
     "invidious": [
-        "https://lekker.gay"
+        "https://cal1.iv.ggtyler.dev"
     ],
-    "hyperpipe": "https://hpapi.ggtyler.dev"
+    "hyperpipe": "https://hyperpipeapi.drgns.space"
 }
