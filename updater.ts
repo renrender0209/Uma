@@ -13,6 +13,7 @@ const di: {
   status: number
 } = {
   piped: [],
+  hls: [],
   invidious: [],
   hyperpipe: '',
   status: 1
@@ -61,7 +62,9 @@ fetch(piped_instances)
         if (i in unified_instances){
           const iv = unified_instances[i];
           const passed = await loadTest(iv);
-          if (passed) di.piped.push(i);
+          passed ?
+            di.piped.push(i):
+            di.hls.push(i);
         }
       });
 
@@ -76,11 +79,12 @@ fetch(piped_instances)
     
     console.log(di);
     
-    if (!di.piped.length)
+    if (!di.piped.length) {
       di.status--;
-    pi
-      .filter(i => !di.piped.includes(i))
-      .forEach(i => di.piped.push(i));
+      pi
+        .filter(i => !di.hls.concat(di.piped).includes(i))
+        .forEach(i => di.piped.push(i));
+    }
     
     if (!di.invidious.length) {
       di.status--;
