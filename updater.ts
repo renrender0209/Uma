@@ -63,6 +63,7 @@ fetch(piped_instances)
           const iv = unified_instances[i];
           const passed = await loadTest(iv);
           if (passed) di.piped.push(i);
+          else di.hls.push(i);
         }
         else di.hls.push(i);
       });
