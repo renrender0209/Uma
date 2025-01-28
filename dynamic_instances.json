@@ -1,15 +1,15 @@
 {
     "piped": [
-        "https://pipedapi.nosebs.ru",
         "https://nyc1.piapi.ggtyler.dev",
         "https://pipedapi.leptons.xyz",
+        "https://pipedapi.nosebs.ru",
         "https://pipedapi.adminforge.de",
-        "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.reallyaweso.me",
         "https://pipedapi.ducks.party",
+        "https://pol1.piapi.ggtyler.dev",
+        "https://api.piped.private.coffee",
         "https://piapi.ggtyler.dev",
-        "https://pipedapi.drgns.space",
-        "https://api.piped.private.coffee"
+        "https://pipedapi.reallyaweso.me",
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
