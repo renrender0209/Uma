@@ -1,8 +1,8 @@
 {
     "piped": [
+        "https://pipedapi.nosebs.ru",
         "https://nyc1.piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.nosebs.ru",
         "https://pipedapi.adminforge.de",
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
@@ -10,14 +10,13 @@
     ],
     "hls": [
         "https://pipedapi.leptons.xyz",
-        "https://pipedapi.ducks.party",
         "https://pipedapi.drgns.space"
     ],
     "invidious": [
-        "https://lekker.gay",
         "https://invidious.nikkosphere.com",
-        "https://inv.stealthy.club"
+        "https://inv.stealthy.club",
+        "https://lekker.gay"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "status": 0
 }
