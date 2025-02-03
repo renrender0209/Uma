@@ -57,22 +57,27 @@ fetch(piped_instances)
       .concat(['https://pol1.piapi.ggtyler.dev','https://nyc1.piapi.ggtyler.dev', 'https://cal1.piapi.ggtyler.dev']);
 
     const pi = await getInstances(piped_instances);
+    const iv = await getInstances(invidious_instances);
+    
     (await Promise.all(pi.map(hlsTest)))
       .filter(h => h)
       .forEach(async i => {
-        if (i in unified_instances){
-          const iv = unified_instances[i];
-          const passed = await unifiedTest(i,iv);
-          if (passed) {
-            di.piped.push(i);
-            di.invidious.push(iv);
+        if (i in unified_instances) {
+          const u = unified_instances[i];
+          const isAlive = iv.includes(u);
+          if (isAlive) {
+            const passed = await unifiedTest(i,u);
+            if (passed) {
+              di.piped.push(i);
+              di.invidious.push(u);
+            }
+            else di.hls.push(i);
           }
           else di.hls.push(i);
         }
         else di.hls.push(i);
       });
 
-    const iv = await getInstances(invidious_instances);
     (await Promise.all(iv.map(loadTest)))
       .filter(p => p)
       .forEach(i => {
