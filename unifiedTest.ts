@@ -3,7 +3,6 @@ export async function unifiedTest(i: string, u: string): Promise<string | null> 
   const url = await fetch(`${i}/streams/4JZ-o3iAJv4`)
     .then(res => res.json())
     .then(data => {
-      console.log(i, `data: ${'audioStreams' in data}, hls: ${Boolean(data.hls)}`)
       if (data.audioStreams.length)
         return data.audioStreams[0].url;
       else throw new Error(data.error);
@@ -18,7 +17,10 @@ export async function unifiedTest(i: string, u: string): Promise<string | null> 
   const passed = await fetch(unifiedUrl)
     .then(res => res.status === 200)
     .catch(() => false);
-
-  return passed ? i : '';
+  
+  if (passed)
+    console.log(unifiedUrl + 'passed the unified test');
+  
+  return '';
 
 }
