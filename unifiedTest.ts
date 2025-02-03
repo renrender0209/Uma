@@ -16,7 +16,7 @@ export async function unifiedTest(i: string, u: string): Promise<string | null> 
   const origin = curl.origin;
   const unifiedUrl = url.replace(origin, u);
 
-  const passed = await fetch(proxiedUrl)
+  const passed = await fetch(unifiedUrl)
     .then(res => res.status === 200)
     .catch(() => false);
 
