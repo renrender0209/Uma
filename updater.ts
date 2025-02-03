@@ -61,7 +61,7 @@ fetch(piped_instances)
       .forEach(async i => {
         if (i in unified_instances){
           const iv = unified_instances[i];
-          const passed = await loadTest(iv);
+          const passed = await unifiedTest(i,iv);
           if (passed) di.piped.push(i);
           else di.hls.push(i);
         }
