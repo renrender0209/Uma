@@ -19,8 +19,8 @@ export async function unifiedTest(i: string, u: string): Promise<string | null> 
     .catch(() => false);
   
   if (passed)
-    console.log(unifiedUrl + 'passed the unified test');
+    console.log('unified: ' + unifiedUrl);
   
-  return '';
+  return passed ? i : '';
 
 }
