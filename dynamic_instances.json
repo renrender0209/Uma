@@ -2,9 +2,7 @@
     "piped": [
         "https://cal1.piapi.ggtyler.dev"
     ],
-    "hls": [
-        "https://pipedapi.drgns.space"
-    ],
+    "hls": [],
     "invidious": [
         "https://cal1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
