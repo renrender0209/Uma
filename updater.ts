@@ -1,5 +1,6 @@
 import { writeFileSync, readFileSync } from 'fs';
 import { loadTest } from './loadTest';
+import { unifiedTest } from './unifiedTest';
 import { hlsTest } from './hlsTest';
 import { gethp } from './hyperpipe';
 
