@@ -2,11 +2,13 @@
     "piped": [
         "https://cal1.piapi.ggtyler.dev"
     ],
-    "hls": [],
+    "hls": [
+        "https://pipedapi.nosebs.ru"
+    ],
     "invidious": [
         "https://cal1.iv.ggtyler.dev",
-        "https://invidious.nikkosphere.com",
         "https://lekker.gay",
+        "https://invidious.nikkosphere.com",
         "https://inv.stealthy.club"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
