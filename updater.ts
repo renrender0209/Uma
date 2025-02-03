@@ -63,7 +63,10 @@ fetch(piped_instances)
         if (i in unified_instances){
           const iv = unified_instances[i];
           const passed = await unifiedTest(i,iv);
-          if (passed) di.piped.push(i);
+          if (passed) {
+            di.piped.push(i);
+            di.invidious.push(iv);
+          }
           else di.hls.push(i);
         }
         else di.hls.push(i);
@@ -73,7 +76,7 @@ fetch(piped_instances)
     (await Promise.all(iv.map(loadTest)))
       .filter(p => p)
       .forEach(i => {
-        di.invidious.push(i)
+        di.invidious.push(i);
       });
     
     di.hyperpipe = await gethp();
