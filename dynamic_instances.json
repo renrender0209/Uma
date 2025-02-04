@@ -5,10 +5,10 @@
     "hls": [],
     "invidious": [
         "https://cal1.iv.ggtyler.dev",
-        "https://lekker.gay",
         "https://invidious.nikkosphere.com",
+        "https://lekker.gay",
         "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "status": 1
 }
