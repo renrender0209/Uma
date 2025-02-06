@@ -5,20 +5,20 @@
         "https://nyc1.piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev",
         "https://pipedapi.adminforge.de",
-        "https://api.piped.private.coffee",
         "https://piapi.ggtyler.dev",
         "https://pipedapi.reallyaweso.me",
+        "https://api.piped.private.coffee",
+        "https://pipedapi.nosebs.ru",
         "https://pipedapi.darkness.services"
     ],
     "hls": [
         "https://pipedapi.ducks.party",
-        "https://pipedapi.drgns.space",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
         "https://invidious.nikkosphere.com",
-        "https://lekker.gay",
-        "https://inv.stealthy.club"
+        "https://inv.stealthy.club",
+        "https://lekker.gay"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 0
