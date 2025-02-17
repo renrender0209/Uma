@@ -4,16 +4,15 @@
     ],
     "hls": [
         "https://pipedapi.nosebs.ru",
-        "https://api.piped.private.coffee",
-        "https://pipedapi.ducks.party",
-        "https://pipedapi.orangenet.cc"
+        "https://pipedapi.orangenet.cc",
+        "https://api.piped.private.coffee"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://id.420129.xyz",
         "https://invidious.nikkosphere.com",
+        "https://id.420129.xyz",
         "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://hyperpipeapi.drgns.space",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "status": 1
 }
