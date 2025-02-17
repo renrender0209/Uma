@@ -3,16 +3,16 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.orangenet.cc",
         "https://pipedapi.nosebs.ru",
-        "https://api.piped.private.coffee"
+        "https://api.piped.private.coffee",
+        "https://pipedapi.orangenet.cc"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://inv.stealthy.club",
         "https://invidious.nikkosphere.com",
+        "https://inv.stealthy.club",
         "https://id.420129.xyz"
     ],
-    "hyperpipe": "https://hyperpipeapi.drgns.space",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
 }
