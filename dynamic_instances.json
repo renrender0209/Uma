@@ -3,16 +3,16 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.drgns.space",
+        "https://pipedapi.orangenet.cc",
         "https://pipedapi.nosebs.ru",
-        "https://pipedapi.orangenet.cc"
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
-        "https://id.420129.xyz",
-        "https://inv.stealthy.club",
+        "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
-        "https://pol1.iv.ggtyler.dev"
+        "https://id.420129.xyz",
+        "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "status": 1
 }
