@@ -5,7 +5,8 @@
     "hls": [
         "https://pipedapi.orangenet.cc",
         "https://pipedapi.nosebs.ru",
-        "https://pipedapi.drgns.space"
+        "https://pipedapi.drgns.space",
+        "https://pipedapi.ducks.party"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
