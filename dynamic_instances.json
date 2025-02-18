@@ -4,13 +4,14 @@
     ],
     "hls": [
         "https://pipedapi.orangenet.cc",
+        "https://pipedapi.nosebs.ru",
         "https://pipedapi.drgns.space"
     ],
     "invidious": [
+        "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
-        "https://inv.stealthy.club",
         "https://id.420129.xyz",
-        "https://pol1.iv.ggtyler.dev"
+        "https://inv.stealthy.club"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
