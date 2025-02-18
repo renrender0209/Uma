@@ -3,12 +3,14 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.drgns.space"
+        "https://pipedapi.nosebs.ru",
+        "https://pipedapi.drgns.space",
+        "https://pipedapi.orangenet.cc"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://invidious.nikkosphere.com",
         "https://inv.stealthy.club",
+        "https://invidious.nikkosphere.com",
         "https://id.420129.xyz"
     ],
     "hyperpipe": "https://hpapi.ggtyler.dev",
