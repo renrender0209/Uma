@@ -2,13 +2,15 @@
     "piped": [
         "https://pol1.piapi.ggtyler.dev"
     ],
-    "hls": [],
+    "hls": [
+        "https://pipedapi.drgns.space"
+    ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://invidious.nikkosphere.com",
         "https://inv.stealthy.club",
-        "https://id.420129.xyz"
+        "https://id.420129.xyz",
+        "https://invidious.nikkosphere.com"
     ],
-    "hyperpipe": "https://musicapi.reallyaweso.me",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "status": 1
 }
