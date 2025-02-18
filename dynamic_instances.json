@@ -3,14 +3,13 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.nosebs.ru",
-        "https://pipedapi.orangenet.cc"
+        "https://pipedapi.nosebs.ru"
     ],
     "invidious": [
-        "https://invidious.nikkosphere.com",
+        "https://pol1.iv.ggtyler.dev",
         "https://inv.stealthy.club",
-        "https://pol1.iv.ggtyler.dev"
+        "https://invidious.nikkosphere.com"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "status": 1
 }
