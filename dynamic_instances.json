@@ -3,8 +3,9 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
+        "https://pipedapi.nosebs.ru",
         "https://pipedapi.orangenet.cc",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.drgns.space"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
@@ -12,6 +13,6 @@
         "https://inv.stealthy.club",
         "https://id.420129.xyz"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hpapi.ggtyler.dev",
     "status": 1
 }
