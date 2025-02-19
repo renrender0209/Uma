@@ -9,9 +9,9 @@
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
-        "https://id.420129.xyz",
-        "https://inv.stealthy.club"
+        "https://inv.stealthy.club",
+        "https://id.420129.xyz"
     ],
-    "hyperpipe": "https://hpapi.ggtyler.dev",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "status": 1
 }
