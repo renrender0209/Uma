@@ -2,11 +2,13 @@
     "piped": [
         "https://pol1.piapi.ggtyler.dev"
     ],
-    "hls": [],
+    "hls": [
+        "https://pipedapi.orangenet.cc"
+    ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://id.420129.xyz",
         "https://invidious.nikkosphere.com",
+        "https://id.420129.xyz",
         "https://inv.stealthy.club"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
