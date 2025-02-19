@@ -3,15 +3,15 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.leptons.xyz",
-        "https://pipedapi.nosebs.ru"
+        "https://pipedapi.nosebs.ru",
+        "https://pipedapi.leptons.xyz"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://inv.stealthy.club",
+        "https://id.420129.xyz",
         "https://invidious.nikkosphere.com",
-        "https://id.420129.xyz"
+        "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://musicapi.reallyaweso.me",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
 }
