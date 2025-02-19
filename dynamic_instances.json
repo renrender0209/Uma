@@ -7,10 +7,10 @@
         "https://pipedapi.orangenet.cc"
     ],
     "invidious": [
+        "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
         "https://inv.stealthy.club",
-        "https://id.420129.xyz",
-        "https://pol1.iv.ggtyler.dev"
+        "https://id.420129.xyz"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
