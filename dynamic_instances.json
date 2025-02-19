@@ -3,8 +3,8 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.orangenet.cc",
-        "https://pipedapi.leptons.xyz"
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi.orangenet.cc"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
@@ -12,6 +12,6 @@
         "https://id.420129.xyz",
         "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://musicapi.reallyaweso.me",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
 }
