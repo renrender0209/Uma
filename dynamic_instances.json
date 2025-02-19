@@ -8,9 +8,10 @@
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
+        "https://invidious.nikkosphere.com",
         "https://id.420129.xyz",
-        "https://invidious.nikkosphere.com"
+        "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://hyperpipe-api.lunar.icu",
+    "hyperpipe": "https://hpapi.ggtyler.dev",
     "status": 1
 }
