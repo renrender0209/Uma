@@ -9,9 +9,8 @@
         "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
-        "https://pol1.iv.ggtyler.dev",
-        "https://id.420129.xyz"
+        "https://pol1.iv.ggtyler.dev"
     ],
-    "hyperpipe": "https://musicapi.reallyaweso.me",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
 }
