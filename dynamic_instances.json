@@ -5,12 +5,11 @@
     "hls": [
         "https://pipedapi.leptons.xyz",
         "https://pipedapi.orangenet.cc",
-        "https://api.piped.private.coffee",
-        "https://cal1.piapi.ggtyler.dev"
+        "https://api.piped.private.coffee"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "status": 1
 }
