@@ -10,8 +10,10 @@
         "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
-        "https://pol1.iv.ggtyler.dev"
+        "https://pol1.iv.ggtyler.dev",
+        "https://invidious.nikkosphere.com",
+        "https://id.420129.xyz"
     ],
-    "hyperpipe": "https://hyperpipe-api.lunar.icu",
+    "hyperpipe": "https://hyperpipeapi.ducks.party",
     "status": 1
 }
