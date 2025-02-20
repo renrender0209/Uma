@@ -5,15 +5,15 @@
     "hls": [
         "https://pipedapi.orangenet.cc",
         "https://pipedapi.leptons.xyz",
+        "https://pipedapi.nosebs.ru",
         "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
-        "https://inv.stealthy.club",
-        "https://id.420129.xyz",
-        "https://lekker.gay"
+        "https://lekker.gay",
+        "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://musicapi.adminforge.de",
+    "hyperpipe": "https://hpapi.ggtyler.dev",
     "status": 1
 }
