@@ -7,11 +7,11 @@
         "https://pipedapi.orangenet.cc"
     ],
     "invidious": [
+        "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
-        "https://id.420129.xyz",
         "https://inv.stealthy.club",
-        "https://pol1.iv.ggtyler.dev"
+        "https://id.420129.xyz"
     ],
-    "hyperpipe": "https://hyperpipe-api.lunar.icu",
+    "hyperpipe": "https://musicapi.reallyaweso.me",
     "status": 1
 }
