@@ -4,14 +4,13 @@
     ],
     "hls": [
         "https://pipedapi.orangenet.cc",
-        "https://pipedapi.leptons.xyz",
         "https://api.piped.private.coffee",
+        "https://pipedapi.leptons.xyz",
         "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
-        "https://pol1.iv.ggtyler.dev",
-        "https://id.420129.xyz"
+        "https://pol1.iv.ggtyler.dev"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hpapi.ggtyler.dev",
     "status": 1
 }
