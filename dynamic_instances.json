@@ -3,19 +3,18 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.orangenet.cc",
-        "https://pipedapi.leptons.xyz",
         "https://pipedapi.nosebs.ru",
+        "https://pipedapi.leptons.xyz",
+        "https://pipedapi.orangenet.cc",
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me"
     ],
     "invidious": [
-        "https://invidious.nikkosphere.com",
-        "https://lekker.gay",
+        "https://pol1.iv.ggtyler.dev",
         "https://inv.stealthy.club",
-        "https://id.420129.xyz",
-        "https://pol1.iv.ggtyler.dev"
+        "https://lekker.gay",
+        "https://id.420129.xyz"
     ],
-    "hyperpipe": "https://musicapi.adminforge.de",
+    "hyperpipe": "https://hpapi.ggtyler.dev",
     "status": 1
 }
