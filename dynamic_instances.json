@@ -4,6 +4,7 @@
     ],
     "hls": [
         "https://pipedapi.orangenet.cc",
+        "https://api.piped.private.coffee",
         "https://pipedapi.nosebs.ru",
         "https://pipedapi.reallyaweso.me",
         "https://cal1.piapi.ggtyler.dev"
@@ -12,6 +13,7 @@
         "https://pol1.iv.ggtyler.dev",
         "https://lekker.gay",
         "https://invidious.nikkosphere.com",
+        "https://id.420129.xyz",
         "https://inv.stealthy.club"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
