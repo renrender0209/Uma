@@ -4,12 +4,12 @@
     ],
     "hls": [
         "https://pipedapi.leptons.xyz",
-        "https://pipedapi.orangenet.cc"
+        "https://pipedapi.orangenet.cc",
+        "https://pipedapi.nosebs.ru"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://invidious.nikkosphere.com",
-        "https://lekker.gay"
+        "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
