@@ -9,7 +9,8 @@
         "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
-        "https://pol1.iv.ggtyler.dev"
+        "https://pol1.iv.ggtyler.dev",
+        "https://invidious.nikkosphere.com"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
