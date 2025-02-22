@@ -4,15 +4,14 @@
     ],
     "hls": [
         "https://pipedapi.leptons.xyz",
-        "https://pipedapi.orangenet.cc",
         "https://api.piped.private.coffee",
         "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://lekker.gay",
-        "https://invidious.nikkosphere.com"
+        "https://invidious.nikkosphere.com",
+        "https://lekker.gay"
     ],
-    "hyperpipe": "https://hyperpipe-api.lunar.icu",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
 }
