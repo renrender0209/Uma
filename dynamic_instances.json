@@ -3,9 +3,9 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
+        "https://pipedapi.nosebs.ru",
         "https://pipedapi.leptons.xyz",
         "https://pipedapi.orangenet.cc",
-        "https://pipedapi.nosebs.ru",
         "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
@@ -13,6 +13,6 @@
         "https://invidious.nikkosphere.com",
         "https://lekker.gay"
     ],
-    "hyperpipe": "https://hyperpipe-api.lunar.icu",
+    "hyperpipe": "https://hpapi.ggtyler.dev",
     "status": 1
 }
