@@ -3,14 +3,15 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.orangenet.cc",
         "https://pipedapi.leptons.xyz",
+        "https://pipedapi.orangenet.cc",
         "https://cal1.piapi.ggtyler.dev"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
-        "https://lekker.gay"
+        "https://lekker.gay",
+        "https://id.420129.xyz"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
