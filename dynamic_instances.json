@@ -12,9 +12,8 @@
         "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
         "https://lekker.gay",
-        "https://inv.stealthy.club",
-        "https://id.420129.xyz"
+        "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://hyperpipe-api.lunar.icu",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
 }
