@@ -3,13 +3,13 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.orangenet.cc",
         "https://pipedapi.leptons.xyz",
+        "https://pipedapi.orangenet.cc",
         "https://api.piped.private.coffee"
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev"
     ],
-    "hyperpipe": "https://hpapi.ggtyler.dev",
+    "hyperpipe": "https://hyperpipeapi.pfcd.me",
     "status": 1
 }
