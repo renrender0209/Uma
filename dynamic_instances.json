@@ -3,7 +3,6 @@
         "https://pol1.piapi.ggtyler.dev"
     ],
     "hls": [
-        "https://pipedapi.orangenet.cc",
         "https://pipedapi.leptons.xyz",
         "https://api.piped.private.coffee",
         "https://cal1.piapi.ggtyler.dev"
@@ -11,9 +10,9 @@
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
-        "https://lekker.gay",
-        "https://inv.stealthy.club"
+        "https://inv.stealthy.club",
+        "https://lekker.gay"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://musicapi.reallyaweso.me",
     "status": 1
 }
