@@ -10,10 +10,9 @@
     ],
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
-        "https://invidious.nikkosphere.com",
         "https://lekker.gay",
         "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://hpapi.ggtyler.dev",
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
     "status": 1
 }
