@@ -10,9 +10,8 @@
     "invidious": [
         "https://pol1.iv.ggtyler.dev",
         "https://invidious.nikkosphere.com",
-        "https://inv.stealthy.club",
-        "https://lekker.gay"
+        "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://musicapi.reallyaweso.me",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 1
 }
