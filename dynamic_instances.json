@@ -2,19 +2,17 @@
     "piped": [
         "https://pipedapi.leptons.xyz",
         "https://cal1.piapi.ggtyler.dev",
-        "https://nyc1.piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.reallyaweso.me",
-        "https://api.piped.private.coffee"
-    ],
-    "hls": [
         "https://pipedapi.nosebs.ru",
-        "https://pipedapi.drgns.space",
-        "https://pipedapi.orangenet.cc",
+        "https://pol1.piapi.ggtyler.dev",
+        "https://api.piped.private.coffee",
+        "https://pipedapi.reallyaweso.me",
         "https://pipedapi.ducks.party"
     ],
+    "hls": [
+        "https://pipedapi.orangenet.cc",
+        "https://pipedapi.drgns.space"
+    ],
     "invidious": [
-        "https://invidious.nikkosphere.com",
         "https://inv.stealthy.club"
     ],
     "hyperpipe": "https://hyperpipeapi.drgns.space",
