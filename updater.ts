@@ -73,9 +73,6 @@ function getInstanceUrls(text: string) {
 fetch(piped_instances)
   .then(r => r.text())
   .then(getInstanceUrls)
-  .then(t => t.split('--- | --- | --- | --- | ---')[1])
-  .then(t => t.split('\n'))
-  .then(i => i.map(_ => _.split(' | ')[1]))
   .then(async instances => {
     instances.shift();
     const piped_instances = instances
