@@ -1,6 +1,6 @@
 export async function loadTest(i: string): Promise<string | null> {
   
-  const url = await fetch(`${i}/api/v1/videos/LuoB1OQvjqk`)
+  const url = await fetch(`${i}/api/v1/videos/GemKqzILV4w`)
     .then(res => res.json())
     .then(data => {
       console.log(i, `data: ${Boolean(data.adaptiveFormats.length)}`);
