@@ -4,7 +4,7 @@ import { unifiedTest } from './unifiedTest';
 import { hlsTest } from './hlsTest';
 import { gethp } from './hyperpipe';
 
-const piped_instances = 'https://raw.githubusercontent.com/wiki/TeamPiped/Piped/Instances.md';
+const piped_instances = 'https://raw.githubusercontent.com/TeamPiped/documentation/refs/heads/main/content/docs/public-instances/index.md';
 const invidious_instances = JSON.parse(readFileSync('./invidious.json', 'utf8'));
 const unified_instances = JSON.parse(readFileSync('./unified_instances.json', 'utf8'));
 const di: {
@@ -45,8 +45,34 @@ const getInstances = async (instanceArray: string[]): Promise<string[]> => Promi
     .map(i => i[1] as string)
 );
 
+function getInstanceUrls(text: string) {
+  const lines = text.split('\n');
+  const instanceUrls = [];
+  let startParsing = false;
+
+  for (const line of lines) {
+    if (line.startsWith('--- | --- | --- | --- | ---')) {
+      startParsing = true;
+      continue;
+    }
+
+    if (startParsing && line.trim() !== '') {
+      const parts = line.split('|').map(part => part.trim());
+      if (parts.length >= 2) {
+        const apiUrl = parts[1];
+        if (apiUrl) {
+          instanceUrls.push(apiUrl);
+        }
+      }
+    }
+  }
+
+  return instanceUrls;
+}
+
 fetch(piped_instances)
   .then(r => r.text())
+  .then(getInstanceUrls)
   .then(t => t.split('--- | --- | --- | --- | ---')[1])
   .then(t => t.split('\n'))
   .then(i => i.map(_ => _.split(' | ')[1]))
