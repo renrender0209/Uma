@@ -3,10 +3,10 @@
         "https://pipedapi.leptons.xyz",
         "https://nyc1.piapi.ggtyler.dev",
         "https://cal1.piapi.ggtyler.dev",
-        "https://pipedapi.drgns.space",
-        "https://pipedapi.nosebs.ru",
         "https://pol1.piapi.ggtyler.dev",
+        "https://pipedapi.nosebs.ru",
         "https://piapi.ggtyler.dev",
+        "https://pipedapi.drgns.space",
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me"
     ],
@@ -14,6 +14,6 @@
     "invidious": [
         "https://inv.stealthy.club"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hyperpipeapi.drgns.space",
     "status": 0
 }
