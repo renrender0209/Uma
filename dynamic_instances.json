@@ -3,16 +3,16 @@
         "https://nyc1.piapi.ggtyler.dev",
         "https://cal1.piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev",
-        "https://pipedapi.leptons.xyz",
         "https://api.piped.private.coffee",
         "https://pipedapi.reallyaweso.me",
         "https://piapi.ggtyler.dev",
+        "https://pipedapi.leptons.xyz",
         "https://pipedapi.drgns.space"
     ],
     "hls": [],
     "invidious": [
-        "https://pol1.iv.ggtyler.dev"
+        "https://invidious.reallyaweso.me"
     ],
-    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "hyperpipe": "https://hpapi.ggtyler.dev",
     "status": -1
 }
