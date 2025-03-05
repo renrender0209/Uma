@@ -1,7 +1,7 @@
 {
     "piped": [
-        "https://pipedapi.leptons.xyz",
         "https://cal1.piapi.ggtyler.dev",
+        "https://pipedapi.leptons.xyz",
         "https://nyc1.piapi.ggtyler.dev",
         "https://pol1.piapi.ggtyler.dev",
         "https://api.piped.private.coffee",
@@ -11,8 +11,7 @@
     ],
     "hls": [],
     "invidious": [
-        "https://lekker.gay",
-        "https://cal1.iv.ggtyler.dev"
+        "https://lekker.gay"
     ],
     "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": 0
