@@ -11,8 +11,8 @@
     ],
     "hls": [],
     "invidious": [
-        "https://lekker.gay"
+        "https://invidious.adminforge.de"
     ],
-    "hyperpipe": "https://hyperpipeapi.drgns.space",
-    "status": 0
+    "hyperpipe": "https://hyperpipe-api.lunar.icu",
+    "status": -1
 }
