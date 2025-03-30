@@ -10,13 +10,14 @@
         "https://api.piped.private.coffee",
         "https://piapi.ggtyler.dev",
         "https://pipedapi.reallyaweso.me",
-        "https://pipedapi.ducks.party",
-        "https://api.piped.yt"
+        "https://api.piped.yt",
+        "https://pipedapi.ducks.party"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.darkness.services"
+        "https://cal1.iv.ggtyler.dev",
+        "https://invidious.f5.si"
     ],
-    "hyperpipe": "https://hyperpipeapi.darkness.services",
-    "status": -1
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
+    "status": 0
 }
