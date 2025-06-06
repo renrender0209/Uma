@@ -3,16 +3,18 @@
         "https://pipedapi.drgns.space",
         "https://pipedapi.adminforge.de",
         "https://cal1.piapi.ggtyler.dev",
-        "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee",
         "https://nyc1.piapi.ggtyler.dev",
+        "https://pipedapi.ducks.party",
+        "https://pol1.piapi.ggtyler.dev",
         "https://piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev"
+        "https://api.piped.private.coffee"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.adminforge.de"
+        "https://lekker.gay/",
+        "https://lekker.gay",
+        "https://invidious.nikkosphere.com"
     ],
-    "hyperpipe": "https://hyperpipeapi.darkness.services",
-    "status": -1
+    "hyperpipe": "https://hyperpipeapi.ducks.party",
+    "status": 0
 }
