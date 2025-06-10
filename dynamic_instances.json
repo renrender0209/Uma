@@ -2,17 +2,17 @@
     "piped": [
         "https://pipedapi.drgns.space",
         "https://cal1.piapi.ggtyler.dev",
-        "https://pipedapi.ducks.party",
-        "https://pipedapi.adminforge.de",
-        "https://api.piped.private.coffee",
         "https://nyc1.piapi.ggtyler.dev",
+        "https://pipedapi.adminforge.de",
         "https://piapi.ggtyler.dev",
-        "https://pol1.piapi.ggtyler.dev"
+        "https://pipedapi.ducks.party",
+        "https://pol1.piapi.ggtyler.dev",
+        "https://api.piped.private.coffee"
     ],
     "hls": [],
     "invidious": [
-        "https://invidious.adminforge.de"
+        "https://youtube.mosesmang.com/"
     ],
-    "hyperpipe": "https://hyperpipeapi.darkness.services",
+    "hyperpipe": "https://hyperpipeapi.onrender.com",
     "status": -1
 }
